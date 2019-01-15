@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+
 dotfuncs="$(dirname "${0}")/dotfuncs"
 if [ -f "${dotfuncs}" ]; then
     . "${dotfuncs}"
@@ -12,7 +13,7 @@ fi
 
 if [ -n "${1}" ]; then
     basedir="${1}"
-elif [ -d "${HOME}/dotfiles" ]; then
+elif [ -d "${HOME}/dotsync" ]; then
     basedir="${HOME}/dotsync"
 else
     echo >&2 "[ERROR] No dotsync directory found; please specify as first argument (e.g. \`${0} path/to/dotsync\`)."

@@ -6,7 +6,7 @@ else
 fi
 
 
-dotsync_depsgood() { return 0 }
+dotsync_depsgood() { return 0 ; }
 # NOTE I could have dependencies for the install script as well,
 # NOTE but that being non-empty would just be a smell that the install process is too complex
 
