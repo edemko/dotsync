@@ -1,0 +1,73 @@
+dotsync() {
+    hostconf="${1}"
+    dotdir="${2}"
+    for module in $(ls "${dotdir}"); do
+        moduledir="${dotdir}/${module}"
+        installscript="${moduledir}/install.sh"
+        if [ ! -d "${moduledir}" ]; then
+            echo >&2 "[WARN] not a dir: $f"
+            continue
+        fi
+
+        if ! grep -Fqx "${module}" "${hostconf}"; then
+            dotdown "${moduledir}"
+        fi
+    done
+    for module in $(cat "${hostconf}"); do
+        moduledir="${dotdir}/${module}"
+        installscript="${moduledir}/install.sh"
+
+        if [ ! -f "${installscript}" ]; then
+            echo >&2 "No install script for '${moduledir}' (expecting '${installscript}')."
+            echo >&2 "Skipping ${module}."
+        else
+            dotup "${moduledir}"
+        fi
+    done
+}
+
+dotup() {
+    dotdir="${1}"
+    case "${dotdir}" in
+      /*) dotdir="${dotdir}";;
+      *) dotdir="${PWD}/${dotdir}";;
+    esac
+    installscript="${dotdir}/install.sh"
+    (
+        echo >&2 "[INFO] Installing ${1}…"
+        . "${installscript}"
+        echo >&2 "Checking status…"
+        if ! dotsync_depsgood "${dotdir}"; then
+            echo >&2 "Missing dependencies."
+            state=SKIP
+        elif dotsync_newest "${dotdir}"; then
+            echo >&2 "Already up-to-date."
+            state=SKIP
+        else
+            echo >&2 "Preparing clean slate…"
+            dotsync_teardown "${dotdir}"
+            echo >&2 "Setting up fresh ${1}…"
+            if dotsync_setup "${dotdir}"; then
+                state=ok
+            else
+                state=FAIL
+            fi
+        fi
+        echo >&2 "[INFO] Install ${1}: ${state}."
+    )
+}
+
+dotdown() {
+    dotdir="${1}"
+    case "${dotdir}" in
+      /*) dotdir="${dotdir}";;
+      *) dotdir="${PWD}/${dotdir}";;
+    esac
+    installscript="${dotdir}/install.sh"
+    echo >&2 "Tearing down ${dotdir}…"
+    (
+        . "${installscript}"
+        dotsync_teardown "${dotdir}"
+    )
+    echo >&2 "done."
+}

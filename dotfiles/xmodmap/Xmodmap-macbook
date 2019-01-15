@@ -1,0 +1,36 @@
+! -*- coding: utf-8 -*-
+
+! ====== Caps Lock to Compose ======
+
+! Original settings were (obtained with `xmodmap -pke | grep -P 'Caps_Lock'`):
+! keycode  66 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock
+
+keycode 66 = Multi_key Multi_key Multi_key Multi_key
+clear lock
+
+
+! ====== Adjust MacBook Layout ======
+! swap 'alt' with 'command' on left
+! change right 'command' and 'alt' for alt and control
+
+! Original settings were (obtained with `xmodmap -pke | grep -P 'Super|Alt|Control'`):
+! keycode  37 = Control_L NoSymbol Control_L
+! keycode  64 = Alt_L Meta_L Alt_L Meta_L
+! keycode 105 = Control_R NoSymbol Control_R
+! keycode 108 = Alt_R Meta_R Alt_R Meta_R
+! keycode 133 = Super_L NoSymbol Super_L
+! keycode 134 = Super_R NoSymbol Super_R
+! keycode 204 = NoSymbol Alt_L NoSymbol Alt_L
+! keycode 206 = NoSymbol Super_L NoSymbol Super_L
+
+! I'm not sure what keycodes 204 and 206 are, so I will ignore them
+
+clear control
+clear mod1
+clear mod4
+keycode 64 = Super_L
+keycode 133 = Alt_L
+keycode 134 = Control_R
+add control = Control_L Control_R
+add mod1 = Alt_L Alt_R
+add mod4 = Super_L Super_R

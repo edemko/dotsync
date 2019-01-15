@@ -1,0 +1,9 @@
+! -*- coding: utf-8 -*-
+
+! ====== Caps Lock to Compose ======
+
+! Original settings were (obtained with `xmodmap -pke | grep -P 'Caps_Lock'`):
+! keycode  66 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock
+
+keycode 66 = Multi_key Multi_key Multi_key Multi_key
+clear lock
