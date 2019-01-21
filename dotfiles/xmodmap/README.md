@@ -7,9 +7,9 @@
 * [ ] accumulate notes
     * [ ] lazarenko
     * [ ] macbook
-* [ ] split XCompose monolith
+* [x] split XCompose monolith
     * [x] how do XCompose includes work?
-    * [ ] use XCompose includes
+    * [x] use XCompose includes
     * [x] replace monolithic m4-based build with many smaller symlinks
 * [ ] document default XCompose sequences
     * [ ] hardcoding
