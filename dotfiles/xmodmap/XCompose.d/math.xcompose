@@ -1,0 +1,19 @@
+###                  ###
+# Mathematical Symbols #
+###                  ###
+
+### Everyday Math ###
+
+# <%> <o> already used for ‰ (per-mille)
+<Multi_key> <percent> <O>: "‱" U2031 # PER MYRIAD SIGN
+
+
+### Duodecimal ###
+
+<Multi_key> <d> <o>: "↊"
+<Multi_key> <e> <l>: "↋"
+
+
+### Logic ###
+
+<Multi_key> <period> <3>: "∴"

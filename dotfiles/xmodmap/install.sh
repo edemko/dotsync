@@ -1,28 +1,46 @@
-target="${HOME}/.Xmodmap"
+xinitrc="${HOME}/.xinitrc"
+xinitrc_src="${1}/xinitrc"
+
+modmap="${HOME}/.Xmodmap"
 if setxkbmap -query | grep -qi 'model:\s*macbook'; then
-    src="${1}/Xmodmap-macbook"
+    modmap_src="${1}/Xmodmap-macbook"
 else
-    src="${1}/Xmodmap"
+    modmap_src="${1}/Xmodmap"
 fi
 
+compose="${HOME}/.XCompose"
+compose_src="${1}/XCompose"
+composedir="${HOME}/.XCompose.d"
+composedir_src="${1}/XCompose.d"
 
-dotsync_depsgood() { return 0 ; }
-# NOTE I could have dependencies for the install script as well,
-# NOTE but that being non-empty would just be a smell that the install process is too complex
 
-# exit with 0 if the current install is up to requirements, otherwise return non-zero
+dotsync_depsgood() {
+    # FIXME check for the right input methods (somethingsomething `uim`)
+    if which runghc && which m4; then
+        echo >&2 "Building XCompose afresh…"
+        "${1}/build/XCompose.sh"
+        echo >&2 "done."
+    fi
+    return 0
+}
+
 dotsync_newest() {
-    [ -f "${target}" ] || return 1
-    diff -q "${src}" "${target}"
+    diff -q "${xinitrc_src}" "${xinitrc}" || return 1
+    diff -q "${modmap_src}" "${modmap}" || return 1
+    diff -q "${compose_src}" "${compose}" || return 1
+    # TODO diff the contents of XCompose.d
 }
 
 dotsync_setup() {
-    ln -sv "${src}" "${target}"
+    ln -sv "${composedir_src}" "${composedir}"
+    ln -sv "${compose_src}" "${compose}"
+    ln -sv "${modmap_src}" "${modmap}"
+    ln -sv "${xinitrc_src}" "${xinitrc}"
 }
 
-# teardown should always succeed, even if there's nothing to teardown
-# that way, upgrading a version can be done merely by testing for newest, and if not,
-# then a teardown will ensure a clean state for a fresh install of the new version
 dotsync_teardown() {
-    if [ -L "${target}" ]; then rm -v "${target}"; fi
+    if [ -L "${xinitrc}" ]; then rm -v "${xinitrc}"; fi
+    if [ -L "${modmap}" ]; then rm -v "${modmap}"; fi
+    if [ -L "${compose}" ]; then rm -v "${compose}"; fi
+    if [ -L "${composedir}" ]; then rm -v "${composedir}"; fi
 }

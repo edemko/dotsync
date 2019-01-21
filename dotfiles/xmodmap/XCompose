@@ -1,0 +1,9 @@
+# -*- coding: utf-8; mode: conf -*-
+include "%L"
+
+include "%H/.XCompose.d/punctuation.xcompose"
+include "%H/.XCompose.d/math.xcompose"
+include "%H/.XCompose.d/phonetic.xcompose"
+include "%H/.XCompose.d/latin.xcompose"
+include "%H/.XCompose.d/greek.xcompose"
+include "%H/.XCompose.d/lul.xcompose"

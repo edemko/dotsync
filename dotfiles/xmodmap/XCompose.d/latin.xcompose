@@ -1,0 +1,17 @@
+###            ###
+# Latin Alphabet #
+###            ###
+
+### Modified Characters ###
+
+<Multi_key> <c> <x>: "x̌"
+<Multi_key> <c> <X>: "X̌"
+
+
+### Historical Characters ###
+
+# <Multi_key> <f> <s>: "ſ" # Long s # It seems this one is already here
+<Multi_key> <W> <W>: "Ƿ" U01F7 # Wynn
+<Multi_key> <w> <w>: "ƿ" U01BF # wynn
+<Multi_key> <G> <h>: "Ȝ" U021C # Yogh
+<Multi_key> <g> <h>: "ȝ" U021D # yogh

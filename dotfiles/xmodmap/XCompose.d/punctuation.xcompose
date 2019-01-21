@@ -1,0 +1,20 @@
+###         ###
+# Punctuation #
+###         ###
+
+### Spaces ###
+
+# tabular space = the width of a digit if font is fixed‐digit
+<Multi_key> <space> <numbersign>: " " U2007 # FIGURE SPACE
+
+<Multi_key> <3> <asterisk>: "⁂" # ASTERISM
+<Multi_key> <asterisk> <3>: "⁂" # ASTERISM
+<Multi_key> <f> <greater>: "❧" # ROTATED FLORAL HEART BULLET (fleuron)
+
+
+### Emote Marks ###
+
+<Multi_key> <exclam> <comma>: "!̦"
+<Multi_key> <question> <comma>: "?̦"
+<Multi_key> <asciitilde> <?>: "⸮" # irony/sarcasm point
+<Multi_key> <slash> <s> <a> <r> <c> <a> <s> <m>: "⸮" # irony/sarcasm point
