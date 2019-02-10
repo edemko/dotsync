@@ -14,5 +14,7 @@ EOF
 ### Shortcuts ###
 
 <Multi_key> <f> <n>: "λ"
+<Multi_key> <F> <n>: "Λ"
+<Multi_key> <F> <N>: "Λ"
 
 EOF
