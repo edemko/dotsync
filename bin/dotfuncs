@@ -51,7 +51,7 @@ dotup() {
     esac
     installscript="${dotdir}/install.sh"
     (
-        echo >&2 "[INFO] Installing ${1}…"
+        echo >&2 "Syncing ${1}…"
         . "${installscript}"
         echo >&2 "Checking status…"
         if ! dotsync_depsgood "${dotdir}"; then
@@ -61,20 +61,21 @@ dotup() {
             echo >&2 "Already up-to-date."
             state=up-to-date
         else
-            echo >&2 "Preparing clean slate…"
-            if ! dotsync_teardown "${dotdir}"; then
-                echo >&2 "[WARNING] Teardown failed, but should never fail."
-                state=FAIL
-                return 1
-            fi
-            echo >&2 "Setting up fresh ${1}…"
+            # FIXME I think I don't need to teardown
+            # echo >&2 "Preparing clean slate…"
+            # if ! dotsync_teardown "${dotdir}"; then
+            #     echo >&2 "[WARNING] Teardown failed, but should never fail."
+            #     state=FAIL
+            #     return 1
+            # fi
+            echo >&2 "Updating ${1}…"
             if dotsync_setup "${dotdir}"; then
                 state=ok
             else
                 state=FAIL
             fi
         fi
-        echo >&2 "[INFO] Install ${1}: ${state}."
+        echo >&2 "[INFO] ${1}: ${state}."
     )
 }
 

@@ -10,8 +10,8 @@ dotsync_newest() {
 }
 dotsync_setup() {
     [ -d "${bindir}" ] || mkdir -v "${bindir}"
-    ln -srv "${srcexe}" "${targetexe}"
-    ln -srv "${srcfuncs}" "${targetfuncs}"
+    ln -srvf "${srcexe}" "${targetexe}"
+    ln -srvf "${srcfuncs}" "${targetfuncs}"
 }
 dotsync_teardown() {
     [ -L "${targetexe}" ] && rm -v "${targetexe}"
