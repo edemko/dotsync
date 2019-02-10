@@ -22,11 +22,13 @@ Thankfully, there's only ~50 sloc in there, so go read the implementation as "do
 ### Configuration
 
 You may place a number of text files under `boxen/`.
-The framework finds `boxen/$(hostname)`, so the file used for you machine is the one with the name name as the host.
+The framework finds `boxen/$(hostname)`, so the file used for your machine is the one with the same name as the host.
 
-Each of these files should have one module name per line.
+Each of these files should have one module name per line, and possibly a prefix.
 See "Writing Dotfiles" coming up next for what a "module" is.
-If a module doesn't exist, then a warning is emitted, but otherwise the framework carries on installing all the modules it can find (so, for example, putting `#` at the start of a line would probably make the module get skipped).
+If the prefix (first character of the line) is `#`, that line is ignored; if it is `!`, then the module is uninstalled; if there is no prefix, then the module is installed/updated.
+Leading and trailing spaces of a module name are ignored.
+If a module doesn't exist, then a warning is emitted, but otherwise the framework carries on installing all the modules it can find.
 
 ### Writing Dotfiles
 

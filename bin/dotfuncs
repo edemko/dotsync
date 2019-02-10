@@ -1,30 +1,43 @@
 #!/bin/sh
 
 dotsync() {
-    local hostconf dotdir moduledir installscript
+    local hostconf dotdir moduledir installscript action
     hostconf="${1}"
     dotdir="${2}"
     for module in $(ls "${dotdir}"); do
         moduledir="${dotdir}/${module}"
         installscript="${moduledir}/install.sh"
         if [ ! -d "${moduledir}" ]; then
-            echo >&2 "[WARN] not a dir: $f"
+            echo >&2 "[WARNING] not a dir: $f"
             continue
         fi
 
-        if ! grep -Fqx "${module}" "${hostconf}"; then
-            dotdown "${moduledir}"
-        fi
+        # if ! grep -Fqx "${module}" "${hostconf}"; then
+        #     dotdown "${moduledir}"
+        # fi
     done
     for module in $(cat "${hostconf}"); do
+        case "${module}" in
+            '#'*)
+                continue
+                ;;
+            '!'*)
+                module="${module#!}"
+                action=dotdown
+                ;;
+            *)
+                action=dotup
+                ;;
+        esac
+        module="$(echo "${module}" | sed 's/^\s*//' | sed 's/\s*$//')"
         moduledir="${dotdir}/${module}"
         installscript="${moduledir}/install.sh"
 
         if [ ! -f "${installscript}" ]; then
-            echo >&2 "No install script for '${moduledir}' (expecting '${installscript}')."
+            echo >&2 "No install script for '${module}' (expecting '${installscript}')."
             echo >&2 "Skipping ${module}."
         else
-            dotup "${moduledir}"
+            "${action}" "${moduledir}"
         fi
     done
 }
@@ -49,7 +62,11 @@ dotup() {
             state=up-to-date
         else
             echo >&2 "Preparing clean slate…"
-            dotsync_teardown "${dotdir}"
+            if ! dotsync_teardown "${dotdir}"; then
+                echo >&2 "[WARNING] Teardown failed, but should never fail."
+                state=FAIL
+                return 1
+            fi
             echo >&2 "Setting up fresh ${1}…"
             if dotsync_setup "${dotdir}"; then
                 state=ok
