@@ -3,7 +3,7 @@
 ## TODO
 
 * [x] get this to load on startup
-* [ ] do I need to do anything about uim?
+* [x] do I need to do anything about uim?
 * [ ] accumulate notes
     * [ ] lazarenko
     * [ ] macbook
