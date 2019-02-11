@@ -18,12 +18,20 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 PS1+="\[${sty_BOLD}${col_YEL}\]"'${debian_chroot:+($debian_chroot)}'"\[${col_CLR}\]"
 # display current git branch
-if which git; then
-    __prompt_gitbranch() {
-        git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-    }
-    PS1+="\[${col_YEL}\]\$(__prompt_gitbranch)\[${col_CLR}\]"
-fi
+__prompt_gitstatus() {
+    (
+        if git rev-parse --git-dir >/dev/null 2>&1; then
+            if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+                st='*'
+            else
+                st=''
+            fi
+            br="$(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')"
+            echo "(${st}${br})"
+        fi
+    )
+}
+PS1+="\[${col_YEL}\]\$(__prompt_gitstatus)\[${col_CLR}\]"
 # user, host, and working directory
 PS1+="\[${col_BLU}\]\u@\h:\[${col_LBLU}\]\w\[${col_CLR}\]"
 # dollar or hash for prompt
