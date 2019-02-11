@@ -29,7 +29,7 @@ dotsync_newest() {
     for rc in $(ls "${bashrcdir_src}"); do
         diff -q "${bashrcdir}/${rc}" "${bashrcdir_src}/${rc}" || return 1
     done
-    return 1
+    return 0
 }
 
 dotsync_setup() {
