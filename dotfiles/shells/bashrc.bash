@@ -49,3 +49,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -e "${HOME}/.bashrc.d/$(hostname).bash" ]; then
+    . "${HOME}/.bashrc.d/$(hostname).bash"
+fi
