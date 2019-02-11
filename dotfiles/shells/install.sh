@@ -50,28 +50,22 @@ dotsync_newest() {
 }
 
 dotsync_setup() {
-    [ -e "${profile}" ] && rm "${profile}"
     ln -srvf "${profile_src}" "${profile}"
     mkdir -pv "${profiledir}"
 
     [ -f "${bashlogin}" -o -L "${bashlogin}" ] && rm -v "${bashlogin}"
     [ -f "${bashprofile}" -o -L "${bashprofile}" ] && rm -v "${bashprofile}"
-    [ -e "${bashrc}" ] && rm "${bashrc}"
     ln -srvf "${bashrc_src}" "${bashrc}"
-    [ -e "${bashlogout}" ] && rm "${bashlogout}"
     ln -srvf "${bashlogout_src}" "${bashlogout}"
     mkdir -pv "${bashrcdir}"
     for rc in $(ls "${bashrcdir_src}"); do
-        [ -e "${bashrcdir}/${rc}" ] && rm "${bashrcdir}/${rc}"
         ln -srvf "${bashrcdir_src}/${rc}" "${bashrcdir}/${rc}"
     done
 
-    [ -e "${zshrc}" ] && rm "${zshrc}"
     ln -srvf "${zshrc_src}" "${zshrc}"
     # TODO
     # mkdir -pv "${zshrcdir}"
     # for rc in $(ls "${zshrcdir_src}"); do
-    #     [ -e "${zshrcdir}/${rc}" ] && rm "${zshrcdir}/${rc}"
     #     ln -srvf "${zshrcdir_src}/${rc}" "${zshrcdir}/${rc}"
     # done
 }
