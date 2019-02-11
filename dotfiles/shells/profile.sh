@@ -4,7 +4,9 @@
 #umask 022
 
 # set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+# FIXME this looks like haskell dotfiles
+PATH="$PATH:$HOME/.cabal/bin"
 
 
 if [ -d "${HOME}/.profile.d" ]; then

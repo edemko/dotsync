@@ -10,12 +10,14 @@ dotsync_depsgood() {
 }
 
 dotsync_newest() {
-    diff -q "${target}" "${src}" || return 1
-    diff -q "${profile}" "${profile_src}" || return 1
+    diff -q 2>/dev/null "${target}" "${src}" || return 1
+    diff -q 2>/dev/null "${profile}" "${profile_src}" || return 1
 }
 
 dotsync_setup() {
+    [ -e "${target}" ] && rm "${target}"
     ln -srvf "${src}" "${target}"
+    [ -e "${profile}" ] && rm "${profile}"
     ln -srvf "${profile_src}" "${profile}"
 }
 

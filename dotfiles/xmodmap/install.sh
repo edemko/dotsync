@@ -31,18 +31,23 @@ dotsync_depsgood() {
 }
 
 dotsync_newest() {
-    diff -q "${xinitrc_src}" "${xinitrc}" || return 1
-    diff -q "${xinputrc_src}" "${xinputrc}" || return 1
-    diff -q "${modmap_src}" "${modmap}" || return 1
-    diff -q "${compose_src}" "${compose}" || return 1
+    diff -q 2>/dev/null "${xinitrc_src}" "${xinitrc}" || return 1
+    diff -q 2>/dev/null "${xinputrc_src}" "${xinputrc}" || return 1
+    diff -q 2>/dev/null "${modmap_src}" "${modmap}" || return 1
+    diff -q 2>/dev/null "${compose_src}" "${compose}" || return 1
     # TODO diff the contents of XCompose.d
 }
 
 dotsync_setup() {
+    [ -e "${composedir}" ] && rm "${composedir}"
     ln -srvf "${composedir_src}" "${composedir}"
+    [ -e "${compose}" ] && rm "${compose}"
     ln -srvf "${compose_src}" "${compose}"
+    [ -e "${modmap}" ] && rm "${modmap}"
     ln -srvf "${modmap_src}" "${modmap}"
+    [ -e "${xinputrc}" ] && rm "${xinputrc}"
     ln -srvf "${xinputrc_src}" "${xinputrc}"
+    [ -e "${xinitrc}" ] && rm "${xinitrc}"
     ln -srvf "${xinitrc_src}" "${xinitrc}"
 }
 

@@ -1,4 +1,4 @@
-if [ -f xmodmap ~/.Xmodmap ]; then
+if [ -f ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
     # at least XFCE can override the previous attempt to use xmodmap
     # therefore, run it again after the system has had some time to stop messing around
