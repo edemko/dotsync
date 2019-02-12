@@ -7,12 +7,19 @@ bashrc_src="${1}/bashrc.bash"
 bashlogout="${HOME}/.bash_logout"
 bashlogout_src="${1}/bash_logout.bash"
 
+zprofile="${HOME}/.zprofile"
+zprofile_src="${1}/profile.zsh"
 zshrc="${HOME}/.zshrc"
 zshrc_src="${1}/zshrc.zsh"
+zlogout="${HOME}/.zlogout"
+zlogout_src="${1}/logout.zsh"
+# TODO zlogout
 
 # these are deleted to reduce complexity
-bashlogin="${HOME}/.bash_login"
 bashprofile="${HOME}/.bash_profile"
+bashlogin="${HOME}/.bash_login"
+zshenv="${HOME}/.zshenv"
+zlogin="${HOME}/.zlogin"
 
 # directories for additional cofiguration to be plugged in
 profiledir="${HOME}/.profile.d"
@@ -33,7 +40,11 @@ dotsync_newest() {
     diff -q "${bashrc}" "${bashrc_src}" || return 1
     diff -q "${bashlogout}" "${bashlogout_src}" || return 1
 
+    [ -f "${zshenv}" -o -L "${zshenv}" ] && return 1
+    [ -f "${zlogin}" -o -L "${zlogin}" ] && return 1
+    diff -q "${zprofile}" "${zprofile_src}" || return 1
     diff -q "${zshrc}" "${zshrc_src}" || return 1
+    diff -q "${zshlogout}" "${zshlogout_src}" || return 1
 
     [ -d "${shrcdir}" ] || return 1
     for rc in $(ls "${shrcdir_src}"); do
@@ -53,12 +64,16 @@ dotsync_setup() {
     ln -srvf "${profile_src}" "${profile}"
     mkdir -pv "${profiledir}"
 
-    [ -f "${bashlogin}" -o -L "${bashlogin}" ] && rm -v "${bashlogin}"
-    [ -f "${bashprofile}" -o -L "${bashprofile}" ] && rm -v "${bashprofile}"
+    [ -e "${bashprofile}" ] && rm -v "${bashprofile}"
+    [ -e "${bashlogin}" ] && rm -v "${bashlogin}"
     ln -srvf "${bashrc_src}" "${bashrc}"
     ln -srvf "${bashlogout_src}" "${bashlogout}"
 
+    [ -e "${zshenv}" ] && rm -v "${zshenv}"
+    [ -e "${zlogin}" ] && rm -v "${zlogin}"
+    ln -srvf "${zprofile_src}" "${zprofile}"
     ln -srvf "${zshrc_src}" "${zshrc}"
+    ln -srvf "${zlogout_src}" "${zlogout}"
 
     mkdir -pv "${shrcdir}"
     for rc in $(ls "${shrcdir_src}"); do

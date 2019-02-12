@@ -1,13 +1,13 @@
 # always clear any color
 PS1="\[${col_CLR}\]"
 # what shell is being run?
-PS1+="\[${col_GRA}\][$(basename "${SHELL}")]\[${col_CLR}\]"
+PS1+="\[${col_GRA}\][bash]\[${col_CLR}\]"
 # show last exit code if non-zero
 __prompt_failcode() {
     (
         ec="$?"
         if [[ $ec != 0 ]]; then
-            echo "<${ec}> "
+            echo "<${ec}>"
         fi
     )
 }
@@ -31,9 +31,13 @@ __prompt_gitstatus() {
 }
 PS1+="\[${col_YEL}\]\$(__prompt_gitstatus)\[${col_CLR}\]"
 # user, host, and working directory
-PS1+="\[${col_BLU}\]\u@\h:\[${col_LBLU}\]\w\[${col_CLR}\]"
+PROMPT_DIRTRIM=3
+PS1+="\[${col_BLU}\]\u@\H:\[${col_LBLU}\]\w\[${col_CLR}\]"
 # dollar or hash for prompt
-PS1+="\[${sty_BOLD}${sty_DIM}${col_WHI}\]\$\[${col_CLR}\] "
+PS1+="\[${col_GRE}\]\$\[${col_CLR}\]"
+# lebensraum
+PS1+=" "
+
 
 # always clear any color
 PS2="\[${col_CLR}\]"
