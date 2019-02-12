@@ -5,6 +5,7 @@
 
 :set prompt  "\ESC[34m<%s>\n\ESC[1;32mλ=\ESC[0m "
 :set prompt2 "\ESC[1;32m |\ESC[0m "
+:set prompt-cont "\ESC[1;32m |\ESC[0m "
 
 :set editor vim
 

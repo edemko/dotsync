@@ -3,14 +3,6 @@ PS1="\[${col_CLR}\]"
 # what shell is being run?
 PS1+="\[${col_GRA}\][bash]\[${col_CLR}\]"
 # show last exit code if non-zero
-__prompt_failcode() {
-    (
-        ec="$?"
-        if [[ $ec != 0 ]]; then
-            echo "<${ec}>"
-        fi
-    )
-}
 PS1+="\[${col_RED}\]\$(__prompt_failcode)\[${col_CLR}\]"
 # chroot
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -18,17 +10,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 PS1+="\[${sty_BOLD}${col_YEL}\]"'${debian_chroot:+($debian_chroot)}'"\[${col_CLR}\]"
 # display current git branch
-__prompt_gitstatus() {
-    (
-        if git rev-parse --git-dir >/dev/null 2>&1; then
-            st="$(git status --porcelain)"
-            if [ $(echo "$st" | grep -c '^??') -ne 0 ]; then symbol+='!'; fi
-            if [ -n "$(echo $st | grep -v '^??')" ]; then symbol+='*'; fi
-            branch="$(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')"
-            echo "(${symbol}${branch})"
-        fi
-    )
-}
 PS1+="\[${col_YEL}\]\$(__prompt_gitstatus)\[${col_CLR}\]"
 # user, host, and working directory
 PROMPT_DIRTRIM=3
