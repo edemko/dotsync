@@ -4,9 +4,16 @@
 #umask 022
 
 # set PATH so it includes user's private bin directories
-PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+if ! echo "$PATH" | grep -q "$HOME/bin"; then
+    export PATH="$PATH:$HOME/bin"
+fi
+if ! echo "$PATH" | grep -q "$HOME/.local/bin"; then
+    export PATH="$PATH:$HOME/.local/bin"
+fi
 # FIXME this looks like haskell dotfiles
-PATH="$PATH:$HOME/.cabal/bin"
+if ! echo "$PATH" | grep -q "$HOME/.cabal/bin"; then
+    export PATH="$PATH:$HOME/.cabal/bin"
+fi
 
 
 if [ -d "${HOME}/.profile.d" ]; then
