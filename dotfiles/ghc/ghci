@@ -1,0 +1,47 @@
+-- allow multi-line input
+:set +m
+-- display type of last expression
+:set +t
+
+:set prompt  "\ESC[34m<%s>\n\ESC[1;32mλ=\ESC[0m "
+:set prompt2 "\ESC[1;32m |\ESC[0m "
+
+:set editor vim
+
+
+------ And now, extensions ------
+------ …so many extensions ------
+
+-- allows for holes in types, not just terms
+:seti -XPartialTypeSignatures
+:seti -XNamedWildCards
+
+:seti -XUnicodeSyntax
+:seti -XLambdaCase
+:seti -XTupleSections
+
+:seti -XOverloadedStrings
+-- :seti -XOverloadedLists
+-- :seti -XOverloadedLabels
+-- :seti -XNegativeLiterals
+
+:seti -XPatternGuards
+:seti -XViewPatterns
+:seti -XNamedFieldPuns
+:seti -XRecordWildCards
+:seti -XPatternSynonyms
+
+-- :seti -XRecursiveDo
+-- :seti -XApplicativeDo
+-- :seti -XArrows
+
+:seti -XRankNTypes
+:seti -XScopedTypeVariables
+
+:seti -XTypeApplications
+-- :seti -XEmptyDataDecls
+-- :seti -XDataKinds
+-- :seti -XPolyKinds
+-- :seti -XTypeInType
+
+:seti -XBangPatterns
