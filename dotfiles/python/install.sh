@@ -15,9 +15,7 @@ dotsync_newest() {
 }
 
 dotsync_setup() {
-    [ -e "${target}" ] && rm "${target}"
     ln -srvf "${src}" "${target}"
-    [ -e "${profile}" ] && rm "${profile}"
     ln -srvf "${profile_src}" "${profile}"
 }
 

@@ -18,11 +18,8 @@ bashprofile="${HOME}/.bash_profile"
 profiledir="${HOME}/.profile.d"
 # profiledir_src="${1}/profile.d"
 
-bashrcdir="${HOME}/.bashrc.d"
-bashrcdir_src="${1}/bashrc.d"
-
-zshrcdir="${HOME}/.zshrc.d"
-zshrcdir_src="${1}/zshrc.d"
+shrcdir="${HOME}/.shrc.d"
+shrcdir_src="${1}/shrc.d"
 
 
 dotsync_depsgood() { return 0 ; }
@@ -35,45 +32,42 @@ dotsync_newest() {
     [ -f "${bashlogin}" -o -L "${bashlogin}" ] && return 1
     diff -q "${bashrc}" "${bashrc_src}" || return 1
     diff -q "${bashlogout}" "${bashlogout_src}" || return 1
-    [ -d "${bashrcdir}" ] || return 1
-    for rc in $(ls "${bashrcdir_src}"); do
-        diff -q "${bashrcdir}/${rc}" "${bashrcdir_src}/${rc}" || return 1
-    done
 
     diff -q "${zshrc}" "${zshrc_src}" || return 1
-    # TODO
-    # [ -d "${zshrcdir}" ] || return 1
-    # for rc in $(ls "${zshrcdir_src}"); do
-    #     diff -q "${zshrcdir}/${rc}" "${zshrcdir_src}/${rc}" || return 1
-    # done
+
+    [ -d "${shrcdir}" ] || return 1
+    for rc in $(ls "${shrcdir_src}"); do
+        case "$rc" in
+            *.d)
+                [ -d "${shrcdir}/${rc}" ] || return 1
+                ;;
+            *.sh|*.bash|*.zsh)
+                diff -q "${shrcdir}/${rc}" "${shrcdir_src}/${rc}" || return 1
+                ;;
+        esac
+    done
     return 0
 }
 
 dotsync_setup() {
-    [ -e "${profile}" ] && rm "${profile}"
     ln -srvf "${profile_src}" "${profile}"
     mkdir -pv "${profiledir}"
 
     [ -f "${bashlogin}" -o -L "${bashlogin}" ] && rm -v "${bashlogin}"
     [ -f "${bashprofile}" -o -L "${bashprofile}" ] && rm -v "${bashprofile}"
-    [ -e "${bashrc}" ] && rm "${bashrc}"
     ln -srvf "${bashrc_src}" "${bashrc}"
-    [ -e "${bashlogout}" ] && rm "${bashlogout}"
     ln -srvf "${bashlogout_src}" "${bashlogout}"
-    mkdir -pv "${bashrcdir}"
-    for rc in $(ls "${bashrcdir_src}"); do
-        [ -e "${bashrcdir}/${rc}" ] && rm "${bashrcdir}/${rc}"
-        ln -srvf "${bashrcdir_src}/${rc}" "${bashrcdir}/${rc}"
-    done
 
-    [ -e "${zshrc}" ] && rm "${zshrc}"
     ln -srvf "${zshrc_src}" "${zshrc}"
-    # TODO
-    # mkdir -pv "${zshrcdir}"
-    # for rc in $(ls "${zshrcdir_src}"); do
-    #     [ -e "${zshrcdir}/${rc}" ] && rm "${zshrcdir}/${rc}"
-    #     ln -srvf "${zshrcdir_src}/${rc}" "${zshrcdir}/${rc}"
-    # done
+
+    mkdir -pv "${shrcdir}"
+    for rc in $(ls "${shrcdir_src}"); do
+        case "$rc" in
+            *.d|*.sh|*.bash|*.zsh)
+                ln -srvf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
+                ;;
+        esac
+    done
 }
 
 dotsync_teardown() {
@@ -81,8 +75,8 @@ dotsync_teardown() {
     [ -d "${profiledir}" ] && rm -r "${profiledir}"
     [ -L "${bashrc}" ] && rm -v "${bashrc}"
     [ -L "${bashlogout}" ] && rm -v "${bashlogout}"
-    [ -d "${bashrcdir}" ] && rm -r "${bashrcdir}"
     [ -L "${zshrc}" ] && rm -v "${zshrc}"
+    [ -d "${shrcdir}" ] && rm -r "${shrcdir}"
     # TODO
     # [ -d "${zshrcdir}" ] && rm -r "${zshrcdir}"
     return 0

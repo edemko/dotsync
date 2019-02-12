@@ -1,5 +1,7 @@
 # always clear any color
 PS1="\[${col_CLR}\]"
+# what shell is being run?
+PS1+="\[${col_GRA}\][$(basename "${SHELL}")]\[${col_CLR}\]"
 # show last exit code if non-zero
 __prompt_failcode() {
     (
@@ -10,8 +12,6 @@ __prompt_failcode() {
     )
 }
 PS1+="\[${col_RED}\]\$(__prompt_failcode)\[${col_CLR}\]"
-# number of background jobs
-PS1+="\[${col_GRA}\][j:\j]\[${col_CLR}\]"
 # chroot
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)

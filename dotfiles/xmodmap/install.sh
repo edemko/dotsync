@@ -39,15 +39,10 @@ dotsync_newest() {
 }
 
 dotsync_setup() {
-    [ -e "${composedir}" ] && rm "${composedir}"
     ln -srvf "${composedir_src}" "${composedir}"
-    [ -e "${compose}" ] && rm "${compose}"
     ln -srvf "${compose_src}" "${compose}"
-    [ -e "${modmap}" ] && rm "${modmap}"
     ln -srvf "${modmap_src}" "${modmap}"
-    [ -e "${xinputrc}" ] && rm "${xinputrc}"
     ln -srvf "${xinputrc_src}" "${xinputrc}"
-    [ -e "${xinitrc}" ] && rm "${xinitrc}"
     ln -srvf "${xinitrc_src}" "${xinitrc}"
 }
 
