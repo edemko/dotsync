@@ -8,7 +8,7 @@ dotsync_newest() {
 }
 
 dotsync_setup() {
-    ln -srvf "${src}" "${target}"
+    ln -svf "${src}" "${target}"
 }
 
 dotsync_teardown() {

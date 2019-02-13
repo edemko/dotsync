@@ -61,25 +61,25 @@ dotsync_newest() {
 }
 
 dotsync_setup() {
-    ln -srvf "${profile_src}" "${profile}"
+    ln -svf "${profile_src}" "${profile}"
     mkdir -pv "${profiledir}"
 
     [ -e "${bashprofile}" ] && rm -v "${bashprofile}"
     [ -e "${bashlogin}" ] && rm -v "${bashlogin}"
-    ln -srvf "${bashrc_src}" "${bashrc}"
-    ln -srvf "${bashlogout_src}" "${bashlogout}"
+    ln -svf "${bashrc_src}" "${bashrc}"
+    ln -svf "${bashlogout_src}" "${bashlogout}"
 
     [ -e "${zshenv}" ] && rm -v "${zshenv}"
     [ -e "${zlogin}" ] && rm -v "${zlogin}"
-    ln -srvf "${zprofile_src}" "${zprofile}"
-    ln -srvf "${zshrc_src}" "${zshrc}"
-    ln -srvf "${zlogout_src}" "${zlogout}"
+    ln -svf "${zprofile_src}" "${zprofile}"
+    ln -svf "${zshrc_src}" "${zshrc}"
+    ln -svf "${zlogout_src}" "${zlogout}"
 
     mkdir -pv "${shrcdir}"
     for rc in $(ls "${shrcdir_src}"); do
         case "$rc" in
             *.d|*.sh|*.bash|*.zsh)
-                ln -srvf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
+                ln -svf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
                 ;;
         esac
     done
