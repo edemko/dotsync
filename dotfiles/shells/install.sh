@@ -79,7 +79,7 @@ dotsync_setup() {
     for rc in $(ls "${shrcdir_src}"); do
         case "$rc" in
             *.d|*.sh|*.bash|*.zsh)
-                ln -svf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
+                ln -sTvf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
                 ;;
         esac
     done
