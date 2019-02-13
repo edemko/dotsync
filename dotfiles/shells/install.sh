@@ -44,7 +44,7 @@ dotsync_newest() {
     [ -f "${zlogin}" -o -L "${zlogin}" ] && return 1
     diff -q "${zprofile}" "${zprofile_src}" || return 1
     diff -q "${zshrc}" "${zshrc_src}" || return 1
-    diff -q "${zshlogout}" "${zshlogout_src}" || return 1
+    diff -q "${zlogout}" "${zlogout_src}" || return 1
 
     [ -d "${shrcdir}" ] || return 1
     for rc in $(ls "${shrcdir_src}"); do
