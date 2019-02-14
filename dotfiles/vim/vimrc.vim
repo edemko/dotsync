@@ -19,6 +19,7 @@ nmap <C-p> ,
 nmap <C-n> ;
 " beautifully saves two keystrokes entering command mode
 nnoremap ; :
+vnoremap ; :
 " I'm always hitting escape. My life is changed now: let's not leave the home row.
 inoremap jf <esc>
 " see near highlighting below that , also gets repurposed
@@ -40,6 +41,7 @@ set showmatch " highlight matching paren
 set hlsearch
 " clear the search register to eliminate over-highlighting
 nmap <silent> , :nohlsearch<CR>
+set gdefault
 
 " make Nj and Nk easier; taking the compiler's advice is easy as Ngg
 set relativenumber
