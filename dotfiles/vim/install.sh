@@ -5,7 +5,12 @@ vimdir="${HOME}/.vim"
 bundledir="${vimdir}/bundle"
 
 
-dotsync_depsgood() { return 0; }
+dotsync_depsgood() {
+    if ! (apt search fonts-powerline | grep -q ^i); then
+        echo >&2 '[WARNING] powerline fonts not installed. Maybe `sudo apt install fonts-powerline`?'
+    fi
+    return 0;
+}
 
 dotsync_newest() {
     diff -q 2>/dev/null "${vimrc}" "${vimrc_src}" || return 1
