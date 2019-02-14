@@ -19,6 +19,8 @@ nmap <C-p> ,
 nmap <C-n> ;
 " beautifully saves two keystrokes entering command mode
 nnoremap ; :
+" I'm always hitting escape. My life is changed now: let's not leave the home row.
+inoremap jf <esc>
 " see near highlighting below that , also gets repurposed
 
 " forgot sudo? use this (once I understand it):
