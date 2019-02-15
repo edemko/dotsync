@@ -6,3 +6,4 @@ vim
 ghc
 python
 sqlite
+psql
