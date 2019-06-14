@@ -11,18 +11,12 @@
 
 # Labiodental
 <Multi_key> <m> <underscore> <d>: "ɱ"
-<Multi_key> <p> <underscore> <d>: "p̪"
-<Multi_key> <b> <underscore> <d>: "b̪"
 <Multi_key> <v> <r>: "ⱱ"
 <Multi_key> <v> <underscore> <d>: "ʋ"
 
 # Dental
-<Multi_key> <t> <underscore> <d>: "t̪"
-<Multi_key> <d> <underscore> <d>: "d̪"
 <Multi_key> <T> <h>: "θ"
 # <Multi_key> <d> <h>: "ð" # already in default gtk compose table
-<Multi_key> <s> <underscore> <d>: "s̪"
-<Multi_key> <z> <underscore> <d>: "z̪"
 
 # Alveolar
 <Multi_key> <r> <t>: "ɾ"
@@ -111,6 +105,8 @@
 <Multi_key> <c> <j>: "ɕ"
 <Multi_key> <z> <j>: "ʑ"
 <Multi_key> <s> <x>: "ɧ"
+<Multi_key> <equal> <equal> <asterisk>: U0361 # tie bar above
+<Multi_key> <equal> <equal> <underscore>: U035C # tie bar below
 
 # Glottalic
 <Multi_key> <underscore> <greater>: "ʼ"
@@ -126,3 +122,46 @@
 <Multi_key> <exclam> <backslash>: "ǃ"
 <Multi_key> <equal> <backslash>: "ǂ"
 <Multi_key> <bar> <bar> <backslash>: "ǁ"
+
+# Suprasegmentals
+<Multi_key> <asterisk> <exclam>: "ˈ"
+<Multi_key> <underscore> <exclam>: "ˌ"
+<Multi_key> <colon> <colon>: "ː"
+<Multi_key> <semicolon> <semicolon>: "ˑ"
+<Multi_key> <asterisk> <colon>: U0306 # extra-short (breve)
+# minor (foot) group is the simple ascii bar "|"
+<Multi_key> <bar> <bar> <space>: "‖"
+<Multi_key> <asciitilde> <asciitilde>: "‿"
+
+# Diacritics
+<Multi_key> <underscore> <f>: U0325 # voiceless
+<Multi_key> <underscore> <v>: U032C # voiced
+<Multi_key> <asterisk> <h>: "ʰ"
+<Multi_key> <underscore> <bracketright>: U0339 # more rounded
+<Multi_key> <underscore> <bracketleft>: U031C # less rounded
+<Multi_key> <underscore> <plus>: U031F # advanced
+<Multi_key> <underscore> <minus>: U0320 # retracted
+<Multi_key> <asterisk> <quotedbl>: U0308 # centralized
+<Multi_key> <asterisk> <x>: U033D # mid-centralized
+<Multi_key> <underscore> <exclam>: U0329 # syllabic
+<Multi_key> <underscore> <comma>: U032F # non-syllabic
+<Multi_key> <underscore> <r>: U02DE # rhoticity
+<Multi_key> <underscore> <t>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
+<Multi_key> <underscore> <k>: U0330 # creaky voiced # FIXME why didn't quotedbl work? went with xsampa
+<Multi_key> <underscore> <b>: U033C # linguolabial
+<Multi_key> <asterisk> <w>: "ʷ"
+<Multi_key> <asterisk> <j>: "ʲ"
+<Multi_key> <asterisk> <g>: "ˠ"
+<Multi_key> <asterisk> <question>: "ˤ"
+<Multi_key> <equal> <asciitilde>: U0334 # velarized or pharyngealizedlinguolabial
+<Multi_key> <underscore> <bar> <asciicircum>: U031D # raised
+<Multi_key> <underscore> <bar> <v>: U031E # lowered
+<Multi_key> <underscore> <bar> <less>: U0318 # advanced tounge root
+<Multi_key> <underscore> <bar> <greater>: U0319 # retracted tounge root
+<Multi_key> <underscore> <d>: U032A # dental
+<Multi_key> <underscore> <t>: U033A # apical
+<Multi_key> <underscore> <l>: U033B # laminal
+<Multi_key> <asterisk> <asciitilde>: U0303 # nasalized
+<Multi_key> <asterisk> <n>: "ⁿ"
+<Multi_key> <asterisk> <l>: "ˡ"
+<Multi_key> <asterisk> <bracketright>: "˺"
