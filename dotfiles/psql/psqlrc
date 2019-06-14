@@ -1,0 +1,23 @@
+\set QUIET yes
+
+
+\set ON_ERROR_ROLLBACK interactive
+
+\set COMP_KEYWORD_CASE upper
+
+\set HISTFILE ~/.history/psql/ :DBNAME
+\set HISTCONTROL ignoredups
+
+\set PROMPT1 '%[%033[34m%]%/%[%033[1;32m%]%R%#%[%033[0m%] '
+\set PROMPT2 '%[%033[34m%]%/%[%033[1;32m%]%R%#%[%033[0m%] '
+\set PROMPT3 '%[%033[1;32m%]>>%[%033[0m%] '
+
+\pset pager always
+
+\pset border 1
+\pset linestyle unicode
+\pset null (NULL)
+
+-- \setenv pager less
+
+\unset QUIET
