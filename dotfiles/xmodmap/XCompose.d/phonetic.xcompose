@@ -4,5 +4,125 @@
 
 ### IPA Characters ###
 
+# Labial
+<Multi_key> <p> <h>: "ɸ"
+<Multi_key> <b> <h>: "β"
+<Multi_key> <b> <b>: "ʙ"
+
+# Labiodental
+<Multi_key> <m> <underscore> <d>: "ɱ"
+<Multi_key> <p> <underscore> <d>: "p̪"
+<Multi_key> <b> <underscore> <d>: "b̪"
+<Multi_key> <v> <r>: "ⱱ"
+<Multi_key> <v> <underscore> <d>: "ʋ"
+
+# Dental
+<Multi_key> <t> <underscore> <d>: "t̪"
+<Multi_key> <d> <underscore> <d>: "d̪"
+<Multi_key> <T> <h>: "θ"
+# <Multi_key> <d> <h>: "ð" # already in default gtk compose table
+<Multi_key> <s> <underscore> <d>: "s̪"
+<Multi_key> <z> <underscore> <d>: "z̪"
+
+# Alveolar
+<Multi_key> <r> <t>: "ɾ"
+<Multi_key> <l> <h>: "ɬ"
+<Multi_key> <l> <z>: "ɮ"
+<Multi_key> <r> <r>: "ɹ"
+<Multi_key> <r> <l>: "ɺ"
+
+# Postalveolar
 <Multi_key> <s> <h>: "ʃ"
 <Multi_key> <z> <h>: "ʒ"
+
+# Retroflex
+<Multi_key> <t> <grave>: "ʈ"
+<Multi_key> <d> <grave>: "ɖ"
+<Multi_key> <n> <grave>: "ɳ"
+<Multi_key> <R> <t>: "ɽ"
+<Multi_key> <s> <grave>: "ʂ"
+<Multi_key> <z> <grave>: "ʐ"
+<Multi_key> <R> <r>: "ɻ"
+<Multi_key> <l> <grave>: "ɭ"
+
+# Palatal
+<Multi_key> <g> <j>: "ɟ"
+<Multi_key> <n> <j>: "ɲ"
+# <Multi_key> <c> <comma>: "ç" # already in default gtk compose table
+<Multi_key> <j> <h>: "ʝ"
+<Multi_key> <l> <j>: "ʎ"
+
+# Velar
+<Multi_key> <backslash> <g> <space>: "ɡ"
+<Multi_key> <g> <space>: "ɡ"
+# <Multi_key> <n> <g>: "ŋ" # already in default gtk compose table
+<Multi_key> <g> <x>: "ɣ"
+<Multi_key> <w> <x>: "ɰ"
+<Multi_key> <L> <L>: "ʟ"
+
+# Uvular
+<Multi_key> <G> <G>: "ɢ"
+<Multi_key> <N> <N>: "ɴ"
+<Multi_key> <R> <R>: "ʀ"
+<Multi_key> <x> <q>: "χ"
+<Multi_key> <r> <q>: "ʁ"
+
+# Pharyngeal
+<Multi_key> <h> <minus>: "ħ"
+<Multi_key> <question> <h>: "ʕ"
+
+# Glottal
+<Multi_key> <question> <period>: "ʔ"
+<Multi_key> <h> <z>: "ɦ"
+
+# Epiglottal
+<Multi_key> <question> <minus> <period>: "ʡ"
+<Multi_key> <question> <minus> <h>: "ʢ"
+<Multi_key> <H> <H>: "ʜ"
+
+# Vowels
+<Multi_key> <i> <equal>: "ɨ"
+<Multi_key> <u> <equal>: "ʉ"
+<Multi_key> <u> <ampersand>: "ɯ"
+<Multi_key> <I> <I>: "ɪ"
+<Multi_key> <Y> <Y>: "ʏ"
+<Multi_key> <O> <O>: "ʊ"
+# <Multi_key> <o> <slash>: "ø" # already in gtk compose table
+<Multi_key> <e> <equal>: "ɘ"
+<Multi_key> <o> <equal>: "ɵ"
+<Multi_key> <o> <ampersand>: "ɤ"
+# <Multi_key> <e> <e>: "ə" # already in default gtk compose table
+<Multi_key> <e> <space>: "ɛ"
+# <Multi_key> <o> <e>: "œ" # already in default gtk compose table
+<Multi_key> <at> <e>: "ɜ"
+<Multi_key> <at> <o>: "ɞ"
+<Multi_key> <a> <x>: "ʌ"
+<Multi_key> <o> <space>: "ɔ"
+# <Multi_key> <a> <e>: "æ" # already in default gtk compose table
+<Multi_key> <at> <a>: "ɐ"
+<Multi_key> <a> <o>: "ɶ"
+<Multi_key> <a> <space>: "ɑ"
+<Multi_key> <a> <ampersand>: "ɒ"
+
+
+# Coarticulations
+<Multi_key> <j> <w>: "ɥ"
+<Multi_key> <w> <h>: "ʍ"
+<Multi_key> <c> <j>: "ɕ"
+<Multi_key> <z> <j>: "ʑ"
+<Multi_key> <s> <x>: "ɧ"
+
+# Glottalic
+<Multi_key> <underscore> <greater>: "ʼ"
+<Multi_key> <b> <underscore> <less>: "ɓ"
+<Multi_key> <d> <underscore> <less>: "ɗ"
+<Multi_key> <J> <slash> <underscore> <less>: "ʄ"
+<Multi_key> <g> <underscore> <less>: "ɠ"
+<Multi_key> <G> <slash> <underscore> <less>: "ʛ"
+
+# Clicks
+<Multi_key> <O> <backslash>: "ʘ"
+<Multi_key> <bar> <backslash>: "ǀ"
+<Multi_key> <exclam> <backslash>: "ǃ"
+<Multi_key> <equal> <backslash>: "ǂ"
+<Multi_key> <bar> <bar> <backslash>: "ǁ"
