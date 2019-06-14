@@ -4,6 +4,11 @@
 
 ### IPA Characters ###
 
+# TODO tone and word accents
+# TODO alternate-placement diacritics (voiceless above)
+# TODO extIPA
+# TODO alternate spellings (i.e. easier to type)
+
 # Labial
 <Multi_key> <p> <h>: "ɸ"
 <Multi_key> <b> <h>: "β"
@@ -125,7 +130,7 @@
 
 # Suprasegmentals
 <Multi_key> <asterisk> <exclam>: "ˈ"
-<Multi_key> <underscore> <exclam>: "ˌ"
+<Multi_key> <asterisk> <period>: "ˌ"
 <Multi_key> <colon> <colon>: "ː"
 <Multi_key> <semicolon> <semicolon>: "ˑ"
 <Multi_key> <asterisk> <colon>: U0306 # extra-short (breve)
@@ -146,7 +151,7 @@
 <Multi_key> <underscore> <exclam>: U0329 # syllabic
 <Multi_key> <underscore> <comma>: U032F # non-syllabic
 <Multi_key> <underscore> <r>: U02DE # rhoticity
-<Multi_key> <underscore> <t>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
+<Multi_key> <underscore> <h>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
 <Multi_key> <underscore> <k>: U0330 # creaky voiced # FIXME why didn't quotedbl work? went with xsampa
 <Multi_key> <underscore> <b>: U033C # linguolabial
 <Multi_key> <asterisk> <w>: "ʷ"
