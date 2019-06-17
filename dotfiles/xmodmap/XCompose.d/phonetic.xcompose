@@ -12,7 +12,7 @@
 # Labial
 <Multi_key> <p> <h>: "ɸ"
 <Multi_key> <b> <h>: "β"
-<Multi_key> <b> <b>: "ʙ"
+<Multi_key> <B> <B>: "ʙ"
 
 # Labiodental
 <Multi_key> <m> <underscore> <d>: "ɱ"
@@ -57,7 +57,7 @@
 # <Multi_key> <n> <g>: "ŋ" # already in default gtk compose table
 <Multi_key> <g> <x>: "ɣ"
 <Multi_key> <w> <x>: "ɰ"
-<Multi_key> <L> <L>: "ʟ"
+<Multi_key> <l> <x>: "ʟ" # why doesn't LL work‽
 
 # Uvular
 <Multi_key> <G> <G>: "ɢ"
@@ -117,9 +117,9 @@
 <Multi_key> <underscore> <greater>: "ʼ"
 <Multi_key> <b> <underscore> <less>: "ɓ"
 <Multi_key> <d> <underscore> <less>: "ɗ"
-<Multi_key> <J> <slash> <underscore> <less>: "ʄ"
+<Multi_key> <J> <underscore> <less>: "ʄ"
 <Multi_key> <g> <underscore> <less>: "ɠ"
-<Multi_key> <G> <slash> <underscore> <less>: "ʛ"
+<Multi_key> <G> <underscore> <less>: "ʛ"
 
 # Clicks
 <Multi_key> <O> <backslash>: "ʘ"
@@ -129,36 +129,36 @@
 <Multi_key> <bar> <bar> <backslash>: "ǁ"
 
 # Suprasegmentals
-<Multi_key> <asterisk> <exclam>: "ˈ"
-<Multi_key> <asterisk> <period>: "ˌ"
-<Multi_key> <colon> <colon>: "ː"
-<Multi_key> <semicolon> <semicolon>: "ˑ"
+<Multi_key> <asterisk> <exclam>: "ˈ" # primary stress
+<Multi_key> <asterisk> <period>: "ˌ" # secondary stress
+<Multi_key> <colon> <colon>: "ː" # long
+<Multi_key> <semicolon> <semicolon>: "ˑ" # half-long
 <Multi_key> <asterisk> <colon>: U0306 # extra-short (breve)
-# minor (foot) group is the simple ascii bar "|"
-<Multi_key> <bar> <bar> <space>: "‖"
-<Multi_key> <asciitilde> <asciitilde>: "‿"
+# <bar>: "|" # minor (foot) group # this is just the simple ascii bar
+<Multi_key> <bar> <bar> <space>: "‖" # major (intonation) group
+<Multi_key> <asciitilde> <asciitilde>: "‿" # linking (absence of a break)
 
 # Diacritics
 <Multi_key> <underscore> <f>: U0325 # voiceless
 <Multi_key> <underscore> <v>: U032C # voiced
-<Multi_key> <asterisk> <h>: "ʰ"
-<Multi_key> <underscore> <bracketright>: U0339 # more rounded
-<Multi_key> <underscore> <bracketleft>: U031C # less rounded
+<Multi_key> <asterisk> <h>: "ʰ" # aspirated
+<Multi_key> <underscore> <braceright>: U0339 # more rounded
+<Multi_key> <underscore> <braceleft>: U031C # less rounded
 <Multi_key> <underscore> <plus>: U031F # advanced
 <Multi_key> <underscore> <minus>: U0320 # retracted
 <Multi_key> <asterisk> <quotedbl>: U0308 # centralized
 <Multi_key> <asterisk> <x>: U033D # mid-centralized
-<Multi_key> <underscore> <exclam>: U0329 # syllabic
-<Multi_key> <underscore> <comma>: U032F # non-syllabic
+<Multi_key> <underscore> <dollar>: U0329 # syllabic
+<Multi_key> <underscore> <percent>: U032F # non-syllabic
 <Multi_key> <underscore> <r>: U02DE # rhoticity
 <Multi_key> <underscore> <h>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
 <Multi_key> <underscore> <k>: U0330 # creaky voiced # FIXME why didn't quotedbl work? went with xsampa
 <Multi_key> <underscore> <b>: U033C # linguolabial
-<Multi_key> <asterisk> <w>: "ʷ"
-<Multi_key> <asterisk> <j>: "ʲ"
-<Multi_key> <asterisk> <g>: "ˠ"
-<Multi_key> <asterisk> <question>: "ˤ"
-<Multi_key> <equal> <asciitilde>: U0334 # velarized or pharyngealizedlinguolabial
+<Multi_key> <asterisk> <w>: "ʷ" # labialized
+<Multi_key> <asterisk> <j>: "ʲ" # palatalized
+<Multi_key> <asterisk> <g>: "ˠ" # velarized
+<Multi_key> <asterisk> <question>: "ˤ" # pharyngealized
+<Multi_key> <equal> <asciitilde>: U0334 # velarized or pharyngealized
 <Multi_key> <underscore> <bar> <asciicircum>: U031D # raised
 <Multi_key> <underscore> <bar> <v>: U031E # lowered
 <Multi_key> <underscore> <bar> <less>: U0318 # advanced tounge root
@@ -167,6 +167,6 @@
 <Multi_key> <underscore> <t>: U033A # apical
 <Multi_key> <underscore> <l>: U033B # laminal
 <Multi_key> <asterisk> <asciitilde>: U0303 # nasalized
-<Multi_key> <asterisk> <n>: "ⁿ"
-<Multi_key> <asterisk> <l>: "ˡ"
-<Multi_key> <asterisk> <bracketright>: "˺"
+<Multi_key> <asterisk> <n>: "ⁿ" # nasal release
+<Multi_key> <asterisk> <l>: "ˡ" # lateral release
+<Multi_key> <asterisk> <bracketright>: "˺" # no audible release
