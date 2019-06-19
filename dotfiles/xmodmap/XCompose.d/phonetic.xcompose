@@ -5,7 +5,6 @@
 ### IPA Characters ###
 
 # TODO tone and word accents
-# TODO alternate-placement diacritics (voiceless above)
 # TODO extIPA
 # TODO alternate spellings (i.e. easier to type)
 
@@ -139,34 +138,53 @@
 <Multi_key> <asciitilde> <asciitilde>: "‿" # linking (absence of a break)
 
 # Diacritics
-<Multi_key> <underscore> <f>: U0325 # voiceless
-<Multi_key> <underscore> <v>: U032C # voiced
-<Multi_key> <asterisk> <h>: "ʰ" # aspirated
-<Multi_key> <underscore> <braceright>: U0339 # more rounded
-<Multi_key> <underscore> <braceleft>: U031C # less rounded
-<Multi_key> <underscore> <plus>: U031F # advanced
-<Multi_key> <underscore> <minus>: U0320 # retracted
-<Multi_key> <asterisk> <quotedbl>: U0308 # centralized
-<Multi_key> <asterisk> <x>: U033D # mid-centralized
+#   syllabicity
 <Multi_key> <underscore> <dollar>: U0329 # syllabic
+<Multi_key> <asterisk> <dollar>: U030D # syllabic (above)
 <Multi_key> <underscore> <percent>: U032F # non-syllabic
-<Multi_key> <underscore> <r>: U02DE # rhoticity
+<Multi_key> <asterisk> <percent>: U0311 # non-syllabic (above)
+
+#   consonant release
+<Multi_key> <asterisk> <h>: "ʰ" # aspirated
+<Multi_key> <asterisk> <bracketright>: "˺" # no audible release
+<Multi_key> <asterisk> <n>: "ⁿ" # nasal release
+<Multi_key> <asterisk> <l>: "ˡ" # lateral release
+
+#   phonation
+<Multi_key> <underscore> <f>: U0325 # voiceless
+<Multi_key> <asterisk> <f>: U030A # voiceless (above)
+<Multi_key> <underscore> <v>: U032C # voiced
 <Multi_key> <underscore> <h>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
 <Multi_key> <underscore> <k>: U0330 # creaky voiced # FIXME why didn't quotedbl work? went with xsampa
+
+#   articulation
+<Multi_key> <underscore> <d>: U032A # dental
+<Multi_key> <asterisk> <d>: U0346 # dental (above)
 <Multi_key> <underscore> <b>: U033C # linguolabial
+<Multi_key> <underscore> <t>: U033A # apical
+<Multi_key> <underscore> <l>: U033B # laminal
+<Multi_key> <underscore> <plus>: U031F # advanced
+<Multi_key> <equal> <plus>: U02D6 # advanced (after)
+<Multi_key> <underscore> <minus>: U0320 # retracted
+<Multi_key> <equal> <minus>: U02D7 # retracted (after)
+<Multi_key> <asterisk> <quotedbl>: U0308 # centralized
+<Multi_key> <asterisk> <x>: U033D # mid-centralized
+<Multi_key> <underscore> <bar> <asciicircum>: U031D # raised
+<Multi_key> <equal> <bar> <asciicircum>: U02D4 # raised (after)
+<Multi_key> <underscore> <bar> <v>: U031E # lowered
+<Multi_key> <equal> <bar> <v>: U02D5 # lowered (after)
+
+#   co-articulation
+<Multi_key> <underscore> <parenright>: U0339 # more rounded
+<Multi_key> <asterisk> <parenright>: U0357 # more rounded (above)
+<Multi_key> <underscore> <parenleft>: U031C # less rounded
+<Multi_key> <asterisk> <parenleft>: U0351 # less rounded (above)
+<Multi_key> <equal> <r>: U02DE # rhoticity
 <Multi_key> <asterisk> <w>: "ʷ" # labialized
 <Multi_key> <asterisk> <j>: "ʲ" # palatalized
 <Multi_key> <asterisk> <g>: "ˠ" # velarized
 <Multi_key> <asterisk> <question>: "ˤ" # pharyngealized
 <Multi_key> <equal> <asciitilde>: U0334 # velarized or pharyngealized
-<Multi_key> <underscore> <bar> <asciicircum>: U031D # raised
-<Multi_key> <underscore> <bar> <v>: U031E # lowered
 <Multi_key> <underscore> <bar> <less>: U0318 # advanced tounge root
 <Multi_key> <underscore> <bar> <greater>: U0319 # retracted tounge root
-<Multi_key> <underscore> <d>: U032A # dental
-<Multi_key> <underscore> <t>: U033A # apical
-<Multi_key> <underscore> <l>: U033B # laminal
 <Multi_key> <asterisk> <asciitilde>: U0303 # nasalized
-<Multi_key> <asterisk> <n>: "ⁿ" # nasal release
-<Multi_key> <asterisk> <l>: "ˡ" # lateral release
-<Multi_key> <asterisk> <bracketright>: "˺" # no audible release
