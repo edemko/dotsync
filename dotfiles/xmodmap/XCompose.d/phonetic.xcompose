@@ -4,7 +4,6 @@
 
 ### IPA Characters ###
 
-# TODO tone and word accents
 # TODO extIPA
 # TODO alternate spellings (i.e. easier to type)
 
@@ -188,3 +187,24 @@
 <Multi_key> <underscore> <bar> <less>: U0318 # advanced tounge root
 <Multi_key> <underscore> <bar> <greater>: U0319 # retracted tounge root
 <Multi_key> <asterisk> <asciitilde>: U0303 # nasalized
+
+# Tones and Word Accents
+<Multi_key> <1> <bar>: "˩"
+<Multi_key> <2> <bar>: "˨"
+<Multi_key> <3> <bar>: "˧"
+<Multi_key> <4> <bar>: "˦"
+<Multi_key> <5> <bar>: "˥"
+# note: tone contours are available in some fonts by stringing several tone letters together (e.g. ˧˩)
+# TODO: add in two- and three-letter tone sequences (such as <31|>, <253|>)
+
+# TODO tone diacritics
+# <Multi_key> <asterisk> <1> <bar>: 
+# <Multi_key> <asterisk> <2> <bar>: 
+# <Multi_key> <asterisk> <3> <bar>: 
+# <Multi_key> <asterisk> <4> <bar>: 
+# <Multi_key> <asterisk> <5> <bar>: 
+
+<Multi_key> <asterisk> <d> <n>: "ꜜ"
+<Multi_key> <asterisk> <u> <p>: "ꜛ"
+<Multi_key> <asterisk> <D> <N>: "↘︎"
+<Multi_key> <asterisk> <U> <P>: "↗︎"
