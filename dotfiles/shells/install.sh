@@ -2,6 +2,8 @@
 profile="${HOME}/.profile"
 profile_src="${1}/profile.sh"
 
+bashprofile="${HOME}/.bash_profile"
+bashprofile_src="${1}/bash_profile.bash"
 bashrc="${HOME}/.bashrc"
 bashrc_src="${1}/bashrc.bash"
 bashlogout="${HOME}/.bash_logout"
@@ -16,7 +18,6 @@ zlogout_src="${1}/logout.zsh"
 # TODO zlogout
 
 # these are deleted to reduce complexity
-bashprofile="${HOME}/.bash_profile"
 bashlogin="${HOME}/.bash_login"
 zshenv="${HOME}/.zshenv"
 zlogin="${HOME}/.zlogin"
@@ -35,7 +36,7 @@ dotsync_newest() {
     diff -q "${profile}" "${profile_src}" || return 1
     [ -d "${profiledir}" ] || return 1
 
-    [ -f "${bashprofile}" -o -L "${bashprofile}" ] && return 1
+    diff -q "${bashprofile}" "${bashprofile_src}" || return 1
     [ -f "${bashlogin}" -o -L "${bashlogin}" ] && return 1
     diff -q "${bashrc}" "${bashrc_src}" || return 1
     diff -q "${bashlogout}" "${bashlogout_src}" || return 1
@@ -64,7 +65,7 @@ dotsync_setup() {
     ln -svf "${profile_src}" "${profile}"
     mkdir -pv "${profiledir}"
 
-    [ -e "${bashprofile}" ] && rm -v "${bashprofile}"
+    ln -svf "${bashprofile_src}" "${bashprofile}"
     [ -e "${bashlogin}" ] && rm -v "${bashlogin}"
     ln -svf "${bashrc_src}" "${bashrc}"
     ln -svf "${bashlogout_src}" "${bashlogout}"
@@ -88,6 +89,7 @@ dotsync_setup() {
 dotsync_teardown() {
     [ -L "${profile}" ] && rm -v "${profile}"
     [ -d "${profiledir}" ] && rm -r "${profiledir}"
+    [ -L "${bashprofile}" ] && rm -v "${bashprofile}"
     [ -L "${bashrc}" ] && rm -v "${bashrc}"
     [ -L "${bashlogout}" ] && rm -v "${bashlogout}"
     [ -L "${zshrc}" ] && rm -v "${zshrc}"
