@@ -3,4 +3,8 @@
 #####################
 
 <Multi_key> <backslash> <c> <o> <m> <p> <space>: "⎄"
+
+<Multi_key> <backslash> <y> <e> <s> <space>: "✓"
+<Multi_key> <backslash> <n> <o> <space>: "✗"
+
 <Multi_key> <u> <g>: "ğ"
