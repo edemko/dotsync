@@ -214,6 +214,7 @@
 <Multi_key> <l> <s> <s>: "ʪ"
 <Multi_key> <l> <s> <z>: "ʫ"
 <Multi_key> <l> <r> <h>: "ꞎ"
+# <Multi_key> <l> <r> <z>: "" # TODO ɭ-ʒ ligature not supported in unicode to my knowledge
 <Multi_key> <l> <c>: ""
 <Multi_key> <L> <c>: ""
 
