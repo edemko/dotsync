@@ -219,8 +219,8 @@
 <Multi_key> <L> <c>: ""
 
 #   velo-pharyngeal
-<Multi_key> <f> <n> <g>: "ʩ"
-<Multi_key> <f> <r> <n> <g>: "fŋ̑" # NOTE: this sequence appears to be a hack; the true glyph is not supported in unicode
+<Multi_key> <f> <g>: "ʩ"
+<Multi_key> <f> <r> <g>: "fŋ̑" # NOTE: this sequence appears to be a hack; the true glyph is not supported in unicode
 
 #   velodorsal
 #    NOTE: velodorsal sounds (reversed k, g, and ŋ) are not supported in unicode to my knowledge
