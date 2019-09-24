@@ -16,19 +16,24 @@ The base dir should contain `boxen/` and `dotfiles/` (e.g. it could just point t
 If it is omitted, then it defaults to `~/dotsync`.
 
 You can also `source bin/dotfuncs`, and then call the functions `dotup`, `dotdown`, and `dotsync` manually (but why?).
-Thankfully, there's only ~50 sloc in there, so go read the implementation as "documentation".
+Thankfully, there's only \~50 sloc in there, so go read the implementation as "documentation".
 
 
 ### Configuration
 
 You may place a number of text files under `boxen/`.
 The framework finds `boxen/$(hostname)`, so the file used for your machine is the one with the same name as the host.
+These are configs, and come in two flavors---host configs and base configs---which are distinguished by how dotsync finds them, but are otherwise identical.
+By convention, included configs should be named in all-caps.
 
-Each of these files should have one module name per line, and possibly a prefix.
+Each line of a host/base config is a command indicating one or more modules to be installed/uninstalled.
 See "Writing Dotfiles" coming up next for what a "module" is.
-If the prefix (first character of the line) is `#`, that line is ignored; if it is `!`, then the module is uninstalled; if there is no prefix, then the module is installed/updated.
-Leading and trailing spaces of a module name are ignored.
-If a module doesn't exist, then a warning is emitted, but otherwise the framework carries on installing all the modules it can find.
+Blank lines, and those starting with `#` are ignored.
+Normally, a line names a module to be installed.
+If, however, the line starts with `!`, that module is uninstalled.
+Lines beginning with `+` include all the directives from the named base config.
+If a module/base config doesn't exist, then a warning is emitted, but otherwise the framework carries on installing all the modules it can find.
+Thanks to my not being able to get IFS to work as expected, and `read` being silly as usual, apparently we can't have nice things, like any whitespace on the lines.
 
 ### Writing Dotfiles
 
