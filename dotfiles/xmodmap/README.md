@@ -16,9 +16,10 @@
     * [ ] any default xcompose files?
     * [ ] note existing sequences in XCompose file comments
 * [ ] more XCompose sequences
-    * [ ] phonetic alphabet(s)
+    * [x] phonetic alphabet(s)
     * [ ] quicker greek letters when oft-used
     * [ ] mathematical symbols
+    * [ ] blackboard symbols
     * [ ] special brackets
     * [ ] missing latin diacritics
     * [ ] fancy archaic latin characters
