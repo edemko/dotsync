@@ -25,20 +25,41 @@ dotsync() {
                 module="${module#!}"
                 action=dotdown
                 ;;
+            '+'*)
+                module="${module#+}"
+                action=dotsync
+                ;;
             *)
                 action=dotup
                 ;;
         esac
         module="$(echo "${module}" | sed 's/^\s*//' | sed 's/\s*$//')"
-        moduledir="${dotdir}/${module}"
-        installscript="${moduledir}/install.sh"
 
-        if [ ! -f "${installscript}" ]; then
-            echo >&2 "No install script for '${module}' (expecting '${installscript}')."
-            echo >&2 "Skipping ${module}."
-        else
-            "${action}" "${moduledir}"
-        fi
+        case "${action}" in
+            dotsync)
+                moduledir="${dotdir}/../boxen" # FIXME I expect boxen to be here, but...
+                installscript="${moduledir}/${module}"
+                if [ ! -f "${installscript}" ]; then
+                    echo >&2 "[ERROR] Could not find configuration file for '${module}' at '${moduledir}'."
+                    echo >&2 "Skipping ${module}."
+                else
+                    echo >&2 "[INFO] START including from '${module}'"
+                    dotsync "${installscript}" "${dotdir}"
+                    echo >&2 "[INFO] DONE including from '${module}'"
+                fi
+                ;;
+            *)
+                moduledir="${dotdir}/${module}"
+                installscript="${moduledir}/install.sh"
+
+                if [ ! -f "${installscript}" ]; then
+                    echo >&2 "No install script for '${module}' (expecting '${installscript}')."
+                    echo >&2 "Skipping ${module}."
+                else
+                    "${action}" "${moduledir}"
+                fi
+                ;;
+        esac
     done
 }
 

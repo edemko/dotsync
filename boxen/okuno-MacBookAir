@@ -1,8 +1,5 @@
-shells
-dotsync
-xmodmap
++FOUNDATION
 
-vim
 ghc
 python
 sqlite
