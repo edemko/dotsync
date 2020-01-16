@@ -18,3 +18,7 @@ It seems that `.bashrc` is run each time you type `bash` at the prompt, but `.pr
 The idea is that the profiles configure the system, whereas the rc file configures one particular shell.
 So what is all this stuff in my bashrc, and should it actually be there, or is it more like system configuration?
 It also raises the question of why I need a separate Bash profile when the profile sets up the system rather than any particular shell.
+
+# Other Links
+
+[Env vars for editor](https://unix.stackexchange.com/questions/4859/visual-vs-editor-what-s-the-difference)

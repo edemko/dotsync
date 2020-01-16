@@ -6,7 +6,7 @@ set hidden
 set lazyredraw
 set showmode
 
-set timeout timeoutlen=100 " fixes that `O` takes a long time sometimes (i.e. after hitting ESC)
+set timeout timeoutlen=200 " fixes that `O` takes a long time sometimes (i.e. after hitting ESC)
 
 syntax on
 filetype plugin indent on
