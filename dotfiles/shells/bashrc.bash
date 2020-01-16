@@ -8,6 +8,9 @@ case $- in
       *) return;;
 esac
 
+if grep -iq ubuntu </proc/version; then
+    . "${HOME}/.profile"
+fi
 
 for rc in $(ls "${HOME}/.shrc.d"); do
     case "${rc}" in
