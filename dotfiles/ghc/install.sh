@@ -9,6 +9,7 @@ dotsync_newest() {
 
 dotsync_setup() {
     ln -svf "${src}" "${target}"
+    chmod go-w "${target}"
 }
 
 dotsync_teardown() {
