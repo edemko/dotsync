@@ -1,0 +1,54 @@
+[
+    { "keys": ["ctrl+shift+o"],
+      "command": "prompt_open_folder",
+    },
+
+    { "keys": ["ctrl+k", "ctrl+a"],
+      "command": "sort_lines",
+      "args": {"case_sensitive": false},
+    },
+
+    { "keys": ["ctrl+["],
+      "command": "move_by_paragraph",
+      "args": { "forward": false },
+    },
+    { "keys": ["ctrl+]"],
+      "command": "move_by_paragraph",
+      "args": { "forward": true },
+    },
+    { "keys": ["ctrl+shift+["],
+      "command": "move_by_paragraph",
+      "args": { "forward": false, "extend": true },
+    },
+    { "keys": ["ctrl+shift+]"],
+      "command": "move_by_paragraph",
+      "args": { "forward": true, "extend": true },
+    },
+
+    { "keys": ["ctrl+."], "command": "indent" },
+    { "keys": ["ctrl+shift+."], "command": "indent" },
+    { "keys": ["ctrl+,"], "command": "unindent" },
+    { "keys": ["ctrl+shift+,"], "command": "unindent" },
+
+    { "keys": ["ctrl+k", "ctrl+p"],
+      "command": "expand_selection_to_paragraph",
+    },
+    { "keys": ["ctrl+shift+f"],
+      "command": "find_all_under",
+    },
+    { "keys": ["ctrl+shift+d"],
+      "command": "find_under_expand_skip",
+    },
+    // NOTE: command expand_selection_to_line (ctrl+l)
+    // NOTE: command split_selection_into_lines (ctrl+shift+l)
+    // NOTE: commands jump_{forward,back} (alt+{shift+,}-)
+    // NOTE: command join_lines (ctrl+j); wrap_lines (alt+q)
+    { "keys": ["ctrl+shift+j"],
+      "command": "wrap_lines"
+    }
+    // NOTE: there are a bunch of keybindings under `Auto-pair *` that look promising for cleaning up bracket typing
+    // NOTE: command expend_selection to:indentation (ctrl+shift+j)
+
+    // WARNING: expand to line and paragraph are a bit crap with the edges
+    // I'd rather they didn't include the trailing newline and trailing blank line
+]

@@ -1,0 +1,60 @@
+{
+  // Theme
+  "theme": "Default.sublime-theme",
+  "color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+  "font_face": "Source Code Pro",
+  "font_size": 12,
+  "highlight_line": true,
+  // Completion
+  "auto_complete_commit_on_tab": true, // actually turns off enter-to-complete
+  // Space
+  "draw_white_space": "all",
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "shift_tab_unindent": true,
+  "rulers": [ 80 ],
+  // Encoding
+  "fallback_encoding": "ASCII",
+  "show_encoding": true,
+  "show_line_endings": true,
+  // Exclusion
+  "file_exclude_patterns":
+  [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.class",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.psd",
+    "*.db",
+    "*.sublime-workspace",
+    "*.aux"
+  ],
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS"
+    // common haskell build folders
+    "dist",
+    "dist-*",
+    ".stack-work"
+  ],
+  "ignored_packages":
+  [
+    "Vintage"
+  ]
+}
