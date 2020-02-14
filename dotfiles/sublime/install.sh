@@ -18,7 +18,7 @@ textlang_src="${packagesdir_src}/Plain text.sublime-settings"
 #------
 
 dotsync_depsgood() {
-    if ! (apt search sublime-text | grep -q ^i); then
+    if ! (dpkg -l sublime-text | grep -q ^ii); then
         echo >&2 '[ERROR] Sublime Text not installed. See https://www.sublimetext.com/docs/3/linux_repositories.html#apt'
         return 1
     fi
@@ -46,22 +46,22 @@ dotsync_newest() {
 dotsync_setup() {
     mkdir -pv "${packagesdir}"
 
-    diff -q "${preferences_src}" "${preferences}" || \
+    diff -q >/dev/null "${preferences_src}" "${preferences}" || \
         cp -v "${preferences_src}" "${preferences}"
-    diff -q "${keymap_src}" "${keymap}" || \
+    diff -q >/dev/null "${keymap_src}" "${keymap}" || \
         cp -v "${keymap_src}" "${keymap}"
-    diff -q "${mousemap_src}" "${mousemap}" || \
+    diff -q >/dev/null "${mousemap_src}" "${mousemap}" || \
         cp -v "${mousemap_src}" "${mousemap}"
-    if ! ( diff -q "${packageControl}" "${packageControl_src}" ); then
+    if ! ( diff -q >/dev/null "${packageControl}" "${packageControl_src}" ); then
         echo >&2 '[NOTICE] Package Control package list updated.'
         echo >&2 '[NOTICE] Packages will be synced on next sublime text restart.'
         echo >&2 '[NOTICE] See https://packagecontrol.io/docs/syncing'
         cp -v "${packageControl_src}" "${packageControl}"
     fi
 
-    diff -q "${bashlang_src}" "${bashlang}" || \
+    diff -q >/dev/null "${bashlang_src}" "${bashlang}" || \
         cp -v "${bashlang_src}" "${bashlang}"
-    diff -q "${textlang_src}" "${textlang}" || \
+    diff -q >/dev/null "${textlang_src}" "${textlang}" || \
         cp -v "${textlang_src}" "${textlang}"
 }
 
