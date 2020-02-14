@@ -20,7 +20,7 @@ if [ "$color_term" = yes ]; then
     export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 fi
 
-
+# FIXME I have a much better interface to color in bin/colors.sh
 # set shortcuts for color escapes
 if [ "$color_term" = yes ]; then
     col_CLR="\e[0m"
