@@ -29,28 +29,28 @@
 
 ### Set Theory ###
 
-<Multi_key> <e> <l> <e> <m>: "∈"
-<Multi_key> <n> <e> <l> <e> <m>: "∉"
-<Multi_key> <m> <e> <m> <b>: "∋"
-<Multi_key> <n> <m> <e> <m> <b>: "∌"
+<Multi_key> <backslash> <e> <l> <e> <m>: "∈"
+<Multi_key> <backslash> <n> <e> <l> <e> <m>: "∉"
+<Multi_key> <backslash> <m> <e> <m> <b>: "∋"
+<Multi_key> <backslash> <n> <m> <e> <m> <b>: "∌"
 
-<Multi_key> <s> <e> <t> <ampersand>: "∩"
-<Multi_key> <s> <e> <t> <bar>: "∪"
+<Multi_key> <backslash> <c> <a> <p>: "∩"
+<Multi_key> <backslash> <c> <u> <p>: "∪"
 
-<Multi_key> <s> <e> <t> <less> <space>: "⊂"
-<Multi_key> <s> <e> <t> <less> <equal>: "⊆"
-<Multi_key> <s> <e> <t> <greater> <space>: "⊃"
-<Multi_key> <s> <e> <t> <greater> <equal>: "⊇"
-<Multi_key> <s> <e> <t> <slash> <less> <space>: "⊄"
-<Multi_key> <s> <e> <t> <slash> <less> <equal>: "⊈"
-<Multi_key> <s> <e> <t> <slash> <greater> <space>: "⊅"
-<Multi_key> <s> <e> <t> <slash> <greater> <equal>: "⊉"
-# <Multi_key>: "⊊"
-# <Multi_key>: "⊋"
+<Multi_key> <backslash> <less> <s>: "⊂"
+<Multi_key> <backslash> <greater> <s>: "⊃"
+<Multi_key> <backslash> <slash> <less> <s>: "⊄"
+<Multi_key> <backslash> <slash> <greater> <s>: "⊅"
+<Multi_key> <backslash> <less> <equal> <s>: "⊆"
+<Multi_key> <backslash> <greater> <equal> <s>: "⊇"
+<Multi_key> <backslash> <slash> <less> <equal> <s>: "⊈"
+<Multi_key> <backslash> <slash> <greater> <equal> <s>: "⊉"
+<Multi_key> <backslash> <less> <slash> <equal> <s>: "⊊"
+<Multi_key> <backslash> <greater> <slash> <equal> <s>: "⊋"
 
-<Multi_key> <c> <o> <p> <i>: "∐"
+<Multi_key> <backslash> <c> <o> <p> <i>: "∐"
 
 ### Calculus ###
 
-<Multi_key> <n> <a> <b> <l> <a>: "∇"
+<Multi_key> <backslash> <n> <a> <b> <l> <a>: "∇"
 
