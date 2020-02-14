@@ -1,7 +1,7 @@
 #!/bin/sh
 
 dotsync() {
-    local hostconf dotdir moduledir installscript action
+    local hostconf dotdir moduledir installscript action module
     hostconf="${1}"
     dotdir="${2}"
     for module in $(ls "${dotdir}"); do
