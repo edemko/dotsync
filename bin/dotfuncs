@@ -8,7 +8,7 @@ dotsync() {
         moduledir="${dotdir}/${module}"
         installscript="${moduledir}/install.sh"
         if [ ! -d "${moduledir}" ]; then
-            echo >&2 "$(withfg ffb000 '[WARNING]') not a dir: $f"
+            echo >&2 "$(withaf f80 '[WARNING]') not a dir: ${f}"
             continue
         fi
 
@@ -40,12 +40,12 @@ dotsync() {
                 moduledir="${dotdir}/../boxen" # FIXME I expect boxen to be here, but...
                 installscript="${moduledir}/${module}"
                 if [ ! -f "${installscript}" ]; then
-                    echo >&2 "$(withfg ff0000 '[ERROR]') Could not find configuration file for '${module}' at '${moduledir}'."
+                    echo >&2 "$(withaf f00 '[ERROR]') Could not find configuration file for '${module}' at '${moduledir}'."
                     echo >&2 "Skipping ${module}."
                 else
-                    echo >&2 "$(withfg 00d0ff '[INFO]') START including from '${module}'"
+                    echo >&2 "$(withaf 08f '[INFO]') START including from '${module}'"
                     dotsync "${installscript}" "${dotdir}"
-                    echo >&2 "$(withfg 00d0ff '[INFO]') DONE including from '${module}'"
+                    echo >&2 "$(withaf 08f '[INFO]') DONE including from '${module}'"
                 fi
                 ;;
             *)
@@ -85,7 +85,7 @@ dotup() {
             # FIXME I think I don't need to teardown
             # echo >&2 "Preparing clean slate…"
             # if ! dotsync_teardown "${dotdir}"; then
-            #     echo >&2 "$(withfg ffb000 '[WARNING]') Teardown failed, but should never fail."
+            #     echo >&2 "$(withaf f80 '[WARNING]') Teardown failed, but should never fail."
             #     state=FAIL
             #     return 1
             # fi
@@ -96,7 +96,13 @@ dotup() {
                 state=FAIL
             fi
         fi
-        echo >&2 "$(withfg 00d0ff '[INFO]') ${1}: ${state}."
+        case ${state} in
+            ok) echo >&2 "$(withaf 0c0 '[ok]') ${1}" ;;
+            up-to-date) echo >&2 "$(withaf 0c0 '[up-to-date]') ${1}" ;;
+            SKIP) echo >&2 "$(withaf 08f '[SKIP]') ${1}" ;;
+            FAIL) echo >&2 "$(withaf f00 '[FAIL]') ${1}" ;;
+            *) echo >&2 "$(withaf f80 '[WARNING]'): unknown state: ${1}" ;;
+        esac
     )
 }
 

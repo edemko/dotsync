@@ -19,11 +19,11 @@ textlang_src="${packagesdir_src}/Plain text.sublime-settings"
 
 dotsync_depsgood() {
     if ! (dpkg -l sublime-text | grep -q ^ii); then
-        echo >&2 '[ERROR] Sublime Text not installed. See https://www.sublimetext.com/docs/3/linux_repositories.html#apt'
+        echo >&2 "$(withaf f00 '[ERROR]') Sublime Text not installed. See https://www.sublimetext.com/docs/3/linux_repositories.html#apt"
         return 1
     fi
     if ! (fc-list | grep -q 'Source Code Pro'); then
-        echo >&2 '[WARNING] Source Code Pro not installed.'
+        echo >&2 "$(withaf f80 '[WARNING]') Source Code Pro not installed."
     fi
     return 0
 }
@@ -53,9 +53,9 @@ dotsync_setup() {
     diff -q >/dev/null "${mousemap_src}" "${mousemap}" || \
         cp -v "${mousemap_src}" "${mousemap}"
     if ! ( diff -q >/dev/null "${packageControl}" "${packageControl_src}" ); then
-        echo >&2 '[NOTICE] Package Control package list updated.'
-        echo >&2 '[NOTICE] Packages will be synced on next sublime text restart.'
-        echo >&2 '[NOTICE] See https://packagecontrol.io/docs/syncing'
+        echo >&2 "$(withaf d0f '[NOTICE]') Package Control package list updated."
+        echo >&2 "$(withaf d0f '[NOTICE]') Packages will be synced on next sublime text restart."
+        echo >&2 "$(withaf d0f '[NOTICE]') See https://packagecontrol.io/docs/syncing"
         cp -v "${packageControl_src}" "${packageControl}"
     fi
 
