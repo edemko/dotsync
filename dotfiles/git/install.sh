@@ -1,7 +1,3 @@
-sqliterc="${HOME}/.sqliterc"
-sqliterc_src="${1}/sqliterc"
-
-
 dotsync_depsgood() {
     return 0
 }

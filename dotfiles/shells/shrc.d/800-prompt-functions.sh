@@ -8,13 +8,15 @@ __prompt_failcode() {
 }
 
 __prompt_gitstatus() {
-    local repodir branch st
+    local repodir branch st fetchhead
     if git rev-parse --git-dir >/dev/null 2>&1; then
         branch="$(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')"
 
+        fetchhead=$(git rev-parse --git-dir)/FETCH_HEAD
         # if 15 minutes ago is further ahead in time than the last time we fetched
-        if [ "$(date +'%s' -d'15 min ago')" -gt "$(stat -c'%Y' "$(git rev-parse --git-dir)/FETCH_HEAD")" ]; then
-            git remote update 2>&1 >/dev/null
+        if [ ! -f "${fetchhead}" ] ||
+           [ "$(date +'%s' -d'15 min ago')" -gt "$(stat -c'%Y' "${fetchhead}")" ]; then
+            git remote update >/dev/null 2>/dev/null &
         fi
         # if remote master has commits that local branch is missing, be sure to rebase
         if [ "${branch}" != "master" ]; then
