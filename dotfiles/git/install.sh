@@ -3,15 +3,15 @@ dotsync_depsgood() {
 }
 
 dotsync_newest() {
-    git config --global --get core.editor || return 1
+    git config --global --get core.editor >/dev/null || return 1
     # Aliases
-    git config --global --get alias.st || return 1
-    git config --global --get alias.graph || return 1
-    git config --global --get alias.com || return 1
-    git config --global --get alias.amend || return 1
-    git config --global --get alias.co || return 1
-    git config --global --get alias.rollback || return 1
-    git config --global --get alias.unstage || return 1
+    git config --global --get alias.st >/dev/null || return 1
+    git config --global --get alias.graph >/dev/null || return 1
+    git config --global --get alias.com >/dev/null || return 1
+    git config --global --get alias.amend >/dev/null || return 1
+    git config --global --get alias.co >/dev/null || return 1
+    git config --global --get alias.rollback >/dev/null || return 1
+    git config --global --get alias.unstage >/dev/null || return 1
 }
 
 dotsync_setup() {
