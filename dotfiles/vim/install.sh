@@ -7,8 +7,8 @@ bundledir="${vimdir}/bundle"
 
 dotsync_depsgood() {
     if ! (fc-list | grep -q 'PowerlineSymbols'); then
-        echo >&2 '[WARNING] powerline fonts not installed.'
-        echo >&2 '[SUGGEST] Maybe `sudo apt install fonts-powerline`?'
+        echo >&2 "$(withaf f80 '[WARNING]') powerline fonts not installed."
+        echo >&2 "$(withaf d0f '[SUGGEST]') Maybe 'sudo apt install fonts-powerline'?"
     fi
     return 0;
 }

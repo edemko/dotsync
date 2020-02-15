@@ -5,7 +5,10 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # lolcat, but less
-function loless() { lolcat -f "${1}" | less -R ; }
+function loless() {
+    # FIXME apparently, even /dev/fd/0 doesn't exist
+    lolcat -f "${1:-'/dev/fd/0'}" | less -R
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

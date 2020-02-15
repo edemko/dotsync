@@ -19,7 +19,7 @@ composedir_src="${1}/XCompose.d"
 
 dotsync_depsgood() {
     if ! im-config -l | grep -q '\buim\b'; then
-        echo >&2 "[WARNING] uim is not installed"
+        echo >&2 "$(withaf f80 '[WARNING]') uim is not installed"
         return 1
     fi
     if which runghc >/dev/null && which m4 >/dev/null; then
