@@ -4,14 +4,13 @@ _gitstat_fetch() {
     local timespec repodir fetchhead
     timespec="$1"
     repodir="$2"
+
+    [ -d "${repodir}" ] || exit 1
     fetchhead="$(cd "${repodir}"; git rev-parse --git-dir)/FETCH_HEAD"
-    [ -z "${fetchhead}" ] && exit 127
-    if [ ! -f "${fetchhead}" ] ||
-       [ "$(stat -c'%Y' "${fetchhead}")" -lt "$(date +'%s' -d "${timespec}")" ]; then
-        exit 1
-    else
-        exit 0
-    fi
+    [ -f "${fetchhead}" ] || exit 1
+    [ "$(date +'%s' -d "${timespec}")" -lt "$(stat -c'%Y' "${fetchhead}")" ] || exit 1
+
+    exit 0
 }
 
 _die_usage() {
