@@ -49,7 +49,7 @@ dotsync_newest() {
 
     [ -d "${shrcdir}" ] || return 1
     for rc in $(ls "${shrcdir_src}"); do
-        case "$rc" in
+        case "${rc}" in
             *.d)
                 [ -d "${shrcdir}/${rc}" ] || return 1
                 ;;
@@ -78,7 +78,7 @@ dotsync_setup() {
 
     mkdir -pv "${shrcdir}"
     for rc in $(ls "${shrcdir_src}"); do
-        case "$rc" in
+        case "${rc}" in
             *.d|*.sh|*.bash|*.zsh)
                 ln -sTvf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"
                 ;;

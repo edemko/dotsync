@@ -3,7 +3,7 @@
 # for examples
 
 # If not running interactively, don't do anything
-case $- in
+case ${-} in
     *i*) ;;
       *) return;;
 esac

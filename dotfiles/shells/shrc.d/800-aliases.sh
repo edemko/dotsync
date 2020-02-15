@@ -5,11 +5,11 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # lolcat, but less
-function loless() { lolcat -f "$1" | less -R ; }
+function loless() { lolcat -f "${1}" | less -R ; }
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-# alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# alias alert='notify-send --urgency=low -i "$([ ${?} = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 alias ln='ln -v'
 # TODO an alias for relative symlinks

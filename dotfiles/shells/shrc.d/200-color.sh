@@ -1,11 +1,12 @@
 # detect if this terminal support color
 # (whitelisted, so non-color, unless we know we "want" color)
-case "$TERM" in
+# FIXME this is not the correct way to look for color support; use the terminfo db
+case "${TERM}" in
     xterm|xterm-color|*-256color) color_term=yes;;
 esac
 
 
-if [ "$color_term" = yes ]; then
+if [ "${color_term}" = yes ]; then
     # enable color support of ls and also add handy aliases
     if [ -x /usr/bin/dircolors ]; then
         [ -r ~/.dircolors ] && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -22,7 +23,7 @@ fi
 
 # FIXME I have a much better interface to color in bin/colors.sh
 # set shortcuts for color escapes
-if [ "$color_term" = yes ]; then
+if [ "${color_term}" = yes ]; then
     col_CLR="\e[0m"
 
     col_NO="\e[39m"

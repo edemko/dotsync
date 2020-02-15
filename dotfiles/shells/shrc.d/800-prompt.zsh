@@ -19,7 +19,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 PS1+="%{$(print -P ${sty_BOLD}${col_YEL})%}"
-PS1+='${debian_chroot:+($debian_chroot)}'
+PS1+='${debian_chroot:+(${debian_chroot})}'
 PS1+="%{$(print -P ${col_CLR})%}"
 
 # FIXME this code is duplicated in the .bash version

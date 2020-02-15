@@ -8,7 +8,7 @@ PS1+="\[${col_RED}\]\$(__prompt_failcode)\[${col_CLR}\]"
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
-PS1+="\[${sty_BOLD}${col_YEL}\]"'${debian_chroot:+($debian_chroot)}'"\[${col_CLR}\]"
+PS1+="\[${sty_BOLD}${col_YEL}\]"'${debian_chroot:+(${debian_chroot})}'"\[${col_CLR}\]"
 # display current git branch
 PS1+="\[${col_YEL}\]\$(__prompt_gitstatus)\[${col_CLR}\]"
 # user, host, and working directory

@@ -1,7 +1,7 @@
 __prompt_failcode() {
     (
-        ec="$?"
-        if [[ $ec != 0 ]]; then
+        ec="${?}"
+        if [[ ${ec} != 0 ]]; then
             echo "<${ec}>"
         fi
     )
@@ -33,9 +33,9 @@ __prompt_gitstatus() {
 
         st="$(git status --porcelain)"
         # untracked files reported as `!`
-        if [ $(echo "$st" | grep -c '^??') -ne 0 ]; then symbol+='!'; fi
+        if [ $(echo "${st}" | grep -c '^??') -ne 0 ]; then symbol+='!'; fi
         # unstaged files reported as `*`
-        if [ -n "$(echo $st | grep -v '^??')" ]; then symbol+='*'; fi
+        if [ -n "$(echo ${st} | grep -v '^??')" ]; then symbol+='*'; fi
 
         echo "(${symbol}${branch})"
     fi

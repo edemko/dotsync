@@ -1,2 +1,2 @@
 # set location of initialization file for python repl
-export PYTHONSTARTUP="$HOME/.pythonrc"
+export PYTHONSTARTUP="${HOME}/.pythonrc"
