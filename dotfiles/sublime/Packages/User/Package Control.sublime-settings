@@ -1,22 +1,23 @@
 {
-  "bootstrapped": true,
-  "channels":
-  [
-    "https://packagecontrol.io/channel_v3.json"
-  ],
-  "in_process_packages":
-  [
-  ],
-  "installed_packages":
-  [
-    "Move By Paragraph (Okuno remix)",
-    "Package Control",
-    "Solarized Color Scheme",
-    "Verilog",
-    "VHDL"
-  ],
-  "repositories":
-  [
-    "https://raw.githubusercontent.com/Zankoku-Okuno/sublime-channel/master/repository.json"
-  ]
+	"bootstrapped": true,
+	"channels":
+	[
+		"https://packagecontrol.io/channel_v3.json"
+	],
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ColorPicker",
+		"Move By Paragraph (Okuno remix)",
+		"Package Control",
+		"Solarized Color Scheme",
+		"Verilog",
+		"VHDL"
+	],
+	"repositories":
+	[
+		"https://raw.githubusercontent.com/Zankoku-Okuno/sublime-channel/master/repository.json"
+	]
 }

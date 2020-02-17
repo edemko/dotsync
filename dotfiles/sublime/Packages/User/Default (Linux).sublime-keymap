@@ -49,11 +49,22 @@
     // NOTE: commands jump_{forward,back} (alt+{shift+,}-)
     // NOTE: command join_lines (ctrl+j); wrap_lines (alt+q)
     { "keys": ["ctrl+shift+j"],
-      "command": "wrap_lines"
-    }
+      "command": "wrap_lines",
+    },
     // NOTE: there are a bunch of keybindings under `Auto-pair *` that look promising for cleaning up bracket typing
     // NOTE: command expand_selection to:indentation (ctrl+shift+j)
 
     // WARNING: expand to line and paragraph are a bit crap with the edges
     // I'd rather they didn't include the trailing newline and trailing blank line
+
+    // Surround
+    { "keys": ["ctrl+k", "ctrl+s"],
+      "command": "surround_selection",
+    },
+    { "keys": ["ctrl+k", "ctrl+c", "ctrl+s"],
+      "command": "surround_change",
+    },
+    { "keys": ["ctrl+k", "ctrl+d", "ctrl+s"],
+      "command": "surround_delete",
+    },
 ]

@@ -97,7 +97,7 @@ dotup() {
             fi
         fi
         case ${state} in
-            ok) echo >&2 "$(withaf 0c0 '[ok]') ${1}" ;;
+            ok) echo >&2 "$(withaf 0f0 '[ok]') ${1}" ;;
             up-to-date) echo >&2 "$(withaf 0c0 '[up-to-date]') ${1}" ;;
             SKIP) echo >&2 "$(withaf 08f '[SKIP]') ${1}" ;;
             FAIL) echo >&2 "$(withaf f00 '[FAIL]') ${1}" ;;
