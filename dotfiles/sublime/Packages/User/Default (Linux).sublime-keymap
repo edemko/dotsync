@@ -22,7 +22,7 @@
     },
     { "keys": ["ctrl+shift+]"],
       "command": "move_by_paragraph",
-      "args": { "forward": true, "extend": true },
+      "args": { "forward": true, "extend": true, "to_next": false },
     },
 
     { "keys": ["ctrl+."], "command": "indent" },
