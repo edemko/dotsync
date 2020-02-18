@@ -67,4 +67,24 @@
     { "keys": ["ctrl+k", "ctrl+d", "ctrl+s"],
       "command": "surround_delete",
     },
+    { "keys": ["ctrl+shift+0"],
+      "command": "surround_selection",
+      "args": { "surround" : ")" }
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+]"],
+      "command": "surround_selection",
+      "args": { "surround" : "]" }
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+]"],
+      "command": "surround_selection",
+      "args": { "surround" : "}" }
+    },
+    { "keys": ["ctrl+shift+'"],
+      "command": "surround_selection",
+      "args": { "surround" : "\"" }
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+'"],
+      "command": "surround_selection",
+      "args": { "surround" : "'" }
+    },
 ]

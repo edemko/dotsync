@@ -7,6 +7,10 @@
 	"in_process_packages":
 	[
 	],
+	"install_prereleases":
+	[
+		"Move By Paragraph (Okuno remix)"
+	],
 	"installed_packages":
 	[
 		"ColorPicker",
