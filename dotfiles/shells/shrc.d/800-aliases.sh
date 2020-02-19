@@ -6,8 +6,10 @@ alias l='ls -CF'
 
 # lolcat, but less
 function loless() {
-    # FIXME apparently, even /dev/fd/0 doesn't exist
-    lolcat -f "${1:-'/dev/fd/0'}" | less -R
+    case ${#} in
+        0) lolcat -f | less -R ;;
+        *) lolcat -f "${1}" | less -R ;;
+    esac
 }
 
 # Add an "alert" alias for long running commands.  Use like so:
