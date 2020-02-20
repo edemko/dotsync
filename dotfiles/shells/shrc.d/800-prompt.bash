@@ -1,5 +1,7 @@
 # always clear any color
 PS1="\[${col_CLR}\]"
+# what's the Discordian date?
+PS1+="\$(__prompt_ddate)"
 # what shell is being run?
 PS1+="\[${col_GRA}\][bash]\[${col_CLR}\]"
 # show last exit code if non-zero

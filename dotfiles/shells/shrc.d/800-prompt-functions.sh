@@ -40,3 +40,23 @@ __prompt_gitstatus() {
         echo "(${symbol}${branch})"
     fi
 }
+
+__prompt_ddate() {
+    local touch_file prettify
+    touch_file="${HOME}/.shrc.d/.last-ddate"
+    [ -f "${touch_file}" ] \
+        && [ "$(date +'%s' -d "2 hours ago")" -lt "$(stat -c'%Y' "${touch_file}")" ] \
+        && return 0
+    which ddate >/dev/null || return 0
+
+    touch "${touch_file}"
+    if which lolcat >/dev/null; then
+        ddate | lolcat -f
+    elif which technicolor >/dev/null; then
+        technicolor d0f "$(ddate)"
+    else
+        ddate
+    fi
+    # this `tput sgr0` also ensures the trailing newline from ddate doesn't get stripped by command substitution
+    tput sgr0
+}
