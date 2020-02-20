@@ -61,6 +61,8 @@
     // WARNING: expand to line and paragraph are a bit crap with the edges
     // I'd rather they didn't include the trailing newline and trailing blank line
 
+    { "keys": ["ctrl+space"], "command": "expand_region" },
+
     // Surround
     { "keys": ["ctrl+k", "ctrl+s"],
       "command": "surround_selection",
@@ -90,5 +92,43 @@
     { "keys": ["ctrl+shift+k", "ctrl+'"],
       "command": "surround_selection",
       "args": { "surround" : "'" }
+    },
+
+    // Case Conversion
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+l"],
+      "command": "lower_case"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+u"],
+      "command": "upper_case"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+t"],
+      "command": "title_case"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+space"],
+      "command": "convert_to_separate_words"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+c"],
+      "command": "convert_to_camel"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+c"],
+      "command": "convert_to_pascal"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+-"],
+      "command": "convert_to_snake"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+shift+s"],
+      "command": "convert_to_screaming_snake"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+-"],
+      "command": "convert_to_dash"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+/"],
+      "command": "convert_to_slash"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+\\"],
+      "command": "convert_to_back_slash"
+    },
+    { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+."],
+      "command": "convert_to_dot"
     },
 ]

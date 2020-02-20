@@ -13,9 +13,12 @@
 	],
 	"installed_packages":
 	[
+		"Case Conversion",
 		"ColorPicker",
+		"ExpandRegion",
 		"Move By Paragraph (Okuno remix)",
 		"Package Control",
+		"SingleTrailingNewLine",
 		"Solarized Color Scheme",
 		"Surround",
 		"Verilog",
