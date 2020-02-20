@@ -11,10 +11,6 @@ dotsync() {
             echo >&2 "$(withaf f80 '[WARNING]') not a dir: ${f}"
             continue
         fi
-
-        # if ! grep -Fqx "${module}" "${hostconf}"; then
-        #     dotdown "${moduledir}"
-        # fi
     done
     for module in $(cat "${hostconf}"); do
         case "${module}" in
