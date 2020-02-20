@@ -11,7 +11,7 @@ mousemap_src="${packagesdir_src}/Default.sublime-mousemap"
 preferences_src="${packagesdir_src}/Preferences.sublime-settings"
 packageControl_src="${packagesdir_src}/Package Control.sublime-settings"
 #------
-nice_package_names='Bash Markdown MoveByParagraph surround'
+nice_package_names='Bash Markdown surround'
 # annoying package names
 textlang="${packagesdir}/Plain text.sublime-settings"
 textlang_src="${packagesdir_src}/Plain text.sublime-settings"
@@ -29,21 +29,22 @@ dotsync_depsgood() {
 }
 
 dotsync_newest() {
-    diff -q 2>/dev/null "${vimrc}" "${vimrc_src}" || return 1
+    local ret
+    ret=0
+    [ -d "${packagesdir}" ] || ret=1
+    diff -q "${preferences}" "${preferences_src}" || ret=1
+    # echo >&2 hi
+    diff -q "${keymap}" "${keymap_src}" || ret=1
+    diff -q "${mousemap}" "${mousemap_src}" || ret=1
 
-    [ -d "${packagesdir}" ] || return 1
-    diff -q "${preferences}" "${preferences_src}" || return 1
-    diff -q "${keymap}" "${keymap_src}" || return 1
-    diff -q "${mousemap}" "${mousemap_src}" || return 1
-
-    diff -q "${packageControl}" "${packageControl_src}" || return 1
+    diff -q "${packageControl}" "${packageControl_src}" || ret=1
 
     for pkg in $nice_package_names; do
-        diff -q "${packagesdir}/${pkg}.sublime-settings" "${packagesdir_src}/${pkg}.sublime-settings" || return 1
+        diff -q "${packagesdir}/${pkg}.sublime-settings" "${packagesdir_src}/${pkg}.sublime-settings" || ret=1
     done
-    diff -q "${textlang}" "${textlang_src}" || return 1
+    diff -q "${textlang}" "${textlang_src}" || ret=1
 
-    return 0
+    return ${ret}
 }
 
 dotsync_setup() {
