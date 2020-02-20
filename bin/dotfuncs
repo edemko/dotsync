@@ -81,14 +81,10 @@ dotup() {
         elif dotsync_newest "${dotdir}"; then
             echo >&2 "Already up-to-date."
             state=up-to-date
+        elif [ -n "${dotsync_dryrun}" ]; then
+            echo >&2 "Dry run: not updating."
+            state=SKIP
         else
-            # FIXME I think I don't need to teardown
-            # echo >&2 "Preparing clean slate…"
-            # if ! dotsync_teardown "${dotdir}"; then
-            #     echo >&2 "$(withaf f80 '[WARNING]') Teardown failed, but should never fail."
-            #     state=FAIL
-            #     return 1
-            # fi
             echo >&2 "Updating ${1}…"
             if dotsync_setup "${dotdir}"; then
                 state=ok
@@ -114,10 +110,14 @@ dotdown() {
       *) dotdir="${PWD}/${dotdir}";;
     esac
     installscript="${dotdir}/install.sh"
-    echo >&2 "Tearing down ${dotdir}…"
-    (
-        . "${installscript}"
-        dotsync_teardown "${dotdir}"
-    )
-    echo >&2 "done."
+    if [ -n "${dotsync_dryrun}" ]; then
+        echo >&2 "Dry run: not tearing down."
+    else
+        echo >&2 "Tearing down ${dotdir}…"
+        (
+            . "${installscript}"
+            dotsync_teardown "${dotdir}"
+        )
+        echo >&2 "done."
+    fi
 }

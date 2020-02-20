@@ -1,6 +1,24 @@
 #!/bin/sh
 set -e
 
+while getopts "n" arg; do
+    case "${arg}" in
+        n) dotsync_dryrun=1 ;;
+        *) ;;
+    esac
+done
+shift $(expr $OPTIND - 1)
+
+if [ -n "${1}" ]; then
+    basedir="${1}"
+elif [ -d "${HOME}/dotsync" ]; then
+    basedir="${HOME}/dotsync"
+else
+    echo >&2 "$(withaf f00 '[ERROR]') No dotsync directory found; please specify as first argument (e.g. \`${0} path/to/dotsync\`)."
+    exit 127
+fi
+
+
 if which >/dev/null technicolor; then
     # FIXME when I write this as bash, I can source as expected
     # FIXME when I run as sh, I have to call technicolor (thus the alias)
@@ -20,16 +38,6 @@ if [ -f "${dotfuncs}" ]; then
     . "${dotfuncs}"
 else
     echo >&2 "$(withaf f00 '[ERROR]') Could not find dotfuncs file, expected '${dotfuncs}'."
-    exit 127
-fi
-
-
-if [ -n "${1}" ]; then
-    basedir="${1}"
-elif [ -d "${HOME}/dotsync" ]; then
-    basedir="${HOME}/dotsync"
-else
-    echo >&2 "$(withaf f00 '[ERROR]') No dotsync directory found; please specify as first argument (e.g. \`${0} path/to/dotsync\`)."
     exit 127
 fi
 
