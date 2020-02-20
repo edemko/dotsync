@@ -11,7 +11,7 @@ mousemap_src="${packagesdir_src}/Default.sublime-mousemap"
 preferences_src="${packagesdir_src}/Preferences.sublime-settings"
 packageControl_src="${packagesdir_src}/Package Control.sublime-settings"
 #------
-nice_package_names='Bash Markdown surround'
+nice_package_names='Bash Markdown SingleTrailingNewLine surround'
 # annoying package names
 textlang="${packagesdir}/Plain text.sublime-settings"
 textlang_src="${packagesdir_src}/Plain text.sublime-settings"
