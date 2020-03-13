@@ -13,16 +13,18 @@
     * [x] replace monolithic m4-based build with many smaller symlinks
 * [ ] document default XCompose sequences
     * [ ] hardcoding
-    * [ ] any default xcompose files?
+    * [x] find out where my locale files are actually stored: `/usr/share/X11/locale/en_US.UTF-8/Compose`.
     * [ ] note existing sequences in XCompose file comments
 * [ ] more XCompose sequences
     * [x] phonetic alphabet(s)
     * [ ] quicker greek letters when oft-used
     * [ ] mathematical symbols
     * [ ] blackboard symbols
+    * [ ] super- and subscripts
     * [ ] special brackets
     * [ ] missing latin diacritics
     * [ ] fancy archaic latin characters
+
 
 
 ## Links
