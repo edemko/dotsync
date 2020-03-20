@@ -56,7 +56,10 @@
       "command": "wrap_lines",
     },
     // NOTE: there are a bunch of keybindings under `Auto-pair *` that look promising for cleaning up bracket typing
-    // NOTE: command expand_selection to:indentation (ctrl+shift+j)
+    // NOTE: command expand_selection to:indentation (ctrl+shift+j) rebound above
+    { "keys": ["ctrl+shift+i"],
+      "command": "expand_selection", "args": {"to": "indentation"}
+    },
 
     // WARNING: expand to line and paragraph are a bit crap with the edges
     // I'd rather they didn't include the trailing newline and trailing blank line
