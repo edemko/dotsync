@@ -7,6 +7,7 @@ set lazyredraw
 set showmode
 
 set timeout timeoutlen=200 " fixes that `O` takes a long time sometimes (i.e. after hitting ESC)
+" be aware: this also changes how quickly you need to hit `ys` in vim-surround
 
 syntax on
 filetype plugin indent on
@@ -92,3 +93,7 @@ let g:airline_powerline_fonts = 1
 " all the pretty colors
 set background=dark
 colorscheme delek
+
+""" plugin settings """
+
+let g:hexmode_patterns = '*.bin'

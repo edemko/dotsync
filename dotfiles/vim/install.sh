@@ -10,6 +10,9 @@ dotsync_depsgood() {
         echo >&2 "$(withaf f80 '[WARNING]') powerline fonts not installed."
         echo >&2 "$(withaf d0f '[SUGGEST]') Maybe 'sudo apt install fonts-powerline'?"
     fi
+    if ! (which xxd >/dev/null); then
+        echo >&2 "$(withaf f80 '[WARNING]') xxd not installed."
+    fi
     return 0;
 }
 
@@ -18,6 +21,7 @@ dotsync_newest() {
 
     _pathogenstat || return 1
 
+    gitstat "${bundledir}/hexmode" || return 1
     gitstat "${bundledir}/vim-airline" || return 1
     gitstat "${bundledir}/vim-fugitive" || return 1
     gitstat "${bundledir}/vim-repeat" || return 1
@@ -35,6 +39,8 @@ dotsync_setup() {
         curl -LS -o "${vimdir}/autoload/pathogen.vim" 'https://tpo.pe/pathogen.vim'
     fi
 
+    [ -d "${bundledir}/hexmode" ] || git clone 'https://github.com/fidian/hexmode' "${bundledir}/hexmode"
+    gitstat "${bundledir}/hexmode" || (cd "${bundledir}/hexmode" && git pull)
     # TODO I may need to also install a powerline font
     [ -d "${bundledir}/vim-airline" ] || git clone 'https://github.com/vim-airline/vim-airline' "${bundledir}/vim-airline"
     gitstat "${bundledir}/vim-airline" || (cd "${bundledir}/vim-airline" && git pull)
