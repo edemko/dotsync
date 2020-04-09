@@ -1,3 +1,5 @@
+#!/bin/sh
+
 xinitrc="${HOME}/.xinitrc"
 xinitrc_src="${1}/xinitrc"
 

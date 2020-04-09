@@ -4,11 +4,10 @@ dotsync() {
     local hostconf dotdir moduledir installscript action module
     hostconf="${1}"
     dotdir="${2}"
-    for module in $(ls "${dotdir}"); do
-        moduledir="${dotdir}/${module}"
-        installscript="${moduledir}/install.sh"
-        if [ ! -d "${moduledir}" ]; then
-            echo >&2 "$(withaf f80 '[WARNING]') not a dir: ${f}"
+    for module in "${dotdir}"/*; do
+        installscript="${module}/install.sh"
+        if [ ! -d "${module}" ]; then
+            echo >&2 "$(withaf f80 '[WARNING]') not a dir: ${module}"
             continue
         fi
     done
@@ -77,7 +76,7 @@ dotup() {
         elif dotsync_newest "${dotdir}"; then
             echo >&2 "Already up-to-date."
             state=up-to-date
-        elif [ -n "${dotsync_dryrun}" ]; then
+        elif [ -n "${DOTSYNC_DRYRUN}" ]; then
             echo >&2 "Dry run: not updating."
             state=SKIP
         else
@@ -106,7 +105,7 @@ dotdown() {
       *) dotdir="${PWD}/${dotdir}";;
     esac
     installscript="${dotdir}/install.sh"
-    if [ -n "${dotsync_dryrun}" ]; then
+    if [ -n "${DOTSYNC_DRYRUN}" ]; then
         echo >&2 "Dry run: not tearing down."
     else
         echo >&2 "Tearing down ${dotdir}…"

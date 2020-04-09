@@ -1,3 +1,5 @@
+#!/bin/sh
+
 psqlrc="${HOME}/.psqlrc"
 psqlrc_src="${1}/psqlrc"
 

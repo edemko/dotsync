@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # detect if this terminal support color
 # (whitelisted, so non-color, unless we know we "want" color)
 # FIXME this is not the correct way to look for color support; use the terminfo db
@@ -9,7 +11,11 @@ esac
 if [ "${color_term}" = yes ]; then
     # enable color support of ls and also add handy aliases
     if [ -x /usr/bin/dircolors ]; then
-        [ -r ~/.dircolors ] && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+        if [ -r "${HOME}/.dircolors" ]; then
+            eval "$(dircolors -b "${HOME}/.dircolors")"
+        else
+            eval "$(dircolors -b)"
+        fi
         alias ls='ls --color=auto'
 
         alias grep='grep --color=auto'

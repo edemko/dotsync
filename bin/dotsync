@@ -3,11 +3,11 @@ set -e
 
 while getopts "n" arg; do
     case "${arg}" in
-        n) dotsync_dryrun=1 ;;
+        n) export DOTSYNC_DRYRUN=1 ;;
         *) ;;
     esac
 done
-shift $(expr $OPTIND - 1)
+shift $((OPTIND - 1))
 
 if [ -n "${1}" ]; then
     basedir="${1}"

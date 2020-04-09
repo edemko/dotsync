@@ -1,3 +1,5 @@
+#!/bin/sh
+
 packagesdir="${HOME}/.config/sublime-text-3/Packages/User"
 packagesdir_src="${1}/Packages/User"
 #------
@@ -24,6 +26,9 @@ dotsync_depsgood() {
     fi
     if ! (fc-list | grep -q 'Source Code Pro'); then
         echo >&2 "$(withaf f80 '[WARNING]') Source Code Pro not installed."
+    fi
+    if ! (which shellcheck >/dev/null); then
+        echo >&2 "$(with af f80 '[WARNING]') shellcheck not installed."
     fi
     return 0
 }

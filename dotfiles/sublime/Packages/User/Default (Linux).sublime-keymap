@@ -134,4 +134,15 @@
     { "keys": ["ctrl+shift+k", "ctrl+shift+k", "ctrl+."],
       "command": "convert_to_dot"
     },
+
+    // linter
+    { "keys": ["ctrl+k", "ctrl+l", "l"], "command": "sublime_linter_lint" },
+    { "keys": ["ctrl+k", "ctrl+l", "a"], "command": "sublime_linter_panel_toggle" },
+    { "keys": ["ctrl+k", "ctrl+l", "r"], "command": "sublime_linter_line_report" },
+    { "keys": ["ctrl+k", "ctrl+l", "n"], "command": "sublime_linter_goto_error",
+      "args": { "direction": "next", "wrap": true }
+    },
+    { "keys": ["ctrl+k", "ctrl+l", "shift+n"], "command": "sublime_linter_goto_error",
+      "args": { "direction": "previous", "wrap": true }
+    }
 ]

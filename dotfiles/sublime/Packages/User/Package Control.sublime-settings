@@ -20,6 +20,8 @@
 		"Package Control",
 		"SingleTrailingNewLine",
 		"Solarized Color Scheme",
+		"SublimeLinter",
+		"SublimeLinter-shellcheck",
 		"Surround",
 		"Verilog",
 		"VHDL"

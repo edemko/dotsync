@@ -1,3 +1,5 @@
+#!/bin/sh
+
 bindir="${HOME}/bin"
 bindir_src="${1}/bin"
 
@@ -13,7 +15,7 @@ dotsync_newest() {
     local apps
     apps="gitstat lolcat technicolor tree"
     for app in ${apps}; do
-        which ${app} || return 1
+        which "${app}" || return 1
     done
     return 0
 }

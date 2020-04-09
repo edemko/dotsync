@@ -25,7 +25,7 @@ while getopts "d:" arg; do
         *) _die_usage ;;
     esac
 done
-shift $(expr $OPTIND - 1)
+shift $((OPTIND - 1))
 case "$#" in
     0) _gitstat_fetch "${timespec}" "${PWD}" ;;
     1) _gitstat_fetch "${timespec}" "${1}" ;;

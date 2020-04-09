@@ -1,3 +1,5 @@
+#!/bin/sh
+
 srcexe="${1}/dotsync"
 srcfuncs="${1}/dotfuncs"
 bindir="${HOME}/bin"

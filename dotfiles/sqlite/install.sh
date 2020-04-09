@@ -1,3 +1,5 @@
+#!/bin/sh
+
 sqliterc="${HOME}/.sqliterc"
 sqliterc_src="${1}/sqliterc"
 

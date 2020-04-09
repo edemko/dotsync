@@ -1,3 +1,4 @@
+#!/bin/sh
 
 # ls aliases
 alias ll='ls -alFh'
@@ -5,7 +6,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # lolcat, but less
-function loless() {
+loless() {
     case ${#} in
         0) lolcat -f | less -R ;;
         *) lolcat -f "${1}" | less -R ;;

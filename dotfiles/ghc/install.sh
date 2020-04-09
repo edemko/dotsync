@@ -1,3 +1,5 @@
+#!/bin/sh
+
 src="${1}/ghci"
 target="${HOME}/.ghci"
 

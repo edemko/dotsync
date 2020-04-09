@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # entry points for shell configuration
 profile="${HOME}/.profile"
 profile_src="${1}/profile.sh"
@@ -48,7 +50,8 @@ dotsync_newest() {
     diff -q "${zlogout}" "${zlogout_src}" || return 1
 
     [ -d "${shrcdir}" ] || return 1
-    for rc in $(ls "${shrcdir_src}"); do
+    for rc in "${shrcdir_src}"/*; do
+        rc="$(basename "$rc")"
         case "${rc}" in
             *.d)
                 [ -d "${shrcdir}/${rc}" ] || return 1
@@ -77,7 +80,8 @@ dotsync_setup() {
     ln -svf "${zlogout_src}" "${zlogout}"
 
     mkdir -pv "${shrcdir}"
-    for rc in $(ls "${shrcdir_src}"); do
+    for rc in "${shrcdir_src}"/*; do
+        rc="$(basename "$rc")"
         case "${rc}" in
             *.d|*.sh|*.bash|*.zsh)
                 ln -sTvf "${shrcdir_src}/${rc}" "${shrcdir}/${rc}"

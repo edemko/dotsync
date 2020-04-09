@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 setopt promptsubst
 
 # always clear any color

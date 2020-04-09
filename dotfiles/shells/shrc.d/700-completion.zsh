@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # The following lines were added by compinstall
 zstyle :compinstall filename "${HOME}/.zshrc"
 

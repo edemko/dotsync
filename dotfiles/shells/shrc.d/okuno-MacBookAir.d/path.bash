@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # FIXME why is this not in .profile, or somewhere otherwise better?
 # default editor setup
 # export EDITOR=/usr/bin/vim

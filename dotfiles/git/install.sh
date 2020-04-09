@@ -1,3 +1,5 @@
+#!/bin/sh
+
 dotsync_depsgood() {
     return 0
 }

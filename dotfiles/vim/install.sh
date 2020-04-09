@@ -1,3 +1,5 @@
+#!/bin/sh
+
 vimrc="${HOME}/.vimrc"
 vimrc_src="${1}/vimrc.vim"
 
