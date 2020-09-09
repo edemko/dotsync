@@ -5,7 +5,7 @@
 	],
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": false,
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"color_scheme": "Packages/Lunarized/Lunarized (dark).sublime-color-scheme",
 	"draw_white_space": "all",
 	"fallback_encoding": "ASCII",
 	"file_exclude_patterns":
