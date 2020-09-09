@@ -18,6 +18,9 @@ nice_package_names='Markdown SingleTrailingNewLine surround'
 textlang="${packagesdir}/Plain text.sublime-settings"
 textlang_src="${packagesdir_src}/Plain text.sublime-settings"
 #------
+manualdir="${HOME}/.config/sublime-text-3/Packages"
+manual_packages="Lunarized Haskell"
+#------
 
 dotsync_depsgood() {
     if ! (dpkg -l sublime-text | grep -q ^ii); then
@@ -49,6 +52,10 @@ dotsync_newest() {
     done
     diff -q "${textlang}" "${textlang_src}" || ret=1
 
+    for pkg in $manual_packages; do
+        gitstat "${manualdir}/${pkg}" || return 1
+    done
+
     return ${ret}
 }
 
@@ -75,6 +82,13 @@ dotsync_setup() {
     done
     diff -q >/dev/null "${textlang_src}" "${textlang}" || \
         cp -v "${textlang_src}" "${textlang}"
+
+    for pkg in $manual_packages; do
+        [ -d "$manualdir/$pkg" ] || \
+            git clone "ssh://git@github.com/Zankoku-Okuno/sublime-${pkg}" "$manualdir/$pkg"
+        gitstat "$manualdir/$pkg" || \
+            (cd "$manualdir/$pkg" && git pull)
+    done
 }
 
 dotsync_teardown() {
