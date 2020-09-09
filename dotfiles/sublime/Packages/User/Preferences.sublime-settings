@@ -1,6 +1,11 @@
 {
 	"added_words":
 	[
+		"bootloader",
+		"bootloaders",
+		"initialism",
+		"initialisms",
+		"inserters",
 		"requester's"
 	],
 	"auto_complete_commit_on_tab": true,
