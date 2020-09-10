@@ -1,6 +1,6 @@
 #!/bin/sh
 
-src="${1}/ghci"
+src="${dotdir}/ghci"
 target="${HOME}/.ghci"
 
 dotsync_depsgood() { return 0; }

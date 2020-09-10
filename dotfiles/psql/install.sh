@@ -1,7 +1,7 @@
 #!/bin/sh
 
 psqlrc="${HOME}/.psqlrc"
-psqlrc_src="${1}/psqlrc"
+psqlrc_src="${dotdir}/psqlrc"
 
 histdir="${HOME}/.history/psql"
 

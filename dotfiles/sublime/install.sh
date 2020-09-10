@@ -1,7 +1,9 @@
 #!/bin/sh
 
-packagesdir="${HOME}/.config/sublime-text-3/Packages/User"
-packagesdir_src="${1}/Packages/User"
+sublimedir="${HOME}/.config/sublime-text-3"
+#------
+packagesdir="${sublimedir}/Packages/User"
+packagesdir_src="${dotdir}/Packages/User"
 #------
 preferences="${packagesdir}/Preferences.sublime-settings"
 keymap="${packagesdir}/Default (Linux).sublime-keymap"
@@ -18,8 +20,8 @@ nice_package_names='Markdown SingleTrailingNewLine surround'
 textlang="${packagesdir}/Plain text.sublime-settings"
 textlang_src="${packagesdir_src}/Plain text.sublime-settings"
 #------
-manualdir="${HOME}/.config/sublime-text-3/Packages"
-manual_packages="Lunarized Haskell"
+manualdir="${sublimedir}/Packages"
+manual_packages="Haskell Lunarized"
 #------
 
 dotsync_depsgood() {

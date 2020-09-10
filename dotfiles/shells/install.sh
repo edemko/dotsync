@@ -2,21 +2,21 @@
 
 # entry points for shell configuration
 profile="${HOME}/.profile"
-profile_src="${1}/profile.sh"
+profile_src="${dotdir}/profile.sh"
 
 bashprofile="${HOME}/.bash_profile"
-bashprofile_src="${1}/bash_profile.bash"
+bashprofile_src="${dotdir}/bash_profile.bash"
 bashrc="${HOME}/.bashrc"
-bashrc_src="${1}/bashrc.bash"
+bashrc_src="${dotdir}/bashrc.bash"
 bashlogout="${HOME}/.bash_logout"
-bashlogout_src="${1}/bash_logout.bash"
+bashlogout_src="${dotdir}/bash_logout.bash"
 
 zprofile="${HOME}/.zprofile"
-zprofile_src="${1}/profile.zsh"
+zprofile_src="${dotdir}/profile.zsh"
 zshrc="${HOME}/.zshrc"
-zshrc_src="${1}/zshrc.zsh"
+zshrc_src="${dotdir}/zshrc.zsh"
 zlogout="${HOME}/.zlogout"
-zlogout_src="${1}/logout.zsh"
+zlogout_src="${dotdir}/logout.zsh"
 # TODO zlogout
 
 # these are deleted to reduce complexity
@@ -26,10 +26,10 @@ zlogin="${HOME}/.zlogin"
 
 # directories for additional cofiguration to be plugged in
 profiledir="${HOME}/.profile.d"
-# profiledir_src="${1}/profile.d"
+# profiledir_src="${dotdir}/profile.d"
 
 shrcdir="${HOME}/.shrc.d"
-shrcdir_src="${1}/shrc.d"
+shrcdir_src="${dotdir}/shrc.d"
 
 
 dotsync_depsgood() { return 0 ; }

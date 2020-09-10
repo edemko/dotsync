@@ -1,22 +1,22 @@
 #!/bin/sh
 
 xinitrc="${HOME}/.xinitrc"
-xinitrc_src="${1}/xinitrc"
+xinitrc_src="${dotdir}/xinitrc"
 
 xinputrc="${HOME}/.xinputrc"
-xinputrc_src="${1}/xinputrc"
+xinputrc_src="${dotdir}/xinputrc"
 
 modmap="${HOME}/.Xmodmap"
 if setxkbmap -query | grep -qi 'model:\s*macbook'; then
-    modmap_src="${1}/Xmodmap-macbook"
+    modmap_src="${dotdir}/Xmodmap-macbook"
 else
-    modmap_src="${1}/Xmodmap"
+    modmap_src="${dotdir}/Xmodmap"
 fi
 
 compose="${HOME}/.XCompose"
-compose_src="${1}/XCompose"
+compose_src="${dotdir}/XCompose"
 composedir="${HOME}/.XCompose.d"
-composedir_src="${1}/XCompose.d"
+composedir_src="${dotdir}/XCompose.d"
 
 
 dotsync_depsgood() {

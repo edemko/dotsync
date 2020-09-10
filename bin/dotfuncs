@@ -67,6 +67,7 @@ dotup() {
     esac
     installscript="${dotdir}/install.sh"
     (
+        export dotdir
         echo >&2 "Syncing ${1}…"
         . "${installscript}"
         echo >&2 "Checking status…"

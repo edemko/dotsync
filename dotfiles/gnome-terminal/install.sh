@@ -1,6 +1,6 @@
 #!/bin/sh
 
-preferences_src="${1}/preferences.dconf"
+preferences_src="${dotdir}/preferences.dconf"
 
 
 dotsync_depsgood() {

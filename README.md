@@ -23,6 +23,7 @@ Thankfully, there's only \~50 sloc in there, so go read the implementation as "d
 
 You may place a number of text files under `boxen/`.
 The framework finds `boxen/$(hostname)`, so the file used for your machine is the one with the same name as the host.
+You can also override a host config for a particular user with a file at `boxen/${USER}@$(hostname)`.
 These are configs, and come in two flavors---host configs and base configs---which are distinguished by how dotsync finds them, but are otherwise identical.
 By convention, included configs should be named in all-caps.
 
@@ -50,3 +51,5 @@ This file should define four functions:
 
 There's a script `lint.sh` that checks that the scripts in `dotfiles/` are written in particularly safe ways.
 (Atm, this just means parameters substitution is always in brackets, and echos are always to stderr.)
+
+You can use `$dotdir` to obtain an absolute path to the directory of the module.

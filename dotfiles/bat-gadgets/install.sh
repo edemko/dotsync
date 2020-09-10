@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bindir="${HOME}/bin"
-bindir_src="${1}/bin"
+bindir_src="${dotdir}/bin"
 
 dotsync_depsgood() {
     case ":${PATH}:" in
