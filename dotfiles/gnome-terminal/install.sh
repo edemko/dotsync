@@ -8,8 +8,8 @@ dotsync_depsgood() {
         echo >&2 "$(withaf f00 '[ERROR]') gnome-terminal is not installed"
         return 1
     fi
-    if ! which runghc >/dev/null; then
-        echo >&2 "$(withaf f00 '[ERROR]') dconf is not installed"
+    if ! which dconf >/dev/null; then
+        echo >&2 "$(withaf f00 '[ERROR]') dconf is not installed (apt package dconf-cli)"
         return 1
     fi
     return 0
