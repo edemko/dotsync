@@ -9,6 +9,7 @@ profile_src="${dotdir}/profile.d/python.sh"
 
 dotsync_depsgood() {
     [ -d "${profiledir}" ]
+    # FIXME make sure pip and venv are installed
 }
 
 dotsync_newest() {

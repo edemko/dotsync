@@ -3,10 +3,17 @@
 	[
 		"bootloader",
 		"bootloaders",
+		"configurability",
+		"homoiconic",
+		"homoiconicity",
 		"initialism",
 		"initialisms",
 		"inserters",
-		"requester's"
+		"metaprogramming",
+		"multitool",
+		"quasiquotation",
+		"quasiquote",
+		"requester's",
 	],
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": false,

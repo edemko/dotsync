@@ -33,7 +33,7 @@ dotsync_depsgood() {
         echo >&2 "$(withaf f80 '[WARNING]') Source Code Pro not installed."
     fi
     if ! (which shellcheck >/dev/null); then
-        echo >&2 "$(with af f80 '[WARNING]') shellcheck not installed."
+        echo >&2 "$(withaf f80 '[WARNING]') shellcheck not installed."
     fi
     return 0
 }
