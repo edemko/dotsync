@@ -13,7 +13,7 @@ dotsync_depsgood() {
 
 dotsync_newest() {
     local apps
-    apps="gitstat lolcat technicolor tree"
+    apps="gitstat lolcat technicolor tree pv"
     for app in ${apps}; do
         which "${app}" || return 1
     done

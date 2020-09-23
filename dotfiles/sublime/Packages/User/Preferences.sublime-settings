@@ -13,7 +13,8 @@
 		"multitool",
 		"quasiquotation",
 		"quasiquote",
-		"requester's"
+		"requester's",
+		"composability"
 	],
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": false,
