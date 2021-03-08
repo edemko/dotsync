@@ -9,4 +9,5 @@ sqlite
 psql
 
 gnome-terminal
+terminator
 xfce
