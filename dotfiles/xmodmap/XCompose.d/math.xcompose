@@ -2,10 +2,30 @@
 # Mathematical Symbols #
 ###                  ###
 
+# [Here](https://www.compart.com/en/unicode/block/U+2200)'s a good place to search for symbols
+
 ### Everyday Math ###
 
-# <%> <o> already used for ‰ (per-mille)
+<Multi_key> <percent> <o>: "‰"   U2030 # PER MILLE SIGN
 <Multi_key> <percent> <O>: "‱" U2031 # PER MYRIAD SIGN
+
+<Multi_key> <m> <u>               : "µ"   mu # MICRO SIGN
+
+<Multi_key> <plus> <minus>: "±" # PLUS-MINUS SIGN
+<Multi_key> <minus> <plus>: "∓" # MINUS-OR-PLUS SIGN
+
+<Multi_key> <o> <o>: "°"   degree # DEGREE SIGN
+<Multi_key> <asterisk> <0>: "°"   degree # DEGREE SIGN
+<Multi_key> <0> <asterisk>: "°"   degree # DEGREE SIGN
+
+<Multi_key> <v> <slash>: "√" U221a # SQUARE ROOT
+<Multi_key> <slash> <v>: "√" U221a # SQUARE ROOT
+<Multi_key> <slash> <3> <v>: "∛" U221B # CUBE ROOT
+<Multi_key> <slash> <4> <v>: "∜" U221C # FOURTH ROOT
+
+<Multi_key> <8> <8>: "∞" U221E # INFINITY
+
+<Multi_key> <8> <c>: "∝" U221D # PROPORTIONAL TO
 
 
 ### Duodecimal ###
@@ -14,12 +34,51 @@
 <Multi_key> <e> <l>: "↋"
 
 
+### Relations ###
+
+<Multi_key> <slash> <equal>   : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <equal> <slash>   : "≠"   U2260 # NOT EQUAL TO
+
+<Multi_key> <equal> <equal> <equal>: "≡" U2261 # IDENTICAL TO
+# "≢" U2262 # NOT IDENTICAL TO
+
+<Multi_key> <asciicircum> <equal>: "≈" U2248 # ALMOST EQUAL TO
+<Multi_key> <asciicircum> <slash> <equal>: "≉" U2249 # NOT ALMOST EQUAL TO
+
+# "≏" U224F # DIFFERENCE BETWEEN
+<Multi_key> <question> <equal>: "≟" U225F # QUESTIONED EQUAL TO
+# "≝" U225D # EQUAL TO BY DEFINITION
+
+<Multi_key> <less> <equal>  : "≤" U2264 # LESS-THAN OR EQUAL TO
+<Multi_key> <greater> <equal>   : "≥" U2265 # GREATER-THAN OR EQUAL TO
+<Multi_key> <slash> <less> <period>: "≮"   U226E # NOT LESS-THAN
+<Multi_key> <slash> <greater> <period>: "≯"   U226F # NOT GREATER-THAN
+<Multi_key> <slash> <less> <equal>   : "≰"   U2270 # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <greater> <equal>  : "≱"   U2271 # NEITHER GREATER-THAN NOR EQUAL TO
+
+# "≪" U226A # MUCH LESS-THAN
+# "≫" U226B # MUCH GREATER-THAN
+
+
+# "≬" U226C Between
+# "≍" U224D # EQUIVALENT TO
+# "≭" U226D # Not Equivalent To
+
+
 ### Logic ###
 
 <Multi_key> <a> <l> <l>: "∀"
 <Multi_key> <e> <x> <i>: "∃"
+<Multi_key> <slash> <e> <x> <i>: "∄"   U2204 # THERE DOES NOT EXIST
+
+<Multi_key> <comma> <minus>: "¬"   notsign # NOT SIGN
+<Multi_key> <minus> <comma>: "¬"   notsign # NOT SIGN
+
 <Multi_key> <ampersand> <ampersand>: "∧"
 <Multi_key> <bar> <bar>: "∨"
+<Multi_key> <slash> <ampersand> <ampersand>: "⊼" U22BC # NAND
+<Multi_key> <slash> <bar> <bar>: "⊽" U22BD # NOR
+<Multi_key> <exclam> <bar> <bar>: "⊻" U22BB # XOR
 
 <Multi_key> <period> <3>: "∴"
 
@@ -29,28 +88,199 @@
 
 ### Set Theory ###
 
-<Multi_key> <backslash> <e> <l> <e> <m>: "∈"
-<Multi_key> <backslash> <n> <e> <l> <e> <m>: "∉"
-<Multi_key> <backslash> <m> <e> <m> <b>: "∋"
-<Multi_key> <backslash> <n> <m> <e> <m> <b>: "∌"
+<Multi_key> <braceleft> <braceright>  : "∅"   U2205 # EMPTY SET
+
+<Multi_key> <backslash> <i> <n>: "∈"
+<Multi_key> <backslash> <slash> <i> <n>: "∉"
+<Multi_key> <backslash> <n> <i>: "∋"
+<Multi_key> <backslash> <slash> <n> <i>: "∌"
 
 <Multi_key> <backslash> <c> <a> <p>: "∩"
 <Multi_key> <backslash> <c> <u> <p>: "∪"
 
-<Multi_key> <backslash> <less> <s>: "⊂"
-<Multi_key> <backslash> <greater> <s>: "⊃"
-<Multi_key> <backslash> <slash> <less> <s>: "⊄"
-<Multi_key> <backslash> <slash> <greater> <s>: "⊅"
-<Multi_key> <backslash> <less> <equal> <s>: "⊆"
-<Multi_key> <backslash> <greater> <equal> <s>: "⊇"
-<Multi_key> <backslash> <slash> <less> <equal> <s>: "⊈"
-<Multi_key> <backslash> <slash> <greater> <equal> <s>: "⊉"
-<Multi_key> <backslash> <less> <slash> <equal> <s>: "⊊"
-<Multi_key> <backslash> <greater> <slash> <equal> <s>: "⊋"
+<Multi_key> <backslash> <less> <s>: "⊂" # SUBSET OF
+<Multi_key> <backslash> <greater> <s>: "⊃" # SUPERSET OF
+<Multi_key> <backslash> <less> <equal> <s>: "⊆" # SUBSET OF OR EQUAL TO
+<Multi_key> <backslash> <greater> <equal> <s>: "⊇" # SUPERSET OF OR EQUAL TO
+
+<Multi_key> <backslash> <slash> <less> <s>: "⊄" # NOT SUBSET OF
+<Multi_key> <backslash> <slash> <greater> <s>: "⊅" # SUPERSET OF
+<Multi_key> <backslash> <slash> <less> <equal> <s>: "⊈" # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <backslash> <slash> <greater> <equal> <s>: "⊉" # NEITHER A SUPERSET OF NOR EQUAL TO
+
+<Multi_key> <backslash> <less> <slash> <equal> <s>: "⊊" # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <backslash> <greater> <slash> <equal> <s>: "⊋" # SUPERSET OF WITH NOT EQUAL TO
 
 <Multi_key> <backslash> <c> <o> <p> <i>: "∐"
 
+# Square Variants
+
+<Multi_key> <backslash> <q> <c> <a> <p>: "⊓" U2293 # SQUARE CAP
+<Multi_key> <backslash> <q> <c> <u> <p>: "⊔" U2294 # SQUARE CUP
+
+<Multi_key> <backslash> <less> <q>: "⊏" U228F # SQUARE IMAGE OF
+<Multi_key> <backslash> <greater> <q>: "⊐" U2290 # SQUARE ORIGINAL OF
+<Multi_key> <backslash> <less> <equal> <q>: "⊑" U2291 # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <backslash> <greater> <equal> <q>: "⊒" U2292 # SQUARE ORIGINAL OF OR EQUAL TO
+
+<Multi_key> <backslash> <slash> <less> <equal> <q>: "⋢" U22E2 # NOT SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <backslash> <slash> <greater> <equal> <q>: "⋣" U22E3 # NOT SQUARE ORIGINAL OF OR EQUAL TO
+
+<Multi_key> <backslash> <less> <slash> <equal> <q>: "⋤" U22E4 # SQUARE IMAGE OF OR NOT EQUAL TO
+<Multi_key> <backslash> <greater> <slash> <equal> <q>: "⋥" U22E5 # SQUARE ORIGINAL OF OR NOT EQUAL TO
+
+### Geometry ###
+
+<Multi_key> <d> <i>: "⌀"   U2300 # DIAMETER SIGN
+
+# "∟" U221F # RIGHT ANGLE
+# "∠" U2220 # ANGLE
+# "∡" U2221 # MEASURED ANGLE
+# "∢" U2222 # SPHERICAL ANGLE
+
 ### Calculus ###
 
+# "∂" U2202 # PARTIAL DIFFERENTIAL
 <Multi_key> <backslash> <n> <a> <b> <l> <a>: "∇"
 
+"∫" U222B # INTEGRAL
+"∬" U222C # DOUBLE INTEGRAL
+"∭" U222D # TRIPLE INTEGRAL
+"∮" U222E # CONTOUR INTEGRAL
+"∯" U222F # SURFACE INTEGRAL
+"∰" U2230 # VOLUME INTEGRAL
+"∱" U2231 # CLOCKWISE INTEGRAL
+"∲" U2232 # CLOCKWISE CONTOUR INTEGRAL
+"∳" U2233 # ANTICLOCKWISE CONTOUR INTEGRAL
+
+### Preorders ###
+
+# "≺" U227A # PRECEDES
+# "≻" U227B # SUCCEEDS
+# "≼" U227C # PRECEDES OR EQUAL TO
+# "≽" U227D # SUCCEEDS OR EQUAL TO
+# "⊀" U2280 # DOES NOT PRECEDE
+# "⊁" U2281 # DOES NOT SUCCEED
+# "⋠" U22E0 # DOES NOT PRECEDE OR EQUAL
+# "⋡" U22E1 # DOES NOT SUCCEED OR EQUAL
+
+# "≶" U2276 # LESS-THAN OR GREATER-THAN
+# "≷" U2277 # GREATER-THAN OR LESS-THAN
+# "≸" U2278 # NEITHER LESS-THAN NOR GREATER-THAN
+# "≹" U2279 # NEITHER GREATER-THAN NOR LESS-THAN
+
+### Operators ###
+
+
+# "⋆" U22C6 # STAR OPERATOR
+
+# "⊕" U2295 # CIRCLED PLUS
+# "⊖" U2296 # CIRCLED MINUS
+# "⊗" U2297 # CIRCLED TIMES
+# "⊘" U2298 # CIRCLED DIVISION SLASH
+# "⊙" U2299 # CIRCLED DOT OPERATOR
+# "⊚" U229A # CIRCLED RING OPERATOR
+# "⊛" U229B # CIRCLED ASTERISK OPERATOR
+# "⊜" U229C # CIRCLED EQUALS
+# "⊝" U229D # CIRCLED DASH
+
+# "⊞" U229E # SQUARED PLUS
+# "⊟" U229F # SQUARED MINUS
+# "⊠" U22A0 # SQUARED TIMES
+# "⊡" U22A1 # SQUARED DOT OPERATOR
+
+### Vulgar Fractions ###
+
+<Multi_key> <1> <2>: "½"   onehalf # VULGAR FRACTION ONE HALF
+
+<Multi_key> <0> <3>: "↉" U2189 because baseball # VULGAR FRACTION ZERO THIRDS
+<Multi_key> <1> <3>: "⅓" U2153 # VULGAR FRACTION ONE THIRD
+<Multi_key> <2> <3>: "⅔" U2154 # VULGAR FRACTION TWO THIRDS
+
+<Multi_key> <1> <4>: "¼"   onequarter # VULGAR FRACTION ONE QUARTER
+<Multi_key> <3> <4>: "¾"   threequarters # VULGAR FRACTION THREE QUARTERS
+
+<Multi_key> <1> <5>: "⅕" U2155 # VULGAR FRACTION ONE FIFTH
+<Multi_key> <2> <5>: "⅖" U2156 # VULGAR FRACTION TWO FIFTHS
+<Multi_key> <3> <5>: "⅗" U2157 # VULGAR FRACTION THREE FIFTHS
+<Multi_key> <4> <5>: "⅘" U2158 # VULGAR FRACTION FOUR FIFTHS
+
+<Multi_key> <1> <6>: "⅙" U2159 # VULGAR FRACTION ONE SIXTH
+<Multi_key> <5> <6>: "⅚" U215A # VULGAR FRACTION FIVE SIXTHS
+
+<Multi_key> <1> <7>: "⅐" U2150 # VULGAR FRACTION ONE SEVENTH
+
+<Multi_key> <1> <9>: "⅑" U2151 # VULGAR FRACTION ONE NINTH
+
+<Multi_key> <1> <8>: "⅛" U215B # VULGAR FRACTION ONE EIGHTH
+<Multi_key> <3> <8>: "⅜" U215C # VULGAR FRACTION THREE EIGHTHS
+<Multi_key> <5> <8>: "⅝" U215D # VULGAR FRACTION FIVE EIGHTHS
+<Multi_key> <7> <8>: "⅞" U215E # VULGAR FRACTION SEVEN EIGHTHS
+
+<Multi_key> <1> <1> <0>: "⅒" U2152 # VULGAR FRACTION ONE TENTH
+
+### Superscripts and Subscripts ###
+
+<Multi_key> <asciicircum> <0>: "⁰"   U2070 # SUPERSCRIPT ZERO
+<Multi_key> <asciicircum> <1>: "¹"   onesuperior # SUPERSCRIPT ONE
+<Multi_key> <asciicircum> <2>: "²"   twosuperior # SUPERSCRIPT TWO
+<Multi_key> <asciicircum> <3>: "³"   threesuperior # SUPERSCRIPT THREE
+<Multi_key> <asciicircum> <4>: "⁴"   U2074 # SUPERSCRIPT FOUR
+<Multi_key> <asciicircum> <5>: "⁵"   U2075 # SUPERSCRIPT FIVE
+<Multi_key> <asciicircum> <6>: "⁶"   U2076 # SUPERSCRIPT SIX
+<Multi_key> <asciicircum> <7>: "⁷"   U2077 # SUPERSCRIPT SEVEN
+<Multi_key> <asciicircum> <8>: "⁸"   U2078 # SUPERSCRIPT EIGHT
+<Multi_key> <asciicircum> <9>: "⁹"   U2079 # SUPERSCRIPT NINE
+
+<Multi_key> <asciicircum> <plus>: "⁺"   U207A # SUPERSCRIPT PLUS SIGN
+<Multi_key> <asciicircum> <minus>: "⁻"   U207B # SUPERSCRIPT MINUS
+<Multi_key> <asciicircum> <equal>: "⁼"   U207C # SUPERSCRIPT EQUALS SIGN
+<Multi_key> <asciicircum> <parenleft>: "⁽"   U207D # SUPERSCRIPT LEFT PARENTHESIS
+<Multi_key> <asciicircum> <parenright>: "⁾"   U207E # SUPERSCRIPT RIGHT PARENTHESIS
+
+<Multi_key> <underscore> <0>: "₀"   U2080 # SUBSCRIPT ZERO
+<Multi_key> <underscore> <1>: "₁"   U2081 # SUBSCRIPT ONE
+<Multi_key> <underscore> <2>: "₂"   U2082 # SUBSCRIPT TWO
+<Multi_key> <underscore> <3>: "₃"   U2083 # SUBSCRIPT THREE
+<Multi_key> <underscore> <4>: "₄"   U2084 # SUBSCRIPT FOUR
+<Multi_key> <underscore> <5>: "₅"   U2085 # SUBSCRIPT FIVE
+<Multi_key> <underscore> <6>: "₆"   U2086 # SUBSCRIPT SIX
+<Multi_key> <underscore> <7>: "₇"   U2087 # SUBSCRIPT SEVEN
+<Multi_key> <underscore> <8>: "₈"   U2088 # SUBSCRIPT EIGHT
+<Multi_key> <underscore> <9>: "₉"   U2089 # SUBSCRIPT NINE
+
+<Multi_key> <underscore> <plus>: "₊"   U208A # SUBSCRIPT PLUS SIGN
+<Multi_key> <underscore> <minus>: "₋"   U208B # SUBSCRIPT MINUS
+<Multi_key> <underscore> <equal>: "₌"   U208C # SUBSCRIPT EQUALS SIGN
+<Multi_key> <underscore> <parenleft>: "₍"   U208D # SUBSCRIPT LEFT PARENTHESIS
+<Multi_key> <underscore> <parenright>: "₎"   U208E # SUBSCRIPT RIGHT PARENTHESIS
+
+# Numpad Variants
+
+<Multi_key> <asciicircum> <KP_0>: "⁰"   U2070 # SUPERSCRIPT ZERO
+<Multi_key> <asciicircum> <KP_1>: "¹"   onesuperior # SUPERSCRIPT ONE
+<Multi_key> <asciicircum> <KP_2>: "²"   twosuperior # SUPERSCRIPT TWO
+<Multi_key> <asciicircum> <KP_3>: "³"   threesuperior # SUPERSCRIPT THREE
+<Multi_key> <asciicircum> <KP_4>: "⁴"   U2074 # SUPERSCRIPT FOUR
+<Multi_key> <asciicircum> <KP_5>: "⁵"   U2075 # SUPERSCRIPT FIVE
+<Multi_key> <asciicircum> <KP_6>: "⁶"   U2076 # SUPERSCRIPT SIX
+<Multi_key> <asciicircum> <KP_7>: "⁷"   U2077 # SUPERSCRIPT SEVEN
+<Multi_key> <asciicircum> <KP_8>: "⁸"   U2078 # SUPERSCRIPT EIGHT
+<Multi_key> <asciicircum> <KP_9>: "⁹"   U2079 # SUPERSCRIPT NINE
+
+<Multi_key> <asciicircum> <KP_Add>: "⁺"   U207A # SUPERSCRIPT PLUS SIGN
+<Multi_key> <asciicircum> <KP_Equal>: "⁼"   U207C # SUPERSCRIPT EQUALS SIGN
+
+<Multi_key> <underscore> <KP_0>: "₀"   U2080 # SUBSCRIPT ZERO
+<Multi_key> <underscore> <KP_1>: "₁"   U2081 # SUBSCRIPT ONE
+<Multi_key> <underscore> <KP_2>: "₂"   U2082 # SUBSCRIPT TWO
+<Multi_key> <underscore> <KP_3>: "₃"   U2083 # SUBSCRIPT THREE
+<Multi_key> <underscore> <KP_4>: "₄"   U2084 # SUBSCRIPT FOUR
+<Multi_key> <underscore> <KP_5>: "₅"   U2085 # SUBSCRIPT FIVE
+<Multi_key> <underscore> <KP_6>: "₆"   U2086 # SUBSCRIPT SIX
+<Multi_key> <underscore> <KP_7>: "₇"   U2087 # SUBSCRIPT SEVEN
+<Multi_key> <underscore> <KP_8>: "₈"   U2088 # SUBSCRIPT EIGHT
+<Multi_key> <underscore> <KP_9>: "₉"   U2089 # SUBSCRIPT NINE
+
+<Multi_key> <underscore> <KP_Add>: "₊"   U208A # SUBSCRIPT PLUS SIGN
+<Multi_key> <underscore> <KP_Equal>: "₌"   U208C # SUBSCRIPT EQUALS SIGN

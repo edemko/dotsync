@@ -2,9 +2,119 @@
 ### Other Symbols ###
 #####################
 
+<Multi_key> <N> <o>     : "№" numerosign # NUMERO SIGN
+<Multi_key> <N> <O>     : "№" numerosign # NUMERO SIGN
+
+### Keyboard Keys ###
+
 <Multi_key> <backslash> <c> <o> <m> <p> <space>: "⎄"
 
-<Multi_key> <backslash> <y> <e> <s> <space>: "✓"
-<Multi_key> <backslash> <n> <o> <space>: "✗"
+### Obsolete Computer Characters ###
 
-<Multi_key> <u> <g>: "ğ"
+<Multi_key> <exclam> <bar>  : "¦"   brokenbar # BROKEN BAR
+
+### Capitalism ###
+
+<Multi_key> <o> <c>               : "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <o> <C>               : "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <O> <c>               : "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <O> <C>               : "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <C> <o>       : "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <C> <O>       : "©"   copyright # COPYRIGHT SIGN
+
+<Multi_key> <o> <r>               : "®"   registered # REGISTERED SIGN
+<Multi_key> <o> <R>               : "®"   registered # REGISTERED SIGN
+<Multi_key> <O> <r>               : "®"   registered # REGISTERED SIGN
+<Multi_key> <O> <R>               : "®"   registered # REGISTERED SIGN
+<Multi_key> <R> <o>       : "®"   registered # REGISTERED SIGN
+<Multi_key> <R> <O>       : "®"   registered # REGISTERED SIGN
+
+<Multi_key> <S> <M>     : "℠"   U2120 # SERVICE MARK
+<Multi_key> <s> <M>     : "℠"   U2120 # SERVICE MARK
+<Multi_key> <S> <m>     : "℠"   U2120 # SERVICE MARK
+<Multi_key> <s> <m>     : "℠"   U2120 # SERVICE MARK
+
+<Multi_key> <T> <M>     : "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <t> <M>     : "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <T> <m>     : "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <t> <m>     : "™"   U2122 # TRADE MARK SIGN
+
+<Multi_key> <o> <x>               : "¤"   currency # CURRENCY SIGN
+<Multi_key> <x> <o>               : "¤"   currency # CURRENCY SIGN
+<Multi_key> <o> <X>       : "¤"   currency # CURRENCY SIGN
+<Multi_key> <X> <o>       : "¤"   currency # CURRENCY SIGN
+<Multi_key> <O> <X>       : "¤"   currency # CURRENCY SIGN
+<Multi_key> <X> <O>       : "¤"   currency # CURRENCY SIGN
+<Multi_key> <O> <x>       : "¤"   currency # CURRENCY SIGN
+<Multi_key> <x> <O>       : "¤"   currency # CURRENCY SIGN
+
+# Currencies
+# "₳" U20b3 AUSTRAL SIGN
+# "₵" U20b5 CEDI SIGN
+<Multi_key> <C> <bar>             : "¢"   cent # CENT SIGN
+<Multi_key> <bar> <C>     : "¢"   cent # CENT SIGN
+<Multi_key> <c> <bar>             : "¢"   cent # CENT SIGN
+<Multi_key> <bar> <c>     : "¢"   cent # CENT SIGN
+<Multi_key> <c> <slash>           : "¢"   cent # CENT SIGN
+<Multi_key> <slash> <c>           : "¢"   cent # CENT SIGN
+<Multi_key> <C> <slash>           : "₡"   U20a1 # COLON SIGN
+<Multi_key> <slash> <C>           : "₡"   U20a1 # COLON SIGN
+<Multi_key> <C> <r>               : "₢"   U20a2 # CRUZEIRO SIGN
+<Multi_key> <d> <equal>           : "₫"   U20ab # DONG SIGN
+<Multi_key> <equal> <d>           : "₫"   U20ab # DONG SIGN
+# "₯" U20af DRACHMA SIGN
+<Multi_key> <C> <equal>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <C>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <c> <equal>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <c>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <E> <equal>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <E>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <e> <equal>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <e>           : "€"   EuroSign # EURO SIGN
+<Multi_key> <Cyrillic_ES> <equal> : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <Cyrillic_ES> : "€"   EuroSign # EURO SIGN
+<Multi_key> <Cyrillic_IE> <equal> : "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <Cyrillic_IE> : "€"   EuroSign # EURO SIGN
+<Multi_key> <C> <E>               : "₠"   U20a0 # EURO-CURRENCY SIGN
+<Multi_key> <F> <r>               : "₣"   U20a3 # FRENCH FRANC SIGN
+# "₰" U20b0 GERMAN PENNY SIGN
+# "₲" U20b2 GUARANI SIGN
+# "₴" U20b4 HRYVNIA SIGN
+<Multi_key> <R> <equal>           : "₹" U20b9 # INDIAN RUPEE SIGN
+<Multi_key> <equal> <R>           : "₹" U20b9 # INDIAN RUPEE SIGN
+<Multi_key> <r> <equal>           : "₹" U20b9 # INDIAN RUPEE SIGN
+<Multi_key> <equal> <r>           : "₹" U20b9 # INDIAN RUPEE SIGN
+# "₭" U20ad KIP SIGN
+<Multi_key> <L> <equal>           : "₤"   U20a4 # LIRA SIGN
+<Multi_key> <equal> <L>           : "₤"   U20a4 # LIRA SIGN
+<Multi_key> <m> <slash>           : "₥"   U20a5 # MILL SIGN
+<Multi_key> <slash> <m>           : "₥"   U20a5 # MILL SIGN
+<Multi_key> <N> <equal>           : "₦"   U20a6 # NAIRA SIGN
+<Multi_key> <equal> <N>           : "₦"   U20a6 # NAIRA SIGN
+# "₪" U20aa NEW SHEQEL SIGN
+<Multi_key> <P> <t>               : "₧"   U20a7 # PESETA SIGN
+# "₱" U20b1 PESO SIGN
+<Multi_key> <L> <minus>           : "£"   sterling # POUND SIGN
+<Multi_key> <minus> <L>           : "£"   sterling # POUND SIGN
+<Multi_key> <l> <minus>     : "£"   sterling # POUND SIGN
+<Multi_key> <minus> <l>           : "£"   sterling # POUND SIGN
+<Multi_key> <P> <equal>           : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <p> <equal>           : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <equal> <P>           : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <equal> <p>           : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <Cyrillic_ZE> <equal> : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <Cyrillic_ze> <equal> : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <equal> <Cyrillic_ZE> : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <equal> <Cyrillic_ze> : "₽"   U20bd # ROUBLE SIGN
+<Multi_key> <R> <s>               : "₨"   U20a8 # RUPEE SIGN
+# "₮" U20ae TUGRIK SIGN
+<Multi_key> <W> <equal>           : "₩"   U20a9 # WON SIGN
+<Multi_key> <equal> <W>           : "₩"   U20a9 # WON SIGN
+<Multi_key> <Y> <equal>           : "¥"   yen # YEN SIGN
+<Multi_key> <equal> <Y>           : "¥"   yen # YEN SIGN
+<Multi_key> <y> <equal>     : "¥"   yen # YEN SIGN
+<Multi_key> <equal> <y>           : "¥"   yen # YEN SIGN
+<Multi_key> <Y> <minus>     : "¥"   yen # YEN SIGN
+<Multi_key> <minus> <Y>     : "¥"   yen # YEN SIGN
+<Multi_key> <y> <minus>     : "¥"   yen # YEN SIGN
+<Multi_key> <minus> <y>     : "¥"   yen # YEN SIGN

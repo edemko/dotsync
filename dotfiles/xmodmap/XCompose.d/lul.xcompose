@@ -2,6 +2,29 @@
 # Lul #
 ### ###
 
+
+### Cards ###
+
+<Multi_key> <less> <3>                  : "♥"   U2665 # BLACK HEART SUIT
+
+### Emoji ###
+
+<Multi_key> <C> <C> <C> <P>             : "☭"   U262D # HAMMER AND SICKLE
+
+<Multi_key> <colon> <parenright>        : "☺"   U263A # WHITE SMILING FACE
+<Multi_key> <colon> <parenleft>         : "☹"   U2639 # WHITE FROWNING FACE
+
+<Multi_key> <p> <o> <o>                 : "💩"  U1F4A9 # PILE OF POO
+
+# Hand Gestures
+
+<Multi_key> <backslash> <o> <slash>   : "🙌"   # PERSON RAISING BOTH HANDS IN CELEBRATION
+<Multi_key> <F> <U>                     : "🖕"  U1F595 # REVERSED HAND WITH MIDDLE FINGER EXTENDED
+<Multi_key> <L> <L> <A> <P>             : "🖖"  U1F596 # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS
+
+
+### Unicode Emoticons ###
+
 # Look at this link for some more faces:
 # https://gist.github.com/endolith/157796
 

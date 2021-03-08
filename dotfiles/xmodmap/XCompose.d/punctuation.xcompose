@@ -4,17 +4,85 @@
 
 ### Spaces ###
 
+<Multi_key> <space> <space>       : " "   nobreakspace # NO-BREAK SPACE
+<Multi_key> <space> <period>      : " "   U2008 # PUNCTUATION SPACE
+<Multi_key> <minus> <minus> <space> : "­"   U00ad # SOFT HYPHEN
+
 # tabular space = the width of a digit if font is fixed‐digit
 <Multi_key> <space> <numbersign>: " " U2007 # FIGURE SPACE
+
+### Dots ###
+
+<Multi_key> <period> <period>     : "…"   ellipsis # HORIZONTAL ELLIPSIS
+<Multi_key> <period> <minus>      : "·"   periodcentered # MIDDLE DOT
+<Multi_key> <period> <asciicircum>  : "·"   periodcentered # MIDDLE DOT
+<Multi_key> <asciicircum> <period>  : "·"   periodcentered # MIDDLE DOT
+
+# Dashes
+<Multi_key> <minus> <minus> <period>  : "–"   U2013 # EN DASH
+<Multi_key> <minus> <minus> <minus>   : "—"   U2014 # EM DASH
+
+### Ordinals ###
+
+<Multi_key> <asciicircum> <underscore> <a>: "ª"   ordfeminine # FEMININE ORDINAL INDICATOR
+<Multi_key> <asciicircum> <underscore> <o>: "º"   masculine # MASCULINE ORDINAL INDICATOR
+
+### Quote Marks ###
+
+<Multi_key> <period> <greater>    : "›"   U203a # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <period> <less>       : "‹"   U2039 # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <less> <less>         : "«"   guillemotleft # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <greater> <greater>   : "»"   guillemotright # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <less> <apostrophe>   : "‘"   U2018 # LEFT SINGLE QUOTATION MARK
+<Multi_key> <apostrophe> <less>   : "‘"   U2018 # LEFT SINGLE QUOTATION MARK
+<Multi_key> <greater> <apostrophe>  : "’"   U2019 # RIGHT SINGLE QUOTATION MARK
+<Multi_key> <apostrophe> <greater>  : "’"   U2019 # RIGHT SINGLE QUOTATION MARK
+<Multi_key> <comma> <apostrophe>  : "‚"   U201a # SINGLE LOW-9 QUOTATION MARK
+<Multi_key> <apostrophe> <comma>  : "‚"   U201a # SINGLE LOW-9 QUOTATION MARK
+<Multi_key> <less> <quotedbl>     : "“"   U201c # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <less>     : "“"   U201c # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <greater> <quotedbl>  : "”"   U201d # RIGHT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <greater>  : "”"   U201d # RIGHT DOUBLE QUOTATION MARK
+<Multi_key> <comma> <quotedbl>    : "„"   U201e # DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <quotedbl> <comma>    : "„"   U201e # DOUBLE LOW-9 QUOTATION MARK
+
+### Emote Marks ###
+
+<Multi_key> <exclam> <exclam>     : "¡"   exclamdown # INVERTED EXCLAMATION MARK
+<Multi_key> <question> <question>   : "¿"   questiondown # INVERTED QUESTION MARK
+
+<Multi_key> <exclam> <question>         : "‽"   U203D # INTERROBANG
+<Multi_key> <question> <exclam>         : "⸘"   U2E18 # INVERTED INTERROBANG
+
+<Multi_key> <exclam> <comma>: "!̦"
+<Multi_key> <question> <comma>: "?̦"
+<Multi_key> <asciitilde> <?>: "⸮" # irony/sarcasm point
+<Multi_key> <slash> <s> <a> <r> <c> <a> <s> <m>: "⸮" # irony/sarcasm point
+
+### List Bullets ###
+
+<Multi_key> <period> <equal>      : "•"   enfilledcircbullet # BULLET
+<Multi_key> <backslash> <y> <e> <s> <space>: "✓"
+<Multi_key> <backslash> <n> <o> <space>: "✗"
+
+
+### Misc Breaks ###
+
+
+
+<Multi_key> <p> <exclam>          : "¶"   paragraph # PILCROW SIGN
+<Multi_key> <P> <exclam>          : "¶"   paragraph # PILCROW SIGN
+<Multi_key> <P> <P>               : "¶"   paragraph # PILCROW SIGN
+
+<Multi_key> <s> <o>               : "§"   section # SECTION SIGN
+<Multi_key> <o> <s>               : "§"   section # SECTION SIGN
+<Multi_key> <S> <O>       : "§"   section # SECTION SIGN
+<Multi_key> <O> <S>       : "§"   section # SECTION SIGN
+<Multi_key> <s> <exclam>    : "§"   section # SECTION SIGN
+<Multi_key> <S> <exclam>    : "§"   section # SECTION SIGN
 
 <Multi_key> <3> <asterisk>: "⁂" # ASTERISM
 <Multi_key> <asterisk> <3>: "⁂" # ASTERISM
 <Multi_key> <f> <greater>: "❧" # ROTATED FLORAL HEART BULLET (fleuron)
 
 
-### Emote Marks ###
-
-<Multi_key> <exclam> <comma>: "!̦"
-<Multi_key> <question> <comma>: "?̦"
-<Multi_key> <asciitilde> <?>: "⸮" # irony/sarcasm point
-<Multi_key> <slash> <s> <a> <r> <c> <a> <s> <m>: "⸮" # irony/sarcasm point
