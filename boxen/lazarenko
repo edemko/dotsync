@@ -2,6 +2,7 @@ bat-gadgets
 +FOUNDATION
 git
 sublime
+skel
 
 ghc
 python
