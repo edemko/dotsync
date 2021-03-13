@@ -3,7 +3,7 @@
 srcdir="${dotdir}/src"
 targetdir="${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml"
 backupdir="${targetdir}.bak"
-syncd_files='xfce4-desktop.xml xfce4-keyboard-shortcuts.xml xfce4-panel.xml xfwm4.xml xsettings.xml'
+syncd_files='xfce4-desktop.xml xfce4-keyboard-shortcuts.xml xfce4-panel.xml xfwm4.xml xsettings.xml xfce4-power-manager.xml'
 
 dotsync_depsgood() {
     return 0
