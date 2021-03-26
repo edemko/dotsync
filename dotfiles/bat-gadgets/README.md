@@ -1,10 +1,11 @@
 # Bat Gadgets
 
 There are a number of things I find useful to have on the command line.
+For my own tools, I've tried to reduce the dependencies to just plain sh/bash so that they'll be easily-installed without root access.
 
   * `tree` for looking at directory trees
-  * [`technicolor`](https://github.com/Zankoku-Okuno/technicolor) for colorizing
   * `lolcat` for fun
+  * [`technicolor`](https://github.com/Zankoku-Okuno/technicolor) for colorizing
   * `gitstat` (see below)
 
 
