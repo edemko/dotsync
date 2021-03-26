@@ -1,0 +1,58 @@
+cabal-version: 3.0
+name: @@@PROJECT_NAME@@@
+version: 0.0.1.0
+-- synopsis: 
+-- description:
+category: @@@CATEGORY@@@
+homepage: https://github.com/@@@AUTHOR@@@/@@@PROJECT_NAME@@@
+bug-reports: https://github.com/@@@AUTHOR@@@/@@@PROJECT_NAME@@@/issues
+author: @@@AUTHOR=$(git config user.name)@@@
+maintainer: @@@EMAIL=$(git config user.email)@@@
+copyright: @@@YEAR=$(date +'%Y')@@@ @@@AUTHOR@@@
+license: BSD-3-Clause
+license-file: LICENSE
+extra-source-files: CHANGELOG.md
+
+library
+  hs-source-dirs: src
+  exposed-modules:
+  -- other-modules:
+  build-depends:
+    , base >=4.11.1
+  default-language: Haskell2010
+  ghc-options: -Wall -O2
+
+executable hive-sf-bridge
+  hs-source-dirs: app
+  main-is: Main.hs
+  -- other-modules:
+  build-depends:
+    , base
+    , @@@PROJECT_NAME@@@
+  default-language: Haskell2010
+  ghc-options: -Wall -O2 -threaded
+
+test-suite test
+  hs-source-dirs: test
+  main-is: Main.hs
+  type: exitcode-stdio-1.0
+  build-depends:
+    , @@@PROJECT_NAME@@@
+    , base
+    -- , quickcheck-classes
+    -- , tasty
+    -- , tasty-hunit
+    -- , tasty-quickcheck
+  default-language: Haskell2010
+  ghc-options: -Wall -O2
+
+benchmark bench
+  hs-source-dirs: bench
+  main-is: Main.hs
+  type: exitcode-stdio-1.0
+  build-depends:
+    , @@@PROJECT_NAME@@@
+    , base
+    , gauge
+  default-language: Haskell2010
+  ghc-options: -Wall -O2

@@ -2,6 +2,7 @@ bat-gadgets
 +FOUNDATION
 git
 sublime
+skel
 
 ghc
 python
@@ -9,3 +10,5 @@ sqlite
 psql
 
 gnome-terminal
+terminator
+xfce

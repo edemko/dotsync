@@ -18,7 +18,7 @@
 		"ExpandRegion",
 		"LinkerScript",
 		"Lunarized Color Scheme",
-		"Move By Paragraph (Okuno remix)",
+		"Move By Paragraph",
 		"Package Control",
 		"PackageResourceViewer",
 		"SingleTrailingNewLine",
@@ -31,6 +31,5 @@
 	],
 	"repositories":
 	[
-		"https://raw.githubusercontent.com/Zankoku-Okuno/sublime-channel/master/repository.json"
 	]
 }

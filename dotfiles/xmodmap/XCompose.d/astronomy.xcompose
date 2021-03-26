@@ -1,0 +1,53 @@
+############################
+### Astronomical Symbols ###
+############################
+
+# Fusors
+
+<Multi_key> <asterisk> <s> <o> <l>: "☉"
+
+# Major Planets (and Moons)
+
+<Multi_key> <asterisk> <m> <e> <r> <c> <u> <r> <y>: "☿"
+<Multi_key> <asterisk> <v> <e> <n> <u> <s>: "♀"
+<Multi_key> <asterisk> <e> <a> <r> <t> <h>: "🜨"
+<Multi_key> <asterisk> <t> <e> <r> <r> <a>: "🜨"
+<Multi_key> <asterisk> <l> <u> <n> <a>: "☾"
+<Multi_key> <asterisk><m><a><r><s>: "♂"
+<Multi_key> <asterisk> <j> <u> <p> <i> <t> <e> <r>: "♃"
+<Multi_key> <asterisk> <s> <a> <t> <u> <r> <n>: "♄"
+<Multi_key> <asterisk> <u> <r> <a> <n> <u> <s>: "⛢"
+<Multi_key> <asterisk> <n> <e> <p> <t> <u> <n> <e>: "♆"
+
+# Dwarf Planets
+
+<Multi_key> <asterisk> <c> <e> <r> <e> <s>: "⚳"
+<Multi_key> <asterisk> <p> <l> <u> <t> <o>: "♇"
+
+# Other Astronomical Bodies
+
+<Multi_key> <asterisk> <s> <t> <a> <r>: "★"
+<Multi_key> <asterisk> <c> <o> <m> <e> <t>: "☄"
+
+# Zodiac
+
+<Multi_key> <asterisk> <A> <r> <i>: "♈︎"
+<Multi_key> <asterisk> <T> <a> <u>: "♉︎"
+<Multi_key> <asterisk> <G> <e> <m>: "♊︎"
+<Multi_key> <asterisk> <C> <n> <c>: "♋︎"
+<Multi_key> <asterisk> <L> <e> <o>: "♌︎"
+<Multi_key> <asterisk> <V> <i> <r>: "♍︎"
+<Multi_key> <asterisk> <L> <i> <b>: "♎︎"
+<Multi_key> <asterisk> <S> <c> <o>: "♏︎"
+<Multi_key> <asterisk> <S> <g> <r>: "♐︎"
+<Multi_key> <asterisk> <C> <a> <p>: "♑︎"
+<Multi_key> <asterisk> <A> <q> <r>: "♒︎"
+<Multi_key> <asterisk> <P> <s> <c>: "♓︎"
+
+# Orbital Points/Configurations
+
+<Multi_key> <asterisk> <a> <s> <c> <e> <n> <d>: "☊"
+<Multi_key> <asterisk> <d> <e> <s> <c> <e> <n> <d>: "☋"
+<Multi_key> <asterisk> <c> <o> <n> <j>: "☌"
+<Multi_key> <asterisk> <o> <p> <p> <o> <s>: "☍"
+<Multi_key> <asterisk> <q> <u> <a> <d>: "□"

@@ -1,26 +1,32 @@
 #!/bin/sh
 
-src="${dotdir}/src"
-target="${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml"
-bakup="${target}.bak"
+srcdir="${dotdir}/src"
+targetdir="${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml"
+backupdir="${targetdir}.bak"
+syncd_files='xfce4-desktop.xml xfce4-keyboard-shortcuts.xml xfce4-panel.xml xfwm4.xml xsettings.xml xfce4-power-manager.xml'
 
 dotsync_depsgood() {
+    return 0
 }
 
 dotsync_newest() {
-    [ -d "$target" -a -L "$target" ] || return 1
+    local ret=0
+    for file in $syncd_files; do
+        diff -q "$targetdir/$file" "$srcdir/$file" || ret=1
+    done
+    return "$ret"
 }
 
 dotsync_setup() {
-    if [ -d "$target" -a ! -L "$target" ]; then
-        echo >&2 "$(withaf d0f '[NOTICE]') creating back-up of '${target}' at '${backup}'"
-        mv "${target}" "${backup}"
-    fi
-    ln -svf "${src}" "${target}"
+    for file in $syncd_files; do
+        if ! diff -q >/dev/null "$target/$file" "$srcdir/$file"; then
+            mkdir -p "$backupdir"
+            cp -v "$targetdir/$file" "$backupdir/$file"
+            cp -v "$srcdir/$file" "$targetdir/$file"
+        fi
+    done
 }
 
 dotsync_teardown() {
-    [ -L "$target" ] && rm "$target"
-    [ -d "$backup" ] && mv "$backup" "$target"
     return 0
 }
