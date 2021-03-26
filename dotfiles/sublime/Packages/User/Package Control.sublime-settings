@@ -9,12 +9,12 @@
 	],
 	"install_prereleases":
 	[
-		"Move By Paragraph (Okuno remix)"
 	],
 	"installed_packages":
 	[
 		"Case Conversion",
 		"ColorPicker",
+		"Dockerfile Syntax Highlighting",
 		"ExpandRegion",
 		"LinkerScript",
 		"Lunarized Color Scheme",
