@@ -9,12 +9,12 @@
 	],
 	"install_prereleases":
 	[
-		"Move By Paragraph (Okuno remix)"
 	],
 	"installed_packages":
 	[
 		"Case Conversion",
 		"ColorPicker",
+		"Dockerfile Syntax Highlighting",
 		"ExpandRegion",
 		"LinkerScript",
 		"Lunarized Color Scheme",
@@ -22,7 +22,6 @@
 		"Package Control",
 		"PackageResourceViewer",
 		"SingleTrailingNewLine",
-		"Solarized Color Scheme",
 		"SublimeLinter",
 		"SublimeLinter-shellcheck",
 		"Surround",
