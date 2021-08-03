@@ -32,6 +32,9 @@ dotsync_depsgood() {
     if ! (fc-list | grep -q 'Source Code Pro'); then
         echo >&2 "$(withaf f80 '[WARNING]') Source Code Pro not installed."
     fi
+    if ! (fc-list | grep -q 'Eexpr Reference Mono'); then
+        echo >&2 "$(withaf f80 '[WARNING]') Eexpr Reference Mono not installed."
+    fi
     if ! (which shellcheck >/dev/null); then
         echo >&2 "$(withaf f80 '[WARNING]') shellcheck not installed."
     fi

@@ -57,7 +57,7 @@
 		"dist-*",
 		".stack-work"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Eexpr Reference Mono",
 	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
