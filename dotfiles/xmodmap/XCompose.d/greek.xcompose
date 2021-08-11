@@ -1,88 +1,106 @@
-###            ###
-# Greek Alphabet #
-###            ###
+#############
+# Shortcuts #
+#############
 
-### Long Names ###
+<f> <n>: "λ"
+<F> <n>: "Λ"
+<F> <N>: "Λ"
 
+##########
+# Modern #
+##########
+
+### uppercase ###
 <Multi_key> <backslash> <A> <l> <p> <h> <a>: "Α"
-<Multi_key> <backslash> <a> <l> <p> <h> <a>: "α"
 <Multi_key> <backslash> <B> <e> <t> <a>: "Β"
-<Multi_key> <backslash> <b> <e> <t> <a>: "β"
-<Multi_key> <backslash> <v> <b> <e> <t> <a>: "ϐ"
 <Multi_key> <backslash> <G> <a> <m> <m> <a>: "Γ"
-<Multi_key> <backslash> <g> <a> <m> <m> <a>: "γ"
 <Multi_key> <backslash> <D> <e> <l> <t> <a>: "Δ"
-<Multi_key> <backslash> <d> <e> <l> <t> <a>: "δ"
 <Multi_key> <backslash> <E> <p> <s> <i>: "Ε"
-<Multi_key> <backslash> <e> <p> <s> <i>: "ε"
-<Multi_key> <backslash> <v> <e> <p> <s> <i>: "ϵ"
 <Multi_key> <backslash> <Z> <e> <t> <a>: "Ζ"
-<Multi_key> <backslash> <z> <e> <t> <a>: "ζ"
 <Multi_key> <backslash> <E> <t> <a>: "Η"
-<Multi_key> <backslash> <e> <t> <a>: "η"
 <Multi_key> <backslash> <T> <h> <e> <t> <a>: "Θ"
-<Multi_key> <backslash> <t> <h> <e> <t> <a>: "θ"
-<Multi_key> <backslash> <v> <t> <h> <e> <t> <a>: "ϑ"
 <Multi_key> <backslash> <I> <o> <t> <a>: "Ι"
-<Multi_key> <backslash> <i> <o> <t> <a>: "ι"
 <Multi_key> <backslash> <K> <a> <p> <p> <a>: "Κ"
-<Multi_key> <backslash> <k> <a> <p> <p> <a>: "κ"
-<Multi_key> <backslash> <v> <k> <a> <p> <p> <a>: "ϰ"
 <Multi_key> <backslash> <L> <a> <m> <b> <d> <a>: "Λ"
-<Multi_key> <backslash> <l> <a> <m> <b> <d> <a>: "λ"
 <Multi_key> <backslash> <M> <u>: "Μ"
-<Multi_key> <backslash> <m> <u>: "μ"
 <Multi_key> <backslash> <N> <u>: "Ν"
-<Multi_key> <backslash> <n> <u>: "ν"
 <Multi_key> <backslash> <X> <i>: "Ξ"
-<Multi_key> <backslash> <x> <i>: "ξ"
 <Multi_key> <backslash> <O> <m> <i> <c> <r> <o> <n>: "Ο"
-<Multi_key> <backslash> <o> <m> <i> <c> <r> <o> <n>: "ο"
 <Multi_key> <backslash> <P> <i>: "Π"
-<Multi_key> <backslash> <p> <i>: "π"
-<Multi_key> <backslash> <v> <p> <i>: "ϖ"
 <Multi_key> <backslash> <R> <h> <o>: "Ρ"
-<Multi_key> <backslash> <r> <h> <o>: "ρ"
-<Multi_key> <backslash> <v> <r> <h> <o>: "ϱ"
 <Multi_key> <backslash> <S> <i> <g> <m> <a>: "Σ"
-<Multi_key> <backslash> <s> <i> <g> <m> <a>: "σ"
-<Multi_key> <backslash> <v> <s> <i> <g> <m> <a>: "ς"
 <Multi_key> <backslash> <T> <a> <u>: "Τ"
-<Multi_key> <backslash> <t> <a> <u>: "τ"
 <Multi_key> <backslash> <U> <p> <s> <i>: "Υ"
-<Multi_key> <backslash> <u> <p> <s> <i>: "υ"
-<Multi_key> <backslash> <V> <U> <p> <s> <i>: "ϒ"
 <Multi_key> <backslash> <P> <h> <i>: "Φ"
-<Multi_key> <backslash> <p> <h> <i>: "φ"
-<Multi_key> <backslash> <v> <p> <h> <i>: "ϕ"
 <Multi_key> <backslash> <C> <h> <i>: "Χ"
-<Multi_key> <backslash> <c> <h> <i>: "χ"
 <Multi_key> <backslash> <P> <s> <i>: "Ψ"
-<Multi_key> <backslash> <p> <s> <i>: "ψ"
 <Multi_key> <backslash> <O> <m> <e> <g> <a>: "Ω"
+
+### lowercase ###
+<Multi_key> <backslash> <a> <l> <p> <h> <a>: "α"
+<Multi_key> <backslash> <b> <e> <t> <a>: "β"
+<Multi_key> <backslash> <g> <a> <m> <m> <a>: "γ"
+<Multi_key> <backslash> <d> <e> <l> <t> <a>: "δ"
+<Multi_key> <backslash> <e> <p> <s> <i>: "ε"
+<Multi_key> <backslash> <z> <e> <t> <a>: "ζ"
+<Multi_key> <backslash> <e> <t> <a>: "η"
+<Multi_key> <backslash> <t> <h> <e> <t> <a>: "θ"
+<Multi_key> <backslash> <i> <o> <t> <a>: "ι"
+<Multi_key> <backslash> <k> <a> <p> <p> <a>: "κ"
+<Multi_key> <backslash> <l> <a> <m> <b> <d> <a>: "λ"
+<Multi_key> <backslash> <m> <u>: "μ"
+<Multi_key> <backslash> <n> <u>: "ν"
+<Multi_key> <backslash> <x> <i>: "ξ"
+<Multi_key> <backslash> <o> <m> <i> <c> <r> <o> <n>: "ο"
+<Multi_key> <backslash> <p> <i>: "π"
+<Multi_key> <backslash> <r> <h> <o>: "ρ"
+<Multi_key> <backslash> <s> <i> <g> <m> <a>: "σ"
+<Multi_key> <backslash> <t> <a> <u>: "τ"
+<Multi_key> <backslash> <u> <p> <s> <i>: "υ"
+<Multi_key> <backslash> <p> <h> <i>: "φ"
+<Multi_key> <backslash> <c> <h> <i>: "χ"
+<Multi_key> <backslash> <p> <s> <i>: "ψ"
 <Multi_key> <backslash> <o> <m> <e> <g> <a>: "ω"
+
+#########
+# Extra #
+#########
+
+###### Variants ######
+
+### uppercase ###
+<Multi_key> <backslash> <V> <U> <p> <s> <i>: "ϒ"
+
+### lowercase ###
+<Multi_key> <backslash> <v> <b> <e> <t> <a>: "ϐ"
+<Multi_key> <backslash> <v> <e> <p> <s> <i>: "ϵ"
+<Multi_key> <backslash> <v> <t> <h> <e> <t> <a>: "ϑ"
+<Multi_key> <backslash> <v> <k> <a> <p> <p> <a>: "ϰ"
+<Multi_key> <backslash> <v> <p> <i>: "ϖ"
+<Multi_key> <backslash> <v> <r> <h> <o>: "ϱ"
+<Multi_key> <backslash> <v> <s> <i> <g> <m> <a>: "ς"
+<Multi_key> <backslash> <v> <p> <h> <i>: "ϕ"
+
+###### Archaic ######
+
+### uppercase ###
 <Multi_key> <backslash> <D> <i> <g> <a> <m> <m> <a>: "Ϝ"
-<Multi_key> <backslash> <d> <i> <g> <a> <m> <m> <a>: "ϝ"
 <Multi_key> <backslash> <K> <o> <p> <p> <a>: "Ϟ"
-<Multi_key> <backslash> <k> <o> <p> <p> <a>: "ϟ"
 <Multi_key> <backslash> <V> <K> <o> <p> <p> <a>: "Ϙ"
-<Multi_key> <backslash> <v> <k> <o> <p> <p> <a>: "ϙ"
 <Multi_key> <backslash> <S> <a> <m> <p> <i>: "Ϡ"
-<Multi_key> <backslash> <s> <a> <m> <p> <i>: "ϡ"
 <Multi_key> <backslash> <V> <S> <a> <m> <p> <i>: "Ͳ"
-<Multi_key> <backslash> <v> <s> <a> <m> <p> <i>: "ͳ"
 <Multi_key> <backslash> <S> <h> <o>: "Ϸ"
-<Multi_key> <backslash> <s> <h> <o>: "ϸ"
 <Multi_key> <backslash> <S> <a> <n>: "Ϻ"
-<Multi_key> <backslash> <s> <a> <n>: "ϻ"
 <Multi_key> <backslash> <K> <a> <i>: "Ϗ"
-<Multi_key> <backslash> <k> <a> <i>: "ϗ"
 <Multi_key> <backslash> <S> <t> <i> <g> <m> <a>: "Ϛ"
+
+### lowercase ###
+<Multi_key> <backslash> <d> <i> <g> <a> <m> <m> <a>: "ϝ"
+<Multi_key> <backslash> <k> <o> <p> <p> <a>: "ϟ"
+<Multi_key> <backslash> <v> <k> <o> <p> <p> <a>: "ϙ"
+<Multi_key> <backslash> <s> <a> <m> <p> <i>: "ϡ"
+<Multi_key> <backslash> <v> <s> <a> <m> <p> <i>: "ͳ"
+<Multi_key> <backslash> <s> <h> <o>: "ϸ"
+<Multi_key> <backslash> <s> <a> <n>: "ϻ"
+<Multi_key> <backslash> <k> <a> <i>: "ϗ"
 <Multi_key> <backslash> <s> <t> <i> <g> <m> <a>: "ϛ"
-
-### Shortcuts ###
-
-<Multi_key> <f> <n>: "λ"
-<Multi_key> <F> <n>: "Λ"
-<Multi_key> <F> <N>: "Λ"
-

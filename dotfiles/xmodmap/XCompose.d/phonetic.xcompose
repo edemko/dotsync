@@ -243,5 +243,5 @@
 <Multi_key> <asterisk> <2> <asciitilde>: U034C # velopharyngeal friction
 <Multi_key> <asterisk> <slash> <asciitilde>: U034A # denasal
 <Multi_key> <underscore> <backslash> <equal>: U0348 # strong articulation
-<Multi_key> <underscore> <rightbracket>: U0349 # weak articulation
+<Multi_key> <underscore> <bracketright>: U0349 # weak articulation
 # TODO there are more diacritics, but I'm not going to bother unless I get some requests
