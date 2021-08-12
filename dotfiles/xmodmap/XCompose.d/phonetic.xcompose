@@ -1,37 +1,38 @@
-###                ###
+######################
 # Phonetic Alphabets #
-###                ###
+######################
 
-### IPA Characters ###
+###### IPA Characters ######
+
 
 # TODO alternate spellings (i.e. easier to type)
 
-# Labial
+### Labial ###
 <Multi_key> <p> <h>: "ɸ"
 <Multi_key> <b> <h>: "β"
 <Multi_key> <B> <B>: "ʙ"
 
-# Labiodental
+### Labiodental ###
 <Multi_key> <m> <underscore> <d>: "ɱ"
 <Multi_key> <v> <r>: "ⱱ"
 <Multi_key> <v> <underscore> <d>: "ʋ"
 
-# Dental
+### Dental ###
 <Multi_key> <T> <h>: "θ"
-# <Multi_key> <d> <h>: "ð" # already in default gtk compose table
+# 'dh' "ð" already in default gtk compose table
 
-# Alveolar
+### Alveolar ###
 <Multi_key> <r> <t>: "ɾ"
 <Multi_key> <l> <h>: "ɬ"
 <Multi_key> <l> <z>: "ɮ"
 <Multi_key> <r> <r>: "ɹ"
 <Multi_key> <r> <l>: "ɺ"
 
-# Postalveolar
+### Postalveolar ###
 <Multi_key> <s> <h>: "ʃ"
 <Multi_key> <z> <h>: "ʒ"
 
-# Retroflex
+### Retroflex ###
 <Multi_key> <t> <grave>: "ʈ"
 <Multi_key> <d> <grave>: "ɖ"
 <Multi_key> <n> <grave>: "ɳ"
@@ -41,76 +42,76 @@
 <Multi_key> <R> <r>: "ɻ"
 <Multi_key> <l> <grave>: "ɭ"
 
-# Palatal
+### Palatal ###
 <Multi_key> <g> <j>: "ɟ"
 <Multi_key> <n> <j>: "ɲ"
-# <Multi_key> <c> <comma>: "ç" # already in default gtk compose table
+# 'c,' "ç" already in default gtk compose table
 <Multi_key> <j> <h>: "ʝ"
 <Multi_key> <l> <j>: "ʎ"
 
-# Velar
+### Velar ###
 <Multi_key> <backslash> <g> <space>: "ɡ"
 <Multi_key> <g> <space>: "ɡ"
-# <Multi_key> <n> <g>: "ŋ" # already in default gtk compose table
+# 'ng' "ŋ" already in default gtk compose table
 <Multi_key> <g> <x>: "ɣ"
 <Multi_key> <w> <x>: "ɰ"
 <Multi_key> <l> <x>: "ʟ" # why doesn't LL work‽
 
-# Uvular
+### Uvular ###
 <Multi_key> <G> <G>: "ɢ"
 <Multi_key> <N> <N>: "ɴ"
 <Multi_key> <R> <R>: "ʀ"
 <Multi_key> <x> <q>: "χ"
 <Multi_key> <r> <q>: "ʁ"
 
-# Pharyngeal
+### Pharyngeal ###
 <Multi_key> <h> <minus>: "ħ"
 <Multi_key> <question> <h>: "ʕ"
 
-# Glottal
-<Multi_key> <question> <period>: "ʔ"
-<Multi_key> <h> <z>: "ɦ"
-
-# Epiglottal
-<Multi_key> <question> <minus> <period>: "ʡ"
+### Epiglottal ###
+<Multi_key> <question> <minus> <p> <e> <r> <i> <o> <d>: "ʡ"
 <Multi_key> <question> <minus> <h>: "ʢ"
 <Multi_key> <H> <H>: "ʜ"
 
-# Vowels
+### Glottal ###
+<Multi_key> <question> <p> <e> <r> <i> <o> <d>: "ʔ"
+<Multi_key> <h> <z>: "ɦ"
+
+### Vowels ###
 <Multi_key> <i> <equal>: "ɨ"
 <Multi_key> <u> <equal>: "ʉ"
 <Multi_key> <u> <ampersand>: "ɯ"
 <Multi_key> <I> <I>: "ɪ"
 <Multi_key> <Y> <Y>: "ʏ"
 <Multi_key> <O> <O>: "ʊ"
-# <Multi_key> <o> <slash>: "ø" # already in gtk compose table
+# 'o/' "ø" # already in default gtk compose table
 <Multi_key> <e> <equal>: "ɘ"
 <Multi_key> <o> <equal>: "ɵ"
 <Multi_key> <o> <ampersand>: "ɤ"
-# <Multi_key> <e> <e>: "ə" # already in default gtk compose table
+# 'ee' "ə" # already in default gtk compose table
 <Multi_key> <e> <space>: "ɛ"
-# <Multi_key> <o> <e>: "œ" # already in default gtk compose table
+# 'oe' "œ" # already in latin.xin
 <Multi_key> <at> <e>: "ɜ"
 <Multi_key> <at> <o>: "ɞ"
 <Multi_key> <a> <x>: "ʌ"
 <Multi_key> <o> <space>: "ɔ"
-# <Multi_key> <a> <e>: "æ" # already in default gtk compose table
+# 'ae' "æ" already in latin.xin
 <Multi_key> <at> <a>: "ɐ"
 <Multi_key> <a> <o>: "ɶ"
 <Multi_key> <a> <space>: "ɑ"
 <Multi_key> <a> <ampersand>: "ɒ"
 
 
-# Coarticulations
+### Coarticulations ###
 <Multi_key> <j> <w>: "ɥ"
 <Multi_key> <w> <h>: "ʍ"
 <Multi_key> <c> <j>: "ɕ"
 <Multi_key> <z> <j>: "ʑ"
 <Multi_key> <s> <x>: "ɧ"
-<Multi_key> <equal> <equal> <asterisk>: U0361 # tie bar above
-<Multi_key> <equal> <equal> <underscore>: U035C # tie bar below
+<Multi_key> <equal> <equal> <asterisk>: "͡" # U+0361: TIE BAR ABOVE
+<Multi_key> <equal> <equal> <underscore>: "͜" # U+035C: TIE BAR BELOW
 
-# Glottalic
+### Glottalic ###
 <Multi_key> <underscore> <greater>: "ʼ"
 <Multi_key> <b> <underscore> <less>: "ɓ"
 <Multi_key> <d> <underscore> <less>: "ɗ"
@@ -118,76 +119,78 @@
 <Multi_key> <g> <underscore> <less>: "ɠ"
 <Multi_key> <G> <underscore> <less>: "ʛ"
 
-# Clicks
+### Clicks ###
 <Multi_key> <O> <backslash>: "ʘ"
-<Multi_key> <bar> <backslash>: "ǀ"
+<Multi_key> <d> <bar> <backslash>: "ǀ"
 <Multi_key> <exclam> <backslash>: "ǃ"
 <Multi_key> <equal> <backslash>: "ǂ"
-<Multi_key> <bar> <bar> <backslash>: "ǁ"
+<Multi_key> <l> <bar> <bar> <backslash>: "ǁ"
 
-# Suprasegmentals
+### Suprasegmentals ###
 <Multi_key> <asterisk> <exclam>: "ˈ" # primary stress
 <Multi_key> <asterisk> <period>: "ˌ" # secondary stress
 <Multi_key> <colon> <colon>: "ː" # long
 <Multi_key> <semicolon> <semicolon>: "ˑ" # half-long
-<Multi_key> <asterisk> <colon>: U0306 # extra-short (breve)
-# <bar>: "|" # minor (foot) group # this is just the simple ascii bar
-<Multi_key> <bar> <bar> <space>: "‖" # major (intonation) group
+<Multi_key> <asterisk> <colon>: "̆" # U+0306: extra-short (breve)
+<Multi_key> <space> <bar> <space>: "|" # minor (foot) group # this is just the simple ascii bar
+<Multi_key> <space> <bar> <bar> <space>: "‖" # major (intonation) group
 <Multi_key> <asciitilde> <asciitilde>: "‿" # linking (absence of a break)
 
-# Diacritics
-#   syllabicity
-<Multi_key> <underscore> <dollar>: U0329 # syllabic
-<Multi_key> <asterisk> <dollar>: U030D # syllabic (above)
-<Multi_key> <underscore> <percent>: U032F # non-syllabic
-<Multi_key> <asterisk> <percent>: U0311 # non-syllabic (above)
+###### Diacritics ######
 
-#   consonant release
+### syllabicity ###
+<Multi_key> <underscore> <dollar>: "̩" # U+0329: syllabic
+<Multi_key> <asterisk> <dollar>: "̍" # U+030D: syllabic (above)
+<Multi_key> <underscore> <percent>: "̯" # U+032F: non-syllabic
+<Multi_key> <asterisk> <percent>: "̑" # U+0311: non-syllabic (above)
+
+### consonant release ###
 <Multi_key> <asterisk> <h>: "ʰ" # aspirated
 <Multi_key> <asterisk> <bracketright>: "˺" # no audible release
 <Multi_key> <asterisk> <n>: "ⁿ" # nasal release
 <Multi_key> <asterisk> <l>: "ˡ" # lateral release
 
-#   phonation
-<Multi_key> <underscore> <f>: U0325 # voiceless
-<Multi_key> <asterisk> <f>: U030A # voiceless (above)
-<Multi_key> <underscore> <v>: U032C # voiced
-<Multi_key> <underscore> <h>: U0324 # breathy voiced # FIXME why didn't asciitilde work? went with xsampa
-<Multi_key> <underscore> <k>: U0330 # creaky voiced # FIXME why didn't quotedbl work? went with xsampa
+### phonation TODO ###
+# '_f' "̥" # U+0325: voiceless
+# '*f' "̊" # U+030A: voiceless (above)
+# '_v' "̬" # U+032C: voiced
+# '_h' "̤" # U+0324: breathy voiced # FIXME why didn't asciitilde work? went with xsampa
+# '_k' "̰" # U+0330: creaky voiced # FIXME why didn't quotedbl work? went with xsampa
 
-#   articulation
-<Multi_key> <underscore> <d>: U032A # dental
-<Multi_key> <asterisk> <d>: U0346 # dental (above)
-<Multi_key> <underscore> <b>: U033C # linguolabial
-<Multi_key> <underscore> <t>: U033A # apical
-<Multi_key> <underscore> <l>: U033B # laminal
-<Multi_key> <underscore> <plus>: U031F # advanced
-<Multi_key> <equal> <plus>: U02D6 # advanced (after)
-<Multi_key> <underscore> <minus>: U0320 # retracted
-<Multi_key> <equal> <minus>: U02D7 # retracted (after)
-<Multi_key> <asterisk> <quotedbl>: U0308 # centralized
-<Multi_key> <asterisk> <x>: U033D # mid-centralized
-<Multi_key> <underscore> <bar> <asciicircum>: U031D # raised
-<Multi_key> <equal> <bar> <asciicircum>: U02D4 # raised (after)
-<Multi_key> <underscore> <bar> <v>: U031E # lowered
-<Multi_key> <equal> <bar> <v>: U02D5 # lowered (after)
+### articulation TODO ###
+# '_d' "̪" # U+032A: dental
+# '*d' "͆" # U+0346: dental (above)
+# '_b' "̼" # U+033C: linguolabial
+# '_t' "̺" # U+033A: apical
+# '_l' "̻" # U+033B: laminal
+# '_+' "̟" # U+031F: advanced
+# '=+' "˖" # U+02D6: advanced (after)
+# '_-' "̠" # U+0320: retracted
+# '=-' "˗" # U+02D7: retracted (after)
+# '*"' "̈" # U+0308: centralized
+# '*x' "̽" # U+033D: mid-centralized
+# '_|^' "̝" # U+031D: raised
+# '=|^' "˔" # U+02D4: raised (after)
+# '_|v' "̞" # U+031E: lowered
+# '=|v' "˕" # U+02D5: lowered (after)
 
-#   co-articulation
-<Multi_key> <underscore> <parenright>: U0339 # more rounded
-<Multi_key> <asterisk> <parenright>: U0357 # more rounded (above)
-<Multi_key> <underscore> <parenleft>: U031C # less rounded
-<Multi_key> <asterisk> <parenleft>: U0351 # less rounded (above)
-<Multi_key> <equal> <r>: U02DE # rhoticity
+### co-articulation ###
+# TODO '_)' "̹" # U+0339: more rounded
+<Multi_key> <asterisk> <parenright>: "͗" # U+0357: more rounded (above)
+# TODO '_(' "̜" # U+031C: less rounded
+<Multi_key> <asterisk> <parenleft>: "͑" # U+0351: less rounded (above)
+<Multi_key> <equal> <r>: "˞" # U+02DE: rhoticity
 <Multi_key> <asterisk> <w>: "ʷ" # labialized
 <Multi_key> <asterisk> <j>: "ʲ" # palatalized
 <Multi_key> <asterisk> <g>: "ˠ" # velarized
 <Multi_key> <asterisk> <question>: "ˤ" # pharyngealized
-<Multi_key> <equal> <asciitilde>: U0334 # velarized or pharyngealized
-<Multi_key> <underscore> <bar> <less>: U0318 # advanced tounge root
-<Multi_key> <underscore> <bar> <greater>: U0319 # retracted tounge root
-<Multi_key> <asterisk> <asciitilde>: U0303 # nasalized
+<Multi_key> <equal> <asciitilde>: "̴" # U+0334: velarized or pharyngealized
+<Multi_key> <underscore> <bar> <less>: "̘" # U+0318: advanced tongue root
+<Multi_key> <underscore> <bar> <greater>: "̙" # U+0319: retracted tongue root
+<Multi_key> <asterisk> <asciitilde>: "̃" # U+0303: nasalized
 
-# Tones and Word Accents
+###### Tones and Word Accents ######
+
 <Multi_key> <1> <bar>: "˩"
 <Multi_key> <2> <bar>: "˨"
 <Multi_key> <3> <bar>: "˧"
@@ -197,11 +200,11 @@
 # TODO: add in two- and three-letter tone sequences (such as <31|>, <253|>)
 
 # TODO tone diacritics
-# <Multi_key> <asterisk> <1> <bar>: 
-# <Multi_key> <asterisk> <2> <bar>: 
-# <Multi_key> <asterisk> <3> <bar>: 
-# <Multi_key> <asterisk> <4> <bar>: 
-# <Multi_key> <asterisk> <5> <bar>: 
+# '*1|'
+# '*2|'
+# '*3|'
+# '*4|'
+# '*5|'
 
 <Multi_key> <asterisk> <d> <n>: "ꜜ"
 <Multi_key> <asterisk> <u> <p>: "ꜛ"
@@ -209,39 +212,40 @@
 <Multi_key> <asterisk> <U> <P>: "↗︎"
 
 
-# Extended IPA
-#   lateral
+###### Extended IPA ######
+
+### lateral ###
 <Multi_key> <l> <s> <s>: "ʪ"
 <Multi_key> <l> <s> <z>: "ʫ"
 <Multi_key> <l> <r> <h>: "ꞎ"
-# <Multi_key> <l> <r> <z>: "" # TODO ɭ-ʒ ligature not supported in unicode to my knowledge
+# 'lrz' # TODO ɭ-ʒ ligature not supported in unicode to my knowledge
 <Multi_key> <l> <c>: ""
 <Multi_key> <L> <c>: ""
 
-#   velo-pharyngeal
+### velo-pharyngeal ###
 <Multi_key> <f> <g>: "ʩ"
 <Multi_key> <f> <r> <g>: "fŋ̑" # NOTE: this sequence appears to be a hack; the true glyph is not supported in unicode
 
-#   velodorsal
-#    NOTE: velodorsal sounds (reversed k, g, and ŋ) are not supported in unicode to my knowledge
+### velodorsal ###
+# NOTE: velodorsal sounds (reversed k, g, and ŋ) are not supported in unicode to my knowledge
 
-#   pharyngeal
-#    NOTE: pharyngeal sounds (small-caps Q, turned small-caps G) are not supported in unicode to my knowledge
+### pharyngeal ###
+# NOTE: pharyngeal sounds (small-caps Q, turned small-caps G) are not supported in unicode to my knowledge
 
-#   percussive
-<Multi_key> <w> <w> <exclam>: "ʬ"
-<Multi_key> <t> <t> <exclam>: "ʭ"
-# <Multi_key> <exclam> <exclam>: "¡" # already part of default compose table
+### percussive ###
+<Multi_key> <exclam> <w> <w>: "ʬ"
+<Multi_key> <exclam> <t> <t>: "ʭ"
+# '!!' "¡" already in default gtk compose table
 
-#   diacritics
+### diacritics ###
 # FIXME many of these are not working
 <Multi_key> <equal> <parenleft>: "₍" # initial partial (de)voicing
 <Multi_key> <equal> <parenright>: "₎" # final partial (de)voicing
-<Multi_key> <bar> <v>: "↓": # ingressive airflow
-<Multi_key> <bar> <asciicircum>: "↑": # ingressive airflow
-<Multi_key> <asterisk> <equal>: "˭": # unaspirated
-<Multi_key> <asterisk> <2> <asciitilde>: U034C # velopharyngeal friction
-<Multi_key> <asterisk> <slash> <asciitilde>: U034A # denasal
-<Multi_key> <underscore> <backslash> <equal>: U0348 # strong articulation
-<Multi_key> <underscore> <bracketright>: U0349 # weak articulation
+<Multi_key> <bar> <v>: "↓" # ingressive airflow
+<Multi_key> <bar> <asciicircum>: "↑" # ingressive airflow
+<Multi_key> <asterisk> <equal>: "˭" # unaspirated
+<Multi_key> <asterisk> <2> <asciitilde>: "͌" # U+034C velopharyngeal friction
+<Multi_key> <asterisk> <slash> <asciitilde>: "͊" # U+034A denasal
+<Multi_key> <underscore> <backslash> <equal>: "͈" # U+0348 strong articulation
+<Multi_key> <underscore> <bracketright>: "͉" # U+0349 weak articulation
 # TODO there are more diacritics, but I'm not going to bother unless I get some requests

@@ -1,14 +1,8 @@
-#############
-# Shortcuts #
-#############
+#########
+# Greek #
+#########
 
-<f> <n>: "λ"
-<F> <n>: "Λ"
-<F> <N>: "Λ"
-
-##########
-# Modern #
-##########
+###### Modern ######
 
 ### uppercase ###
 <Multi_key> <backslash> <A> <l> <p> <h> <a>: "Α"
@@ -62,16 +56,11 @@
 <Multi_key> <backslash> <p> <s> <i>: "ψ"
 <Multi_key> <backslash> <o> <m> <e> <g> <a>: "ω"
 
-#########
-# Extra #
-#########
+###### Extra ######
 
-###### Variants ######
-
-### uppercase ###
+### Variants ###
 <Multi_key> <backslash> <V> <U> <p> <s> <i>: "ϒ"
 
-### lowercase ###
 <Multi_key> <backslash> <v> <b> <e> <t> <a>: "ϐ"
 <Multi_key> <backslash> <v> <e> <p> <s> <i>: "ϵ"
 <Multi_key> <backslash> <v> <t> <h> <e> <t> <a>: "ϑ"
@@ -81,9 +70,7 @@
 <Multi_key> <backslash> <v> <s> <i> <g> <m> <a>: "ς"
 <Multi_key> <backslash> <v> <p> <h> <i>: "ϕ"
 
-###### Archaic ######
-
-### uppercase ###
+### Archaic ###
 <Multi_key> <backslash> <D> <i> <g> <a> <m> <m> <a>: "Ϝ"
 <Multi_key> <backslash> <K> <o> <p> <p> <a>: "Ϟ"
 <Multi_key> <backslash> <V> <K> <o> <p> <p> <a>: "Ϙ"
@@ -94,7 +81,6 @@
 <Multi_key> <backslash> <K> <a> <i>: "Ϗ"
 <Multi_key> <backslash> <S> <t> <i> <g> <m> <a>: "Ϛ"
 
-### lowercase ###
 <Multi_key> <backslash> <d> <i> <g> <a> <m> <m> <a>: "ϝ"
 <Multi_key> <backslash> <k> <o> <p> <p> <a>: "ϟ"
 <Multi_key> <backslash> <v> <k> <o> <p> <p> <a>: "ϙ"

@@ -1,26 +1,17 @@
-###   ###
+#########
 # Music #
-###   ###
+#########
 
+<Multi_key> <numbersign> <h>: "𝅗𝅥" # MUSICAL SYMBOL HALF NOTE
+<Multi_key> <numbersign> <q>: "♩" # QUARTER NOTE
+<Multi_key> <numbersign> <e>: "♪" # EIGHTH NOTE
+<Multi_key> <numbersign> <E>: "♫" # BEAMED EIGHTH NOTES
+<Multi_key> <numbersign> <s>: "𝅘𝅥𝅯" # MUSICAL SYMBOL SIXTEENTH NOTE
+<Multi_key> <numbersign> <S>: "♬" # BEAMED SIXTEENTH NOTES
+<Multi_key> <numbersign> <b>: "♭" # MUSIC FLAT SIGN
+<Multi_key> <numbersign> <f>: "♮" # MUSIC NATURAL SIGN
+<Multi_key> <numbersign> <numbersign>: "♯" # MUSIC SHARP SIGN
 
-<Multi_key> <numbersign> <q>      : "♩"   U2669 # QUARTER NOTE
-<Multi_key> <numbersign> <e>      : "♪"   U266a # EIGHTH NOTE
-<Multi_key> <numbersign> <E>      : "♫"   U266b # BEAMED EIGHTH NOTES
-<Multi_key> <numbersign> <S>      : "♬"   U266c # BEAMED SIXTEENTH NOTES
-<Multi_key> <numbersign> <b>      : "♭"   U266d # MUSIC FLAT SIGN
-<Multi_key> <numbersign> <f>      : "♮"   U266e # MUSIC NATURAL SIGN
-<Multi_key> <numbersign> <numbersign>   : "♯"   U266f # MUSIC SHARP SIGN
-
-<Multi_key> <U1D157> <U1D165>   : "𝅗𝅥"   U1D15E # MUSICAL SYMBOL HALF NOTE
-<Multi_key> <U1D158> <U1D165>   : "𝅘𝅥"   U1D15F # MUSICAL SYMBOL QUARTER NOTE
-<Multi_key> <U1D15F> <U1D16E>   : "𝅘𝅥𝅮"   U1D160 # MUSICAL SYMBOL EIGHTH NOTE
-<Multi_key> <U1D15F> <U1D16F>   : "𝅘𝅥𝅯"   U1D161 # MUSICAL SYMBOL SIXTEENTH NOTE
-<Multi_key> <U1D15F> <U1D170>   : "𝅘𝅥𝅰"   U1D162 # MUSICAL SYMBOL THIRTY-SECOND NOTE
-<Multi_key> <U1D15F> <U1D171>   : "𝅘𝅥𝅱"   U1D163 # MUSICAL SYMBOL SIXTY-FOURTH NOTE
-<Multi_key> <U1D15F> <U1D172>   : "𝅘𝅥𝅲"   U1D164 # MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH NOTE
-<Multi_key> <U1D1B9> <U1D165>   : "𝆹𝅥"   U1D1BB # MUSICAL SYMBOL MINIMA
-<Multi_key> <U1D1BA> <U1D165>   : "𝆺𝅥"   U1D1BC # MUSICAL SYMBOL MINIMA BLACK
-<Multi_key> <U1D1BB> <U1D16E>   : "𝆹𝅥𝅮"   U1D1BD # MUSICAL SYMBOL SEMIMINIMA WHITE
-<Multi_key> <U1D1BC> <U1D16E>   : "𝆺𝅥𝅮"   U1D1BE # MUSICAL SYMBOL SEMIMINIMA BLACK
-<Multi_key> <U1D1BB> <U1D16F>   : "𝆹𝅥𝅯"   U1D1BF # MUSICAL SYMBOL FUSA WHITE
-<Multi_key> <U1D1BC> <U1D16F>   : "𝆺𝅥𝅯"   U1D1C0 # MUSICAL SYMBOL FUSA BLACK
+# "𝅘𝅥𝅰"   U1D162 # MUSICAL SYMBOL THIRTY-SECOND NOTE
+# "𝅘𝅥𝅱"   U1D163 # MUSICAL SYMBOL SIXTY-FOURTH NOTE
+# "𝅘𝅥𝅲"   U1D164 # MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH NOTE

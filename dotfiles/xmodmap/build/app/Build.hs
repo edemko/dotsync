@@ -11,10 +11,12 @@ module Build
   , setFile
   , setPrefix
   , setSuffix
+  , reset
   , insert
   , Error(..)
   ) where
 
+import Control.Monad (when)
 import Data.List (isPrefixOf)
 import Data.Map.Strict (Map)
 
@@ -78,13 +80,15 @@ data Error
 runBuild :: Build a -> Either Error Config
 runBuild action = reverseConfig . config . fst <$> unBuild action emptySt
 
+reset :: Build ()
+reset = do
+  setFile ""
+  setPrefix ""
+  setSuffix ""
+
 setFile :: FilePath -> Build ()
 setFile path = Build $ \st ->
-  let files = config st
-      st' = case Map.lookup path files of
-        Just _ -> st
-        Nothing -> st{config = Map.insert path [] files}
-   in Right (st'{curFile = path}, ())
+  Right (st{curFile = path}, ())
 
 setPrefix :: String -> Build ()
 setPrefix str = Build $ \st -> Right (st{curPrefix = str}, ())
@@ -94,9 +98,10 @@ setSuffix str = Build $ \st -> Right (st{curSuffix = str}, ())
 
 insert :: ConfigItem -> Build ()
 insert item = Build $ \st -> do
-  file <- case Map.lookup (curFile st) (config st) of
-    Nothing -> Left FileNotSet
-    Just it -> Right it
+  when (null $ curFile st) $ Left FileNotSet
+  file <- pure $ case Map.lookup (curFile st) (config st) of
+    Nothing -> []
+    Just it -> it
   st' <- case item of
     KeySeq{input} -> do
       let input' = curPrefix st <> input <> curSuffix st

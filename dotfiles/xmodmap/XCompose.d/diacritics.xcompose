@@ -1,0 +1,34 @@
+##############
+# Diacritics #
+##############
+
+
+###### Spacing diacritics ######
+
+# TODO: check wiki for any add'l diacritics
+<Multi_key> <space> <apostrophe>: "´" # ACUTE ACCENT
+<Multi_key> <space> <grave>: "`" # GRAVE ACCENT
+<Multi_key> <space> <2> <apostrophe>: "˝" # DOUBLE ACUTE ACCENT
+<Multi_key> <space> <2> <grave>: "˵" # DOUBLE GRAVE ACCENT
+<Multi_key> <space> <asciicircum>: "ˆ" # CIRCUMFLEX ACCENT
+<Multi_key> <space> <less>: "ˇ" # CARON
+<Multi_key> <space> <quotedbl>: "¨" # DIAERESIS
+<Multi_key> <space> <asciitilde>: "~" # TILDE
+<Multi_key> <space> <underscore>: "¯" # MACRON
+<Multi_key> <space> <parenleft>: "˘" # BREVE
+<Multi_key> <space> <o>: "˚" # 02DA RING ABOVE
+<Multi_key> <space> <z>: "¸" # CEDILLA
+<Multi_key> <space> <n>: "˛" # OGONEK
+
+###### Modifier Diacritics ######
+
+# TODO
+
+###### Composed Diacritics ######
+
+<Multi_key> <c> <x>: "x̌"
+<Multi_key> <c> <X>: "X̌"
+
+<Multi_key> <parenleft> <g>: "ğ"
+
+

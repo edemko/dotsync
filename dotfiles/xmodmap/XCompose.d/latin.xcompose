@@ -1,67 +1,35 @@
-###            ###
-# Latin Alphabet #
-###            ###
+####################
+# Latin Alphabet # #
+####################
+
+### Variant Letters ###
+<Multi_key> <v> <l>: "ℓ" # SCRIPT SMALL L
 
 ### Extra Letters ###
+<Multi_key> <s> <s>: "ß" # LATIN SMALL LETTER SHARP S
+<Multi_key> <S> <S>: "ẞ" # LATIN CAPITAL LETTER SHARP S
 
-<Multi_key> <s> <s>               : "ß"   ssharp # LATIN SMALL LETTER SHARP S
-<Multi_key> <S> <S>               : "ẞ"   U1e9e # LATIN CAPITAL LETTER SHARP S
+### Historical Characters ###
+<Multi_key> <f> <s>: "ſ" # LATIN SMALL LETTER LONG S
+<Multi_key> <f> <S>: "ſ" # LATIN SMALL LETTER LONG S
+<Multi_key> <period> <f> <s>: "ẛ" # LATIN SMALL LETTER LONG S WITH DOT ABOVE
 
-# Historical Characters
+<Multi_key> <W> <W>: "Ƿ" # Wynn
+<Multi_key> <w> <w>: "ƿ" # wynn
+<Multi_key> <G> <h>: "Ȝ" # Yogh
+<Multi_key> <g> <h>: "ȝ" # yogh
 
-<Multi_key> <f> <s>               : "ſ"   U017f # LATIN SMALL LETTER LONG S
-<Multi_key> <f> <S>               : "ſ"   U017f # LATIN SMALL LETTER LONG S
-<Multi_key> <period> <f> <s> : "ẛ"   U1e9b # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+### Ligatures ###
+<Multi_key> <a> <e>: "æ" # LATIN SMALL LETTER AE
+<Multi_key> <A> <E>: "Æ" # LATIN CAPITAL LETTER AE
+<Multi_key> <o> <e>: "œ" # LATIN SMALL LIGATURE OE
+<Multi_key> <O> <E>: "Œ" # LATIN CAPITAL LIGATURE OE
 
-<Multi_key> <W> <W>: "Ƿ" U01F7 # Wynn
-<Multi_key> <w> <w>: "ƿ" U01BF # wynn
-<Multi_key> <G> <h>: "Ȝ" U021C # Yogh
-<Multi_key> <g> <h>: "ȝ" U021D # yogh
-
-# Ligatures
-
-<Multi_key> <a> <e>               : "æ"   ae # LATIN SMALL LETTER AE
-<Multi_key> <A> <E>               : "Æ"   AE # LATIN CAPITAL LETTER AE
-<Multi_key> <o> <e>               : "œ"   oe # LATIN SMALL LIGATURE OE
-<Multi_key> <O> <E>               : "Œ"   OE # LATIN CAPITAL LIGATURE OE
-
-<Multi_key> <f> <f>               : "ﬀ"   Ufb00 # LATIN SMALL LIGATURE FF
-<Multi_key> <f> <i>               : "ﬁ"   Ufb01 # LATIN SMALL LIGATURE FI
-<Multi_key> <f> <l>               : "ﬂ"   Ufb02 # LATIN SMALL LIGATURE FL
-<Multi_key> <F> <i>               : "ﬃ"   Ufb03 # LATIN SMALL LIGATURE FFI
-<Multi_key> <F> <l>               : "ﬄ"   Ufb04 # LATIN SMALL LIGATURE FFL
-<Multi_key> <I> <J>               : "Ĳ"   U0132 # LATIN CAPITAL LIGATURE IJ
-<Multi_key> <I> <j>               : "Ĳ"   U0132 # LATIN CAPITAL LIGATURE IJ
-<Multi_key> <i> <j>               : "ĳ"   U0133 # LATIN SMALL LIGATURE IJ
-
-
-### Diacritics ###
-
-# Spacing diacritics
-
-# TODO: check wiki for any add'l diacritics
-<Multi_key> <space> <apostrophe>: "´" acute # ACUTE ACCENT
-<Multi_key> <space> <grave>: "`" grave # GRAVE ACCENT
-<Multi_key> <space> <2> <apostrophe>: "˝" U2DD # DOUBLE ACUTE ACCENT
-<Multi_key> <space> <2> <grave>: "˵" U02F5 # DOUBLE GRAVE ACCENT
-<Multi_key> <space> <asciicircum>: "ˆ" U02C6 # CIRCUMFLEX ACCENT
-<Multi_key> <space> <less>: "ˇ" caron # CARON
-<Multi_key> <space> <quotedbl>: "¨" diaeresis # DIAERESIS
-<Multi_key> <space> <asciitilde>: "~" asciitilde # TILDE
-<Multi_key> <space> <underscore>: "¯" macron # MACRON
-<Multi_key> <space> <parenleft>: "˘" breve # BREVE
-<Multi_key> <space> <o>: "˚" ring above # 02DA RING ABOVE
-<Multi_key> <space> <z>: "¸" cedilla # CEDILLA
-<Multi_key> <space> <n>: "˛" ogonek # OGONEK
-
-# Modifier Diacritics
-# TODO
-
-# Composed Diacritics
-
-<Multi_key> <c> <x>: "x̌"
-<Multi_key> <c> <X>: "X̌"
-
-<Multi_key> <parenleft> <g>: "ğ"
-
-
+<Multi_key> <f> <f>: "ﬀ" # LATIN SMALL LIGATURE FF
+<Multi_key> <f> <i>: "ﬁ" # LATIN SMALL LIGATURE FI
+<Multi_key> <f> <l>: "ﬂ" # LATIN SMALL LIGATURE FL
+<Multi_key> <F> <i>: "ﬃ" # LATIN SMALL LIGATURE FFI
+<Multi_key> <F> <l>: "ﬄ" # LATIN SMALL LIGATURE FFL
+<Multi_key> <I> <J>: "Ĳ" # LATIN CAPITAL LIGATURE IJ
+<Multi_key> <I> <j>: "Ĳ" # LATIN CAPITAL LIGATURE IJ
+<Multi_key> <i> <j>: "ĳ" # LATIN SMALL LIGATURE IJ

@@ -1,0 +1,34 @@
+====== latin
+#### Latin Alphabet #
+= '⎄'
+## Variant Letters
+'vl' "ℓ" # SCRIPT SMALL L
+
+## Extra Letters
+'ss' "ß" # LATIN SMALL LETTER SHARP S
+'SS' "ẞ" # LATIN CAPITAL LETTER SHARP S
+
+## Historical Characters
+'fs'  "ſ" # LATIN SMALL LETTER LONG S
+'fS'  "ſ" # LATIN SMALL LETTER LONG S
+'.fs' "ẛ" # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+
+'WW' "Ƿ" # Wynn
+'ww' "ƿ" # wynn
+'Gh' "Ȝ" # Yogh
+'gh' "ȝ" # yogh
+
+## Ligatures
+'ae' "æ" # LATIN SMALL LETTER AE
+'AE' "Æ" # LATIN CAPITAL LETTER AE
+'oe' "œ" # LATIN SMALL LIGATURE OE
+'OE' "Œ" # LATIN CAPITAL LIGATURE OE
+
+'ff' "ﬀ" # LATIN SMALL LIGATURE FF
+'fi' "ﬁ" # LATIN SMALL LIGATURE FI
+'fl' "ﬂ" # LATIN SMALL LIGATURE FL
+'Fi' "ﬃ" # LATIN SMALL LIGATURE FFI
+'Fl' "ﬄ" # LATIN SMALL LIGATURE FFL
+'IJ' "Ĳ" # LATIN CAPITAL LIGATURE IJ
+'Ij' "Ĳ" # LATIN CAPITAL LIGATURE IJ
+'ij' "ĳ" # LATIN SMALL LIGATURE IJ

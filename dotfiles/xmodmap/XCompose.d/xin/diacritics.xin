@@ -1,0 +1,32 @@
+====== diacritics
+#### Diacritics
+= '⎄'
+
+### Spacing diacritics
+= '⎄ '
+# TODO: check wiki for any add'l diacritics
+''''  "´" # ACUTE ACCENT
+'`'   "`" # GRAVE ACCENT
+'2''' "˝" # DOUBLE ACUTE ACCENT
+'2`'  "˵" # DOUBLE GRAVE ACCENT
+'^'   "ˆ" # CIRCUMFLEX ACCENT
+'<'   "ˇ" # CARON
+'"'   "¨" # DIAERESIS
+'~'   "~" # TILDE
+'_'   "¯" # MACRON
+'('   "˘" # BREVE
+'o'   "˚" # 02DA RING ABOVE
+'z'   "¸" # CEDILLA
+'n'   "˛" # OGONEK
+
+### Modifier Diacritics
+# TODO
+
+### Composed Diacritics
+= '⎄'
+'cx' "x̌"
+'cX' "X̌"
+
+'(g' "ğ"
+
+

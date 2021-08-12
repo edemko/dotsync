@@ -1,0 +1,82 @@
+====== punctuation
+#### Punctuation
+= '⎄'
+### Spaces
+'  '  " " # NO-BREAK SPACE
+' .'  " " # PUNCTUATION SPACE
+'-- ' "­"  # SOFT HYPHEN
+
+# tabular space = the width of a digit if font is fixed‐digit
+' #' " " # FIGURE SPACE
+
+### Dots
+'..' "…" # HORIZONTAL ELLIPSIS
+'.-' "·" # MIDDLE DOT
+'.^' "·" # MIDDLE DOT
+'^.' "·" # MIDDLE DOT
+
+### Dashes
+'--.' "–" # EN DASH
+'---' "—" # EM DASH
+
+### Ordinals
+
+'^_a' "ª" # FEMININE ORDINAL INDICATOR
+'^_o' "º" # MASCULINE ORDINAL INDICATOR
+
+### Quote Marks
+
+'.>' "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+'.<' "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+'<<' "«" # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+'>>' "»" # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+'<''' "‘" # LEFT SINGLE QUOTATION MARK
+'''<' "‘" # LEFT SINGLE QUOTATION MARK
+'>''' "’" # RIGHT SINGLE QUOTATION MARK
+'''>' "’" # RIGHT SINGLE QUOTATION MARK
+',''' "‚" # SINGLE LOW-9 QUOTATION MARK
+''',' "‚" # SINGLE LOW-9 QUOTATION MARK
+'<"' "“" # LEFT DOUBLE QUOTATION MARK
+'"<' "“" # LEFT DOUBLE QUOTATION MARK
+'>"' "”" # RIGHT DOUBLE QUOTATION MARK
+'">' "”" # RIGHT DOUBLE QUOTATION MARK
+',"' "„" # DOUBLE LOW-9 QUOTATION MARK
+'",' "„" # DOUBLE LOW-9 QUOTATION MARK
+
+### Emote Marks
+
+'!!' "¡" # INVERTED EXCLAMATION MARK
+'??' "¿" # INVERTED QUESTION MARK
+
+'!?' "‽" # INTERROBANG
+'?!' "⸘" # INVERTED INTERROBANG
+
+'!,' "!̦" # comma exclam
+'?,' "?̦" # comma question
+'~?' "⸮" # irony/sarcasm point
+'/sarcasm' "⸮" # irony/sarcasm point
+
+### List Bullets
+'.=' "•" # BULLET
+'\yes ' "✓"
+'\no '  "✗"
+
+
+### Misc Breaks
+
+'p!' "¶" # PILCROW SIGN (paragraph)
+'P!' "¶" # PILCROW SIGN (paragraph)
+'PP' "¶" # PILCROW SIGN (paragraph)
+
+'so' "§" # SECTION SIGN
+'os' "§" # SECTION SIGN
+'SO' "§" # SECTION SIGN
+'OS' "§" # SECTION SIGN
+'s!' "§" # SECTION SIGN
+'S!' "§" # SECTION SIGN
+
+'3*' "⁂" # ASTERISM
+'*3' "⁂" # ASTERISM
+'f>' "❧" # ROTATED FLORAL HEART BULLET (fleuron)
+
+

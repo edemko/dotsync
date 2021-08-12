@@ -5,7 +5,7 @@
 
 module Main where
 
-import Build (runBuild)
+import Build (runBuild,reset)
 import Control.Monad (forM,forM_)
 import Options.Generic (Generic)
 import Options.Generic (ParseRecord,getRecord)
@@ -33,7 +33,7 @@ main = do
   builders <- forM (inFile opts) $ \path -> do
     contents <- readFile path
     case parse contents of
-      Right it -> pure it
+      Right it -> pure $ it >> reset
       Left i -> die $ "syntax error line (" ++ show path ++ " line " ++ show i ++ ")"
   let builder = foldl (>>) (pure ()) builders
   config <- case runBuild builder of
