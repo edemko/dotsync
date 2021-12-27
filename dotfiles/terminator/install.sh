@@ -7,6 +7,9 @@ dotsync_depsgood() {
     if ! which terminator >/dev/null; then
         return 1
     fi
+    if ! (fc-list | grep -q 'Eexpr Reference Mono'); then
+        echo >&2 "$(withaf f80 '[WARNING]') Eexpr Reference Mono not installed."
+    fi
     return 0
 }
 

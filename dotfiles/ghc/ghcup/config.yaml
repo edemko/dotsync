@@ -1,0 +1,28 @@
+cache: false
+downloader: Wget
+"gpg-setting": GPGNone
+"keep-dirs": Errors
+"key-bindings":
+  changelog:
+    KChar: c
+  down:
+    KDown: []
+  install:
+    KChar: i
+  quit:
+    KChar: q
+  set:
+    KChar: s
+  "show-all":
+    KChar: a
+  "show-all-tools":
+    KChar: t
+  uninstall:
+    KChar: u
+  up:
+    KUp: []
+"no-network": false
+"no-verify": false
+"url-source":
+  GHCupURL: []
+verbose: false
