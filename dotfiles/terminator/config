@@ -23,6 +23,8 @@
     foreground_color = "#ffffff"
     use_system_font = False
     background_alpha = 0.1
+    scroll_on_output = False
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[window0]]]
