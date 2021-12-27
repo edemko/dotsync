@@ -5,9 +5,12 @@
 ':)' "☺" # WHITE SMILING FACE
 ':(' "☹" # WHITE FROWNING FACE
 
-'CGP'  "⚙️" # GEAR
-'CCCP' "☭" # HAMMER AND SICKLE
-'POO'  "💩" # PILE OF POO
+'LGBT'  "🌈" # RAINBOW
+'SHINE' "✨" # SPARKLES
+'CGP'   "⚙️" # GEAR
+'CCCP'  "☭" # HAMMER AND SICKLE
+'POO'   "💩" # PILE OF POO
+'BARF'  "🤮" # VOMITING
 
 ## Hand Gestures
 '\o/'  "🙌" # PERSON RAISING BOTH HANDS IN CELEBRATION
@@ -38,6 +41,17 @@
 ### Hearts
 = '⎄'
 '<3' "♥" # BLACK HEART SUIT
+
+= '⎄<' '3'
+'r'  "❤️" # Red Heart
+'o'  "🧡" # Orange Heart
+'y'  "💛" # Yellow Heart
+'g'  "💚" # Green Heart
+'bu' "💙" # Blue Heart
+'p'  "💜" # Purple Heart
+'bk' "🖤" # Black Heart
+'w'  "🤍" # White Heart
+'br' "🤎" # Brown Heart
 
 ### Games
 # https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
