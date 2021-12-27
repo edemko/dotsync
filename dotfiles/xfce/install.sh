@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 srcdir="${dotdir}/src"
 targetdir="${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml"
@@ -19,7 +19,7 @@ dotsync_newest() {
 
 dotsync_setup() {
     for file in $syncd_files; do
-        if ! diff -q >/dev/null "$target/$file" "$srcdir/$file"; then
+        if ! diff -q >/dev/null "$targetdir/$file" "$srcdir/$file"; then
             mkdir -p "$backupdir"
             cp -v "$targetdir/$file" "$backupdir/$file"
             cp -v "$srcdir/$file" "$targetdir/$file"

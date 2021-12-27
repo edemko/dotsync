@@ -46,6 +46,11 @@ dotsync_setup() {
   for font in $fonts; do
     if [ -e "$src/$font" ]; then
       mkdir -p "$(dirname "$systarget/$font")"
+      if [ "$systarget/$font" -nt "$src/$font" ]; then
+        echo >&2 "systen font is newer than dotfile font"
+        echo >&2 "to update dotfiles, run: mv '$systarget/$font' '$src/$font'"
+        return 1
+      fi
       ln -svf "$src/$font" "$systarget/$font"
     fi
   done

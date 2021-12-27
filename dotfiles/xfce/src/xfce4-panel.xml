@@ -66,7 +66,7 @@
       <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="%a %Y-%m-%d %H:%M:%S"/>
+      <property name="digital-format" type="string" value="%V %a %Y-%m-%d %H:%M:%S"/>
     </property>
     <property name="plugin-13" type="string" value="pager">
       <property name="rows" type="uint" value="2"/>

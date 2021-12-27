@@ -74,7 +74,7 @@ dotsync_setup() {
     diff -q >/dev/null "${mousemap_src}" "${mousemap}" || \
         cp -v "${mousemap_src}" "${mousemap}"
 
-    if ! ( diff -q >/dev/null "${packageControl}" "${packageControl_src}" ); then
+    if ! diff -q >/dev/null "${packageControl}" "${packageControl_src}"; then
         echo >&2 "$(withaf d0f '[NOTICE]') Package Control package list updated."
         echo >&2 "$(withaf d0f '[NOTICE]') Packages will be synced on next sublime text restart."
         echo >&2 "$(withaf d0f '[NOTICE]') See https://packagecontrol.io/docs/syncing"
@@ -82,17 +82,21 @@ dotsync_setup() {
     fi
 
     for pkg in $nice_package_names; do
-        diff -q >/dev/null "${packagesdir_src}/${pkg}.sublime-settings" "${packagesdir}/${pkg}.sublime-settings" || \
+        if ! diff -q >/dev/null "${packagesdir_src}/${pkg}.sublime-settings" "${packagesdir}/${pkg}.sublime-settings"; then
             cp -v "${packagesdir_src}/${pkg}.sublime-settings" "${packagesdir}/${pkg}.sublime-settings"
+        fi
     done
-    diff -q >/dev/null "${textlang_src}" "${textlang}" || \
+    if ! diff -q >/dev/null "${textlang_src}" "${textlang}"; then
         cp -v "${textlang_src}" "${textlang}"
+    fi
 
     for pkg in $manual_packages; do
-        [ -d "$manualdir/$pkg" ] || \
+        if ! [ -d "$manualdir/$pkg" ]; then
             git clone "ssh://git@github.com/Zankoku-Okuno/sublime-${pkg}" "$manualdir/$pkg"
-        gitstat "$manualdir/$pkg" || \
+        fi
+        if ! gitstat "$manualdir/$pkg"; then
             (cd "$manualdir/$pkg" && git pull)
+        fi
     done
 }
 
