@@ -13,6 +13,9 @@ if ! echo "${PATH}" | grep -q "${HOME}/.local/bin"; then
     export PATH="${PATH}:${HOME}/.local/bin"
 fi
 # FIXME this looks like haskell dotfiles
+if ! echo "${PATH}" | grep -q "${HOME}/.ghcup/bin"; then
+    export PATH="${PATH}:${HOME}/.ghcup/bin"
+fi
 if ! echo "${PATH}" | grep -q "/opt/ghc/bin"; then
     export PATH="${PATH}:/opt/ghc/bin"
 fi

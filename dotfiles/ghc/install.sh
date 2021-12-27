@@ -1,6 +1,5 @@
 #!/bin/sh
 
-ghcupExe="${HOME}/bin/ghcup"
 ghcupSrc="${dotdir}/ghcup"
 ghcupTarget="${HOME}/.ghcup"
 
@@ -15,14 +14,12 @@ dotsync_depsgood() {
 }
 
 dotsync_newest() {
-  [ -e "$ghcupExe" ] || return 1
   diff -q 2>/dev/null "${ghcupSrc}/config.yaml" "${ghcupTarget}/config.yaml" || return 1
   # TODO check that ghcup is latest
   diff -q 2>/dev/null "${ghciTarget}" "${ghciSrc}" || return 1
 }
 
 dotsync_setup() {
-  ln -svf "$ghcupTarget/bin/ghcup" "$ghcupExe"
   ln -svf "${ghcupSrc}/config.yaml" "${ghcupTarget}/config.yaml"
   # TODO ghcup upgrade
   ln -svf "${ghciSrc}" "${ghciTarget}"
