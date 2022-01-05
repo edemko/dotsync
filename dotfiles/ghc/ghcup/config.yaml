@@ -6,7 +6,7 @@ downloader: Wget
   changelog:
     KChar: c
   down:
-    KDown: []
+      KChar: j
   install:
     KChar: i
   quit:
@@ -20,7 +20,7 @@ downloader: Wget
   uninstall:
     KChar: u
   up:
-    KUp: []
+    KChar: k
 "no-network": false
 "no-verify": false
 "url-source":
