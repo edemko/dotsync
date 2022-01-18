@@ -135,7 +135,7 @@
 '*:' "̆" # U+0306: extra-short (breve)
 ' | ' "|" # minor (foot) group # this is just the simple ascii bar
 ' || ' "‖" # major (intonation) group
-'~~' "‿" # linking (absence of a break)
+'~_~' "‿" # linking (absence of a break)
 
 ### Diacritics
 ## syllabicity

@@ -155,11 +155,13 @@
 '/=' "≠" # NOT EQUAL TO
 '=/' "≠" # NOT EQUAL TO
 
+'~=' "≃" # ISOMORPHIC TO
+
 '===' "≡" # IDENTICAL TO
 # "≢" # NOT IDENTICAL TO
 
-'~='  "≈" # ALMOST EQUAL TO
-'~/=' "≉" # NOT ALMOST EQUAL TO
+'~~'  "≈" # ALMOST EQUAL TO
+'~/~' "≉" # NOT ALMOST EQUAL TO
 
 # "≏" # DIFFERENCE BETWEEN
 '?=' "≟" # QUESTIONED EQUAL TO

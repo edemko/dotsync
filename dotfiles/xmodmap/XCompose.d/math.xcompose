@@ -168,11 +168,13 @@
 <Multi_key> <slash> <equal>: "≠" # NOT EQUAL TO
 <Multi_key> <equal> <slash>: "≠" # NOT EQUAL TO
 
+<Multi_key> <asciitilde> <equal>: "≃" # ISOMORPHIC TO
+
 <Multi_key> <equal> <equal> <equal>: "≡" # IDENTICAL TO
 # "≢" # NOT IDENTICAL TO
 
-<Multi_key> <asciitilde> <equal>: "≈" # ALMOST EQUAL TO
-<Multi_key> <asciitilde> <slash> <equal>: "≉" # NOT ALMOST EQUAL TO
+<Multi_key> <asciitilde> <asciitilde>: "≈" # ALMOST EQUAL TO
+<Multi_key> <asciitilde> <slash> <asciitilde>: "≉" # NOT ALMOST EQUAL TO
 
 # "≏" # DIFFERENCE BETWEEN
 <Multi_key> <question> <equal>: "≟" # QUESTIONED EQUAL TO

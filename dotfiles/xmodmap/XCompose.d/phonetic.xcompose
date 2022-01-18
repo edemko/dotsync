@@ -134,7 +134,7 @@
 <Multi_key> <asterisk> <colon>: "̆" # U+0306: extra-short (breve)
 <Multi_key> <space> <bar> <space>: "|" # minor (foot) group # this is just the simple ascii bar
 <Multi_key> <space> <bar> <bar> <space>: "‖" # major (intonation) group
-<Multi_key> <asciitilde> <asciitilde>: "‿" # linking (absence of a break)
+<Multi_key> <asciitilde> <underscore> <asciitilde>: "‿" # linking (absence of a break)
 
 ###### Diacritics ######
 
