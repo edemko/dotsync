@@ -5,26 +5,35 @@
 		"bootloaders",
 		"composability",
 		"configurability",
+		"deconstruct",
+		"deduplicate",
+		"deduplicated",
 		"definitionally",
+		"deserialized",
 		"homoiconic",
 		"homoiconicity",
 		"initialism",
 		"initialisms",
 		"injectively",
+		"inline",
+		"inlined",
 		"inserters",
 		"internet",
+		"metadata",
 		"metaprogramming",
+		"mixfix",
+		"mixfixes",
 		"multitool",
+		"namespace",
+		"namespaces",
+		"performant",
 		"quasiquotation",
 		"quasiquote",
 		"requester's",
-		"inline",
-		"inlined",
+		"reusability",
+		"shaders",
 		"smush",
-		"namespace",
-		"deconstruct",
-		"metadata",
-		"namespaces"
+		"typechecking",
 	],
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": false,
@@ -71,6 +80,10 @@
 	"ignored_packages":
 	[
 		"Vintage"
+	],
+	"ignored_words":
+	[
+		"deduplication"
 	],
 	"rulers":
 	[

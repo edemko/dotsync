@@ -13,21 +13,21 @@
 	"installed_packages":
 	[
 		"Case Conversion",
-		"ColorPicker",
 		"Dockerfile Syntax Highlighting",
 		"ExpandRegion",
 		"LinkerScript",
 		"Lunarized Color Scheme",
 		"Move By Paragraph",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"PackageResourceViewer",
-		"SingleTrailingNewLine",
 		"SublimeLinter",
 		"SublimeLinter-shellcheck",
 		"Surround",
 		"Verilog",
 		"VHDL",
-		"x86 and x86_64 Assembly"
+		"x86 and x86_64 Assembly",
+		"Zig Language"
 	],
 	"repositories":
 	[
