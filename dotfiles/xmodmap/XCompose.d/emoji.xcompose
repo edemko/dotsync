@@ -1,0 +1,155 @@
+#########
+# Emoji #
+#########
+
+# see https://unicode.org/emoji/charts/full-emoji-list.html
+
+###### Smileys ######
+
+
+### smiling ###
+
+<Multi_key> <colon> <space> <colon> <parenright> <colon>: "😀"
+<Multi_key> <colon> <space> <colon> <D> <colon>: "😁"
+<Multi_key> <colon> <space> <X> <D> <colon>: "😆"
+<Multi_key> <colon> <space> <asciicircum> <period> <asciicircum> <apostrophe> <colon>: "😅"
+<Multi_key> <colon> <r> <o> <f> <l> <colon>: "🤣"
+<Multi_key> <colon> <space> <parenleft> <colon> <colon>: "🙃"
+<Multi_key> <colon> <m> <e> <l> <t> <colon>: "🫠"
+<Multi_key> <colon> <space> <semicolon> <parenright> <colon>: "😉"
+<Multi_key> <colon> <b> <l> <u> <s> <h> <colon>: "😊"
+<Multi_key> <colon> <h> <a> <l> <o> <colon>: "😇"
+
+### affection ###
+
+<Multi_key> <colon> <l> <o> <v> <e> <colon>: "🥰"
+<Multi_key> <colon> <less> <3> <e> <y> <e> <colon>: "😍"
+<Multi_key> <colon> <s> <t> <a> <r> <e> <y> <e> <colon>: "🤩"
+<Multi_key> <colon> <k> <i> <s> <s> <colon>: "😘"
+<Multi_key> <colon> <s> <w> <e> <a> <t> <colon>: "🥲"
+
+### tongue ###
+
+<Multi_key> <colon> <y> <u> <m> <colon>: "😋"
+<Multi_key> <colon> <space> <colon> <P> <colon>: "😛"
+<Multi_key> <colon> <space> <semicolon> <P> <colon>: "😜"
+<Multi_key> <colon> <z> <a> <n> <y> <colon>: "🤪"
+<Multi_key> <colon> <space> <X> <P> <colon>: "😝"
+<Multi_key> <colon> <space> <dollar> <P> <colon>: "🤑"
+
+### face-hand ###
+
+<Multi_key> <colon> <h> <u> <g> <colon>: "🤗"
+<Multi_key> <colon> <h> <e> <e> <h> <e> <e> <colon>: "🤭"
+<Multi_key> <colon> <s> <h> <h> <h> <colon>: "🤫"
+<Multi_key> <colon> <h> <m> <m> <m> <colon>: "🤔"
+
+### neutral/skeptical ###
+
+<Multi_key> <colon> <z> <i> <p> <colon>: "🤐"
+<Multi_key> <colon> <e> <y> <e> <b> <r> <o> <w> <colon>: "🤨"
+<Multi_key> <colon> <space> <colon> <bar> <colon>: "😐"
+<Multi_key> <colon> <space> <minus> <underscore> <minus> <colon>: "😑"
+<Multi_key> <colon> <space> <greater> <period> <greater> <colon>: "😒"
+<Multi_key> <colon> <g> <r> <i> <m> <a> <c> <e> <colon>: "😬"
+<Multi_key> <colon> <w> <h> <e> <w> <colon>: "😮‍💨"
+
+### sleepy ###
+
+<Multi_key> <colon> <r> <e> <l> <a> <x> <colon>: "😌"
+<Multi_key> <colon> <s> <n> <o> <r> <e> <colon>: "😪"
+<Multi_key> <colon> <d> <r> <o> <o> <l> <colon>: "🤤"
+<Multi_key> <colon> <z> <z> <z> <colon>: "😴"
+
+### unwell ###
+
+<Multi_key> <colon> <s> <i> <c> <k> <colon>: "🤢"
+<Multi_key> <colon> <b> <a> <r> <f> <colon>: "🤮"
+<Multi_key> <colon> <s> <n> <e> <e> <z> <e> <colon>: "🤧"
+<Multi_key> <colon> <h> <o> <t> <colon>: "🥵"
+<Multi_key> <colon> <c> <o> <l> <d> <colon>: "🥶"
+<Multi_key> <colon> <space> <at> <period> <at> <colon>: "😵‍💫"
+<Multi_key> <colon> <s> <p> <l> <o> <d> <e> <colon>: "🤯"
+
+### hat ###
+
+<Multi_key> <colon> <p> <a> <r> <t> <y> <colon>: "🥳"
+
+### concerned ###
+
+<Multi_key> <colon> <space> <colon> <slash> <colon>: "🫤"
+<Multi_key> <colon> <w> <o> <r> <r> <y> <colon>: "😟"
+<Multi_key> <colon> <space> <colon> <parenleft> <colon>: "🙁"
+<Multi_key> <colon> <space> <colon> <C> <colon>: "☹"
+<Multi_key> <colon> <space> <colon> <o> <colon>: "😮"
+<Multi_key> <colon> <O> <w> <O> <colon>: "😳"
+<Multi_key> <colon> <b> <e> <g> <colon>: "🥺"
+<Multi_key> <colon> <1> <t> <e> <a> <r> <colon>: "😢"
+<Multi_key> <colon> <space> <T> <period> <T> <colon>: "😭"
+<Multi_key> <colon> <space> <0> <period> <0> <colon>: "😱"
+<Multi_key> <colon> <space> <greater> <period> <less> <colon>: "😖"
+<Multi_key> <colon> <space> <D> <colon> <colon>: "😩"
+<Multi_key> <colon> <space> <D> <X> <colon>: "😫"
+<Multi_key> <colon> <y> <a> <w> <n> <colon>: "🥱"
+
+### negative ###
+
+<Multi_key> <colon> <space> <greater> <colon> <parenleft> <colon>: "😠"
+<Multi_key> <colon> <d> <e> <a> <d> <colon>: "💀"
+
+###### Hearts ######
+
+
+<Multi_key> <less> <slash> <3>: "💔"
+
+<Multi_key> <less> <r> <3>: "❤️" # Red Heart
+<Multi_key> <less> <p> <3>: "🩷" # Pink Heart
+<Multi_key> <less> <o> <3>: "🧡" # Orange Heart
+<Multi_key> <less> <y> <3>: "💛" # Yellow Heart
+<Multi_key> <less> <g> <3>: "💚" # Green Heart
+<Multi_key> <less> <b> <u> <3>: "💙" # Blue Heart
+<Multi_key> <less> <l> <b> <3>: "🩵" # Light Blue Heart
+<Multi_key> <less> <p> <i> <3>: "💜" # Purple Heart
+<Multi_key> <less> <b> <r> <3>: "🤎" # Brown Heart
+<Multi_key> <less> <b> <k> <3>: "🖤" # Black Heart
+<Multi_key> <less> <g> <y> <3>: "🩶" # Grey Heart
+<Multi_key> <less> <w> <3>: "🤍" # White Heart
+
+
+###### Animals & Nature ######
+
+
+### Mammals ###
+
+<Multi_key> <colon> <d> <e> <e> <r> <colon>: "🦌"
+<Multi_key> <colon> <f> <o> <x> <colon>: "🦊"
+<Multi_key> <colon> <u> <n> <i> <c> <o> <r> <n> <colon>: "🦄"
+
+### Birds ###
+
+<Multi_key> <colon> <b> <i> <r> <d> <colon>: "🐦"
+
+### Reptiles ###
+
+<Multi_key> <colon> <s> <a> <u> <r> <o> <colon>: "🦕"
+
+### Marine ###
+
+<Multi_key> <colon> <o> <c> <t> <o> <colon>: "🐙"
+
+### Bug ###
+
+<Multi_key> <colon> <b> <t> <r> <f> <l> <y> <colon>: "🦋"
+<Multi_key> <colon> <s> <p> <i> <d> <e> <r> <colon>: "🕷"
+<Multi_key> <colon> <w> <e> <b> <colon>: "🕸"
+
+### Flowers ###
+
+<Multi_key> <colon> <s> <a> <k> <u> <r> <a> <colon>: "🌸"
+
+### Other Plants ###
+
+<Multi_key> <colon> <c> <l> <o> <v> <e> <r> <colon>: "☘"
+<Multi_key> <colon> <4> <c> <l> <o> <v> <e> <r> <colon>: "🍀"
+<Multi_key> <colon> <m> <a> <p> <l> <e> <colon>: "🍁"
+<Multi_key> <colon> <m> <s> <h> <r> <m> <colon>: "🍄"

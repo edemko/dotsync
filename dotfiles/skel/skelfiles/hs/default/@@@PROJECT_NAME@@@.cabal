@@ -4,18 +4,18 @@ version: 0.0.1.0
 -- synopsis: 
 -- description:
 category: @@@CATEGORY@@@
-homepage: https://github.com/@@@AUTHOR@@@/@@@PROJECT_NAME@@@
-bug-reports: https://github.com/@@@AUTHOR@@@/@@@PROJECT_NAME@@@/issues
+homepage: https://github.com/@@@GITHUBUSER@@@/@@@GITHUB_REPO=$(basename "$PWD")@@@
+bug-reports: https://github.com/@@@GITHUBUSER@@@/@@@GITHUB_REPO@@@/issues
 author: @@@AUTHOR=$(git config user.name)@@@
 maintainer: @@@EMAIL=$(git config user.email)@@@
 copyright: @@@YEAR=$(date +'%Y')@@@ @@@AUTHOR@@@
 license: BSD-3-Clause
 license-file: LICENSE
-extra-source-files: CHANGELOG.md
+extra-source-files: README.md, CHANGELOG.md
 
 source-repository head
   type: git
-  location: https://github.com/@@@AUTHOR@@@/@@@PROJECT_NAME@@@
+  location: https://github.com/@@@GITHUBUSER@@@/@@@GITHUB_REPO@@@
 
 library
   hs-source-dirs: src

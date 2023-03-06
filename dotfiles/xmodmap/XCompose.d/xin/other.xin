@@ -34,8 +34,8 @@
 # "₵" # CEDI SIGN
 'C|' "¢" # CENT SIGN
 '|C' "¢" # CENT SIGN
-'C/' "₡" # COLON SIGN
-'/C' "₡" # COLON SIGN
+'C$' "₡" # COLON SIGN
+'$C' "₡" # COLON SIGN
 'Cr' "₢" # CRUZEIRO SIGN
 'd=' "₫" # DONG SIGN
 '=d' "₫" # DONG SIGN
@@ -68,3 +68,16 @@
 '=W' "₩" # WON SIGN
 'Y=' "¥" # YEN SIGN
 '=Y' "¥" # YEN SIGN
+# <dead_currency> <a>           : "؋"   U060B               # AFGHANI SIGN
+# <dead_currency> <b>           : "฿"   Thai_baht           # THAI CURRENCY SYMBOL BAHT
+# <dead_currency> <I>           : "៛"   U17DB               # KHMER CURRENCY SYMBOL RIEL
+# <dead_currency> <i>           : "﷼"   UFDFC               # RIAL SIGN
+# <dead_currency> <O>           : "૱"   U0AF1               # GUJARATI RUPEE SIGN
+# <dead_currency> <o>           : "௹"   U0BF9               # TAMIL RUPEE SIGN
+# <dead_currency> <t>           : "৳"   U09F3               # BENGALI RUPEE SIGN
+# <dead_currency> <THORN>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <thorn>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <U>           : "圓"   U5713              # YUAN / WEN
+# <dead_currency> <u>           : "元"   U5143              # YUAN / WEN
+# <dead_currency> <Y>           : "円"   U5186              # YEN
+

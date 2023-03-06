@@ -2,34 +2,76 @@
 # Latin Alphabet # #
 ####################
 
-### Variant Letters ###
-<Multi_key> <v> <l>: "ℓ" # SCRIPT SMALL L
+
+### Old English ###
+<Multi_key> <A> <E>: "Æ" # LATIN CAPITAL LETTER AE (ash, æsc)
+<Multi_key> <a> <e>: "æ" # LATIN SMALL LETTER AE
+<Multi_key> <O> <E>: "Œ" # LATIN CAPITAL LIGATURE OE (ethel, œthel)
+<Multi_key> <o> <e>: "œ" # LATIN SMALL LIGATURE OE
+<Multi_key> <D> <H>: "Ð" # Eth
+<Multi_key> <d> <h>: "ð" # eth
+<Multi_key> <T> <H>: "Þ" # Thorn
+<Multi_key> <t> <h>: "þ" # thorn
+<Multi_key> <W> <W>: "Ƿ" # Wynn
+<Multi_key> <w> <w>: "ƿ" # wynn
+<Multi_key> <G> <h>: "Ȝ" # Yogh
+<Multi_key> <g> <h>: "ȝ" # yogh
+
 
 ### Extra Letters ###
+<Multi_key> <N> <G>: "Ŋ" # LATIN CAPITAL LETTER ENG
+<Multi_key> <n> <g>: "ŋ" # LATIN SMALL LETTER ENG
+
+<Multi_key> <e> <e>: "ə" # LATIN SMALL LETTER SCHWA
+<Multi_key> <period> <i>: "ı" # LATIN SMALL LETTER DOTLESS I
+<Multi_key> <period> <j>: "ȷ" # LATIN SMALL LETTER DOTLESS J
+
 <Multi_key> <s> <s>: "ß" # LATIN SMALL LETTER SHARP S
 <Multi_key> <S> <S>: "ẞ" # LATIN CAPITAL LETTER SHARP S
+
+### Variant Letters ###
+<Multi_key> <v> <l>: "ℓ" # SCRIPT SMALL L
 
 ### Historical Characters ###
 <Multi_key> <f> <s>: "ſ" # LATIN SMALL LETTER LONG S
 <Multi_key> <f> <S>: "ſ" # LATIN SMALL LETTER LONG S
 <Multi_key> <period> <f> <s>: "ẛ" # LATIN SMALL LETTER LONG S WITH DOT ABOVE
 
-<Multi_key> <W> <W>: "Ƿ" # Wynn
-<Multi_key> <w> <w>: "ƿ" # wynn
-<Multi_key> <G> <h>: "Ȝ" # Yogh
-<Multi_key> <g> <h>: "ȝ" # yogh
+<Multi_key> <k> <k>: "ĸ" # LATIN SMALL LETTER KRA
+
+### Insular Script ###
+
+<Multi_key> <colon> <i> <e> <D>: "Ꝺ" # Capital Insular D
+<Multi_key> <colon> <i> <e> <d>: "ꝺ" # Small Insular D
+<Multi_key> <colon> <i> <e> <F>: "Ꝼ" # Capital Insular F
+<Multi_key> <colon> <i> <e> <f>: "ꝼ" # Small Insular F
+<Multi_key> <colon> <i> <e> <G>: "Ᵹ" # Capital Insular G
+<Multi_key> <colon> <i> <e> <g>: "ᵹ" # Small Insular G
+<Multi_key> <colon> <i> <e> <N> <G>: "Ꝿ" # Capital Turned Insular G
+<Multi_key> <colon> <i> <e> <n> <g>: "ꝿ" # Small Turned Insular G
+<Multi_key> <colon> <i> <e> <R>: "Ꞃ" # Capital Insular R
+<Multi_key> <colon> <i> <e> <r>: "ꞃ" # Small Insular R
+<Multi_key> <colon> <i> <e> <S>: "Ꞅ" # Capital Insular S
+<Multi_key> <colon> <i> <e> <s>: "ꞅ" # Small Insular S
+<Multi_key> <colon> <i> <e> <T>: "Ꞇ" # Capital Insular T
+<Multi_key> <colon> <i> <e> <t>: "ꞇ" # Small Insular T
+
+### Tironian Notes ###
+<Multi_key> <colon> <T> <colon> <E> <t>: "⹒" # Capital Tironian Et
+<Multi_key> <colon> <T> <colon> <e> <t>: "⁊" # Small Tironian Et
 
 ### Ligatures ###
-<Multi_key> <a> <e>: "æ" # LATIN SMALL LETTER AE
-<Multi_key> <A> <E>: "Æ" # LATIN CAPITAL LETTER AE
-<Multi_key> <o> <e>: "œ" # LATIN SMALL LIGATURE OE
-<Multi_key> <O> <E>: "Œ" # LATIN CAPITAL LIGATURE OE
 
 <Multi_key> <f> <f>: "ﬀ" # LATIN SMALL LIGATURE FF
 <Multi_key> <f> <i>: "ﬁ" # LATIN SMALL LIGATURE FI
 <Multi_key> <f> <l>: "ﬂ" # LATIN SMALL LIGATURE FL
 <Multi_key> <F> <i>: "ﬃ" # LATIN SMALL LIGATURE FFI
 <Multi_key> <F> <l>: "ﬄ" # LATIN SMALL LIGATURE FFL
+<Multi_key> <s> <t>: "ﬆ" # LATIN SMALL LIGATURE ST
 <Multi_key> <I> <J>: "Ĳ" # LATIN CAPITAL LIGATURE IJ
 <Multi_key> <I> <j>: "Ĳ" # LATIN CAPITAL LIGATURE IJ
 <Multi_key> <i> <j>: "ĳ" # LATIN SMALL LIGATURE IJ
+<Multi_key> <W> <Y>: "Ꝡ" # LATIN CAPITAL LIGATURE VY
+<Multi_key> <W> <y>: "Ꝡ" # LATIN CAPITAL LIGATURE VY
+<Multi_key> <w> <y>: "ꝡ" # LATIN SMALL LIGATURE VY
+

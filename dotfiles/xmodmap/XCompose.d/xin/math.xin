@@ -3,6 +3,10 @@
 
 #### Everyday Math
 = '⎄'
+'xx' "×" # MULTIPLICATION SIGN
+':-' "÷" # DIVISION SIGN
+'-:' "÷" # DIVISION SIGN
+
 '%o' "‰" # PER MILLE SIGN
 '%O' "‱" # PER MYRIAD SIGN
 

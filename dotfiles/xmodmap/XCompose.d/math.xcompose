@@ -4,6 +4,10 @@
 # Everyday Math #
 #################
 
+<Multi_key> <x> <x>: "×" # MULTIPLICATION SIGN
+<Multi_key> <colon> <minus>: "÷" # DIVISION SIGN
+<Multi_key> <minus> <colon>: "÷" # DIVISION SIGN
+
 <Multi_key> <percent> <o>: "‰" # PER MILLE SIGN
 <Multi_key> <percent> <O>: "‱" # PER MYRIAD SIGN
 

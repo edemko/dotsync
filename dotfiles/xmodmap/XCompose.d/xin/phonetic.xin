@@ -17,7 +17,7 @@
 
 ## Dental
 'Th' "θ"
-# 'dh' "ð" already in default gtk compose table
+# 'dh' "ð" already in latin.xin
 
 ## Alveolar
 'rt' "ɾ"
@@ -31,21 +31,31 @@
 'zh' "ʒ"
 
 ## Retroflex
-'t`' "ʈ"
-'d`' "ɖ"
-'n`' "ɳ"
+'tr' "ʈ"
+'dr' "ɖ"
+'nr' "ɳ"
 'Rt' "ɽ"
-'s`' "ʂ"
-'z`' "ʐ"
+'sr' "ʂ"
+'zr' "ʐ"
 'Rr' "ɻ"
-'l`' "ɭ"
+'lr' "ɭ"
+'lR' "ꞎ"
+
+## Alveopalatal
+'nJ' "ȵ"
+'tJ' "ȶ"
+'dJ' "ȡ"
+'sJ' "ɕ"
+'zJ' "ʑ"
+'lJ' "ȴ"
 
 ## Palatal
 'gj' "ɟ"
 'nj' "ɲ"
-# 'c,' "ç" already in default gtk compose table
+# 'c,' "ç" already in diacritics.xin
 'jh' "ʝ"
 'lj' "ʎ"
+'lc' ""
 
 ## Velar
 '\g ' "ɡ"
@@ -53,7 +63,8 @@
 # 'ng' "ŋ" already in default gtk compose table
 'gx' "ɣ"
 'wx' "ɰ"
-'lx' "ʟ" # why doesn't LL work‽
+'lx' "ʟ" # TODO why does LL not work‽
+'lk' "Ɬ"
 
 ## Uvular
 'GG' "ɢ"
@@ -63,16 +74,16 @@
 'rq' "ʁ"
 
 ## Pharyngeal
-'h-' "ħ"
+# 'h-' "ħ" # already in diacritics.xin
 '?h' "ʕ"
 
 ## Epiglottal
-'?-period' "ʡ"
+'?-.' "ʡ"
 '?-h' "ʢ"
 'HH' "ʜ"
 
 ## Glottal
-'?period' "ʔ"
+'?.' "ʔ"
 'hz' "ɦ"
 
 ## Vowels
@@ -82,11 +93,11 @@
 'II' "ɪ"
 'YY' "ʏ"
 'OO' "ʊ"
-# 'o/' "ø" # already in default gtk compose table
+# 'o/' "ø" # already in diacritics.xin
 'e=' "ɘ"
 'o=' "ɵ"
 'o&' "ɤ"
-# 'ee' "ə" # already in default gtk compose table
+# 'ee' "ə" # already in latin.xin
 'e ' "ɛ"
 # 'oe' "œ" # already in latin.xin
 '@e' "ɜ"
@@ -103,8 +114,6 @@
 ## Coarticulations
 'jw' "ɥ"
 'wh' "ʍ"
-'cj' "ɕ"
-'zj' "ʑ"
 'sx' "ɧ"
 '==*' "͡" # U+0361: TIE BAR ABOVE
 '==_' "͜" # U+035C: TIE BAR BELOW
@@ -146,6 +155,7 @@
 
 ## consonant release
 '*h' "ʰ" # aspirated
+'*H' "ʱ" # voiced aspirate/breathy
 '*]' "˺" # no audible release
 '*n' "ⁿ" # nasal release
 '*l' "ˡ" # lateral release
@@ -163,16 +173,16 @@
 # '_b' "̼" # U+033C: linguolabial
 # '_t' "̺" # U+033A: apical
 # '_l' "̻" # U+033B: laminal
-# '_+' "̟" # U+031F: advanced
-# '=+' "˖" # U+02D6: advanced (after)
-# '_-' "̠" # U+0320: retracted
-# '=-' "˗" # U+02D7: retracted (after)
+'_⎄<-' "̟" # U+031F: advanced
+'=⎄<-' "˖" # U+02D6: advanced (after)
+ '_⎄->' "̠" # U+0320: retracted
+'=⎄->' "˗" # U+02D7: retracted (after)
 # '*"' "̈" # U+0308: centralized
 # '*x' "̽" # U+033D: mid-centralized
-# '_|^' "̝" # U+031D: raised
-# '=|^' "˔" # U+02D4: raised (after)
-# '_|v' "̞" # U+031E: lowered
-# '=|v' "˕" # U+02D5: lowered (after)
+'_⎄|^' "̝" # U+031D: raised
+'=⎄|^' "˔" # U+02D4: raised (after)
+'_⎄|v' "̞" # U+031E: lowered
+'=⎄|v' "˕" # U+02D5: lowered (after)
 
 ## co-articulation
 # TODO '_)' "̹" # U+0339: more rounded
@@ -182,6 +192,7 @@
 '=r' "˞" # U+02DE: rhoticity
 '*w' "ʷ" # labialized
 '*j' "ʲ" # palatalized
+'*y' "ᶣ" # labiopalatalized
 '*g' "ˠ" # velarized
 '*?' "ˤ" # pharyngealized
 '=~' "̴" # U+0334: velarized or pharyngealized
@@ -215,10 +226,7 @@
 ## lateral
 'lss' "ʪ"
 'lsz' "ʫ"
-'lrh' "ꞎ"
 # 'lrz' # TODO ɭ-ʒ ligature not supported in unicode to my knowledge
-'lc' ""
-'Lc' ""
 
 ## velo-pharyngeal
 'fg' "ʩ"
@@ -231,9 +239,9 @@
 #  NOTE: pharyngeal sounds (small-caps Q, turned small-caps G) are not supported in unicode to my knowledge
 
 ## percussive
-'!ww' "ʬ"
-'!tt' "ʭ"
-# '!!' "¡" already in default gtk compose table
+'!.w' "ʬ"
+'!.t' "ʭ"
+# '!!' "¡" already in punctuation.xin
 
 ## diacritics
 # FIXME many of these are not working

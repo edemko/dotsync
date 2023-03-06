@@ -58,7 +58,7 @@ instance Monad Build where
 
 data St = St
   { config :: Config
-  , knownInputs :: [String]
+  , knownInputs :: [(String, String)]
   , curFile :: FilePath
   , curPrefix :: String
   , curSuffix :: String
@@ -73,9 +73,13 @@ emptySt = St
   }
 
 data Error
-  = SharedPrefixes [String]
+  = SharedPrefixes [(String, String)]
   | FileNotSet
-  deriving (Show)
+
+instance Show Error where
+  show FileNotSet = "FileNotSet"
+  show (SharedPrefixes kvs) = "SharedPrefixes" <> (concat $ ("\n  " ++) . go <$> kvs)
+    where go (i, o) = i <> " (" <> show i <> ") → " <> o <> " (" <> show o <> ")"
 
 runBuild :: Build a -> Either Error Config
 runBuild action = reverseConfig . config . fst <$> unBuild action emptySt
@@ -103,15 +107,15 @@ insert item = Build $ \st -> do
     Nothing -> []
     Just it -> it
   st' <- case item of
-    KeySeq{input} -> do
+    KeySeq{input,output} -> do
       let input' = curPrefix st <> input <> curSuffix st
-      () <- case prefixSharing input' (knownInputs st) of
+      case prefixSharing (input',output) (knownInputs st) of
         [] -> pure ()
-        xs -> Left $ SharedPrefixes xs
+        xs -> Left $ SharedPrefixes ((input',output) : xs)
       let item' = item{input = input'}
           file' = item' : file
           config' = Map.insert (curFile st) file' (config st)
-          knownInputs' = input' : knownInputs st
+          knownInputs' = (input',output) : knownInputs st
       pure st{config = config', knownInputs = knownInputs'}
     _ -> do
       let file' = item : file
@@ -119,8 +123,8 @@ insert item = Build $ \st -> do
       pure st{config = config'}
   pure (st', ())
 
-prefixSharing :: String -> [String] -> [String]
+prefixSharing :: (String,String) -> [(String,String)] -> [(String,String)]
 prefixSharing new old =
-  let newIsPrefixOf = filter (new `isPrefixOf`) old
-      oldIsPrefixOf = filter (`isPrefixOf` new) old
+  let newIsPrefixOf = filter ((fst new `isPrefixOf`) . fst) old
+      oldIsPrefixOf = filter ((`isPrefixOf` fst new) . fst) old
    in newIsPrefixOf <> oldIsPrefixOf

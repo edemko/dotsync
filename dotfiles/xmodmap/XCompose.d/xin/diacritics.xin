@@ -4,29 +4,629 @@
 
 ### Spacing diacritics
 = '⎄ '
-# TODO: check wiki for any add'l diacritics
+
 ''''  "´" # ACUTE ACCENT
-'`'   "`" # GRAVE ACCENT
+#'-' "" # TODO BAR
+'U'   "˘" # BREVE
+'c'   "ˇ" # CARON
+','   "¸" # CEDILLA
+'^'   "ˆ" # CIRCUMFLEX ACCENT
+'/,'  "̦" # COMMA BELOW
+'"'   "¨" # DIAERESIS
+#'.'    :: # DOT ABOVE
+#'!'    :: # DOT BELOW
 '2''' "˝" # DOUBLE ACUTE ACCENT
 '2`'  "˵" # DOUBLE GRAVE ACCENT
-'^'   "ˆ" # CIRCUMFLEX ACCENT
-'<'   "ˇ" # CARON
-'"'   "¨" # DIAERESIS
-'~'   "~" # TILDE
+'`'   "`" # GRAVE ACCENT
+#'>' "" # HOOK
+#'?' "" # HOOK ABOVE
+#'{' "" # HORN
 '_'   "¯" # MACRON
-'('   "˘" # BREVE
-'o'   "˚" # 02DA RING ABOVE
-'z'   "¸" # CEDILLA
-'n'   "˛" # OGONEK
+';'   "˛" # OGONEK
+'o'   "˚" # RING ABOVE
+#'/' "" # TODO SLASH
+'~'   "~" # TILDE
 
-### Modifier Diacritics
-# TODO
+### Combining Diacritics
+= '⎄-'
+
+'''' "́" # COMBINING ACUTE ACCENT
+'U' "̆" # COMBINING BREVE
+'c' "̌" # COMBINING CARON
+'z' "̧" # COMBINING CEDILLA
+'^' "̂" # COMBINING CIRCUMFLEX ACCENT
+'\,' "̦" # COMBINING COMMA BELOW
+'"' "̈" # COMBINING DIAERESIS
+'.' "̇" #  COMBINING DOT ABOVE
+'!' "̣" # COMBINING DOT BELOW
+'2''' "̋" # COMBINING DOUBLE ACUTE ACCENT
+# TODO # COMBINING DOUBLE GRAVE ACCENT
+'`' "̀" # COMBINING GRAVE ACCENT
+'?' "̉" # COMBINING HOOK ABOVE
+'{' "̛" # COMBINING HORN
+'_' "̄" # COMBINING MACRON
+';' "̨" # COMBINING OGONEK
+'o' "̊" # COMBINING RING ABOVE
+'~' "̃" # COMBINING TILDE
+
+
 
 ### Composed Diacritics
-= '⎄'
-'cx' "x̌"
-'cX' "X̌"
 
-'(g' "ğ"
+## Acute
+= '⎄' ''''
+
+'A' "Á"
+'a' "á"
+'C' "Ć"
+'c' "ć"
+'E' "É"
+'e' "é"
+'G' "Ǵ"
+'g' "ǵ"
+'I' "Í"
+'i' "í"
+'J' "J́"
+'j' "j́"
+'K' "Ḱ"
+'k' "ḱ"
+'L' "Ĺ"
+'l' "ĺ"
+'M' "Ḿ"
+'m' "ḿ"
+'N' "Ń"
+'n' "ń"
+'O' "Ó"
+'o' "ó"
+'P' "Ṕ"
+'p' "ṕ"
+'R' "Ŕ"
+'r' "ŕ"
+'S' "Ś"
+'s' "ś"
+'U' "Ú"
+'u' "ú"
+'W' "Ẃ"
+'w' "ẃ"
+'Y' "Ý"
+'y' "ý"
+'Z' "Ź"
+'z' "ź"
+
+'⎄AE' "Ǽ"
+'⎄ae' "ǽ"
+'⎄NG' "Ŋ̀"
+'⎄ng' "ŋ̀"
+
+## Bar
+= '⎄' '-'
+
+'2' "ƻ"
+'B' "Ƀ"
+'b' "ƀ"
+'D' "Đ"
+'d' "đ"
+'G' "Ǥ"
+'g' "ǥ"
+'H' "Ħ"
+'h' "ħ"
+'I' "Ɨ"
+'i' "ɨ"
+'J' "Ɉ"
+'j' "ɉ"
+'P' "Ᵽ"
+'p' "ᵽ"
+'R' "Ɍ"
+'r' "ɍ"
+'T' "Ŧ"
+'t' "ŧ"
+'U' "Ʉ"
+'u' "ʉ"
+'Y' "Ɏ"
+'y' "ɏ"
+'Z' "Ƶ"
+'z' "ƶ"
+
+## Breve
+= '⎄U'
+
+'A' "Ă"
+'a' "ă"
+'E' "Ĕ"
+'e' "ĕ"
+'G' "Ğ"
+'g' "ğ"
+'I' "Ĭ"
+'i' "ĭ"
+'O' "Ŏ"
+'o' "ŏ"
+'U' "Ŭ"
+'u' "ŭ"
+'Y' "Y̆"
+'y' "y̆"
+
+## Breve Below
+= '⎄\U'
+
+'H' "Ḫ"
+'h' "ḫ"
+
+## Caron/Wedge
+= '⎄c'
+
+'A' "Ǎ"
+'a' "ǎ"
+'B' "B̌"
+'b' "b̌"
+'C' "Č"
+'c' "č"
+'D' "Ď"
+'d' "ď"
+'E' "Ě"
+'e' "ě"
+'F' "F̌"
+'f' "f̌"
+'G' "Ǧ"
+'g' "ǧ"
+'H' "Ȟ"
+'h' "ȟ"
+'I' "Ǐ"
+'i' "ǐ"
+'J' "J̌"
+'j' "ǰ"
+'K' "Ǩ"
+'k' "ǩ"
+'L' "Ľ"
+'l' "ľ"
+'M' "M̌"
+'m' "m̌"
+'N' "Ň"
+'n' "ň"
+'O' "Ǒ"
+'o' "ǒ"
+'P' "P̌"
+'p' "p̌"
+'Q' "Q̌"
+'q' "q̌"
+'R' "Ř"
+'r' "ř"
+'S' "Š"
+'s' "š"
+'T' "Ť"
+'t' "ť"
+'U' "Ǔ"
+'u' "ǔ"
+'V' "V̌"
+'v' "v̌"
+'W' "W̌"
+'w' "w̌"
+'X' "X̌"
+'x' "x̌"
+'Y' "Y̌"
+'y' "y̌"
+'Z' "Ž"
+'z' "ž"
+
+'⎄ZH' "Ǯ"
+'⎄zh' "ǯ"
+
+## Cedilla
+= '⎄' ','
+
+'C' "Ç"
+'c' "ç"
+'D' "Ḑ"
+'d' "ḑ"
+'E' "Ȩ"
+'e' "ȩ"
+'G' "Ģ"
+'g' "ģ"
+'H' "Ḩ"
+'h' "ḩ"
+'K' "Ķ"
+'k' "ķ"
+'L' "Ļ"
+'l' "ļ" # "l‌̧" may get around undercomma rendering
+'N' "Ņ"
+'n' "ņ" # "n‌̧" may get around undercomma rendering
+'R' "Ŗ"
+'r' "ŗ"
+'S' "Ş"
+'s' "ş"
+'T' "Ţ"
+'t' "ţ"
+
+## Circumflex
+= '⎄' '^'
+
+'A' "Â"
+'a' "â"
+'E' "Ê"
+'e' "ê"
+'I' "Î"
+'i' "î"
+'O' "Ô"
+'o' "ô"
+'U' "Û"
+'u' "û"
+'W' "Ŵ"
+'w' "ŵ"
+'Y' "Ŷ"
+'y' "ŷ"
+'Z' "Ẑ"
+'z' "ẑ"
+
+## Circumflex Below
+= '⎄' '\^'
+
+'D' "Ḓ"
+'d' "ḓ"
+'E' "Ḙ"
+'e' "ḙ"
+'L' "Ḽ"
+'l' "ḽ"
+'N' "Ṋ"
+'n' "ṋ"
+'T' "Ṱ"
+'t' "ṱ"
+'U' "Ṷ"
+'u' "ṷ"
+
+## Comma Below
+
+= '⎄' '\,'
+
+'S' "Ș"
+'s' "ș"
+'T' "Ț"
+'t' "ț"
+
+## Diaresis/Umlaut
+= '⎄' '"'
+
+'A' "Ä"
+'a' "ä"
+'E' "Ë"
+'e' "ë"
+'H' "Ḧ"
+'h' "ḧ"
+'I' "Ï"
+'i' "ï"
+'O' "Ö"
+'o' "ö"
+'t' "ẗ"
+'U' "Ü"
+'u' "ü"
+'W' "Ẅ"
+'w' "ẅ"
+'X' "Ẍ"
+'x' "ẍ"
+'Y' "Ÿ"
+'y' "ÿ"
+
+## Diaresis Below
+= '⎄' '\"'
+
+'U' "Ṳ"
+'u' "ṳ"
+
+## Dot Above
+= '⎄' '.'
+
+'A' "Ȧ"
+'a' "ȧ"
+'B' "Ḃ"
+'b' "ḃ"
+'C' "Ċ"
+'c' "ċ"
+'D' "Ḋ"
+'d' "ḋ"
+'E' "Ė"
+'e' "ė"
+'F' "Ḟ"
+'f' "ḟ"
+'G' "Ġ"
+'g' "ġ"
+'H' "Ḣ"
+'h' "ḣ"
+'I' "İ"
+'M' "Ṁ"
+'m' "ṁ"
+'N' "Ṅ"
+'n' "ṅ"
+'O' "Ȯ"
+'o' "ȯ"
+'P' "Ṗ"
+'p' "ṗ"
+'R' "Ṙ"
+'r' "ṙ"
+'S' "Ṡ"
+'s' "ṡ"
+'T' "Ṫ"
+'t' "ṫ"
+'W' "Ẇ"
+'w' "ẇ"
+'X' "Ẋ"
+'x' "ẋ"
+'Y' "Ẏ"
+'y' "ẏ"
+'Z' "Ż"
+'z' "ż"
+
+## Dot Below
+= '⎄!'
+
+'A' "Ạ"
+'a' "ạ"
+'B' "Ḅ"
+'b' "ḅ"
+'D' "Ḍ"
+'d' "ḍ"
+'E' "Ẹ"
+'e' "ẹ"
+'H' "Ḥ"
+'h' "ḥ"
+'I' "Ị"
+'i' "ị"
+'K' "Ḳ"
+'k' "ḳ"
+'L' "Ḷ"
+'l' "ḷ"
+'M' "Ṃ"
+'m' "ṃ"
+'N' "Ṇ"
+'n' "ṇ"
+'O' "Ọ"
+'o' "ọ"
+'R' "Ṛ"
+'r' "ṛ"
+'S' "Ṣ"
+'s' "ṣ"
+'T' "Ṭ"
+'t' "ṭ"
+'U' "Ụ"
+'u' "ụ"
+'V' "Ṿ"
+'v' "ṿ"
+'W' "Ẉ"
+'w' "ẉ"
+'Y' "Ỵ"
+'y' "ỵ"
+'Z' "Ẓ"
+'z' "ẓ"
+
+## Double Acute
+= '⎄' '2'''
+
+'O' "Ő"
+'o' "ő"
+'U' "Ű"
+'u' "ű"
+
+## Double Grave
+= '⎄' '2`'
+
+'A' "Ȁ"
+'a' "ȁ"
+'E' "Ȅ"
+'e' "ȅ"
+'I' "Ȉ"
+'i' "ȉ"
+'O' "Ȍ"
+'o' "ȍ"
+'R' "Ȑ"
+'r' "ȑ"
+'U' "Ȕ"
+'u' "ȕ"
+
+## Grave
+= '⎄' '`'
+
+'A' "À"
+'a' "à"
+'E' "È"
+'e' "è"
+'I' "Ì"
+'i' "ì"
+'N' "Ǹ"
+'n' "ǹ"
+'O' "Ò"
+'o' "ò"
+'U' "Ù"
+'u' "ù"
+'W' "Ẁ"
+'w' "ẁ"
+'Y' "Ỳ"
+'y' "ỳ"
+
+## Hook
+= '⎄>'
+
+'B' "Ɓ"
+'b' "ɓ"
+'C' "Ƈ"
+'c' "ƈ"
+'D' "Ɗ"
+'d' "ɗ"
+'F' "Ƒ"
+'f' "ƒ"
+'G' "Ɠ"
+'g' "ɠ"
+'h' "ɦ"
+'K' "Ƙ"
+'k' "ƙ"
+'M' "Ɱ"
+'m' "ɱ"
+'N' "Ɲ"
+'n' "ɲ"
+'P' "Ƥ"
+'p' "ƥ"
+'q' "ʠ"
+'r' "ɼ"
+'s' "ʂ"
+'T' "Ƭ"
+'t' "ƭ"
+'V' "Ʋ"
+'v' "ʋ"
+'W' "Ⱳ"
+'w' "ⱳ"
+'Z' "Ȥ"
+'z' "ȥ"
+
+## Hook Above
+= '⎄?'
+
+'A' "Ả"
+'a' "ả"
+'E' "Ẻ"
+'e' "ẻ"
+'I' "Ỉ"
+'i' "ỉ"
+'O' "Ỏ"
+'o' "ỏ"
+'U' "Ủ"
+'u' "ủ"
+'Y' "Ỷ"
+'y' "ỷ"
+
+## Horn
+= '⎄{'
+
+'O' "Ơ"
+'o' "ơ"
+'U' "Ư"
+'u' "ư"
+
+# Inverted Breve
+= '⎄U\'
+
+'A' "Ȃ"
+'a' "ȃ"
+'E' "Ȇ"
+'e' "ȇ"
+'I' "Ȋ"
+'i' "ȋ"
+'O' "Ȏ"
+'o' "ȏ"
+'R' "Ȓ"
+'r' "ȓ"
+'U' "Ȗ"
+'u' "ȗ"
+
+## Line Below
+
+= '⎄' '\_'
+
+'B' "Ḇ"
+'b' "ḇ"
+'D' "Ḏ"
+'d' "ḏ"
+'h' "ẖ"
+'K' "Ḵ"
+'k' "ḵ"
+'L' "Ḻ"
+'l' "ḻ"
+'N' "Ṉ"
+'n' "ṉ"
+'R' "Ṟ"
+'r' "ṟ"
+'T' "Ṯ"
+'t' "ṯ"
+'Z' "Ẕ"
+'z' "ẕ"
 
 
+## Macron
+= '⎄' '_'
+
+'A' "Ā"
+'a' "ā"
+'E' "Ē"
+'e' "ē"
+# 'G' "Ḡ" # conflict with phonetics '⎄g_<'
+# 'g' "ḡ" # conflict with phonetics '⎄g_<'
+'I' "Ī"
+'i' "ī"
+'O' "Ō"
+'o' "ō"
+'U' "Ū"
+'u' "ū"
+'Y' "Ȳ"
+'y' "ȳ"
+
+'⎄AE' "Ǣ"
+'⎄ae' "ǣ"
+
+## Ogonek
+= '⎄' ';'
+
+'A' "Ą"
+'a' "ą"
+'E' "Ę"
+'e' "ę"
+'I' "Į"
+'i' "į"
+'O' "Ǫ"
+'o' "ǫ"
+'U' "Ų"
+'u' "ų"
+
+## Ring
+= '⎄o'
+
+'A' "Å"
+'a' "å"
+'U' "Ů"
+'u' "ů"
+'w' "ẘ"
+'y' "ẙ"
+
+## Ring Below
+= '⎄\o'
+
+'A' "Ḁ"
+'a' "ḁ"
+
+## Slash
+= '⎄' '/'
+
+'A' "Ⱥ"
+'a' "ⱥ"
+'C' "Ȼ"
+'c' "ȼ"
+'E' "Ɇ"
+'e' "ɇ"
+'L' "Ł"
+'l' "ł"
+'O' "Ø"
+'o' "ø"
+
+## Tilde
+= '⎄' '~'
+
+'A' "Ã"
+'a' "ã"
+'E' "Ẽ"
+'e' "ẽ"
+'I' "Ĩ"
+'i' "ĩ"
+'N' "Ñ"
+'n' "ñ"
+'O' "Õ"
+'o' "õ"
+'U' "Ũ"
+'u' "ũ"
+'V' "Ṽ"
+'v' "ṽ"
+'Y' "Ỹ"
+'y' "ỹ"
+
+## Tilde Below
+= '⎄' '\~'
+
+'E' "Ḛ"
+'e' "ḛ"
+'I' "Ḭ"
+'i' "ḭ"
+'U' "Ṵ"
+'u' "ṵ"

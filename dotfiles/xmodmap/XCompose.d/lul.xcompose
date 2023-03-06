@@ -4,10 +4,9 @@
 
 ###### Emoji ######
 
-<Multi_key> <colon> <parenright>: "☺" # WHITE SMILING FACE
-<Multi_key> <colon> <parenleft>: "☹" # WHITE FROWNING FACE
 
 <Multi_key> <L> <G> <B> <T>: "🌈" # RAINBOW
+<Multi_key> <T> <R> <A> <N> <S>: "⚧" # TRANSGENDER SYMBOL
 <Multi_key> <S> <H> <I> <N> <E>: "✨" # SPARKLES
 <Multi_key> <C> <G> <P>: "⚙️" # GEAR
 <Multi_key> <C> <C> <C> <P>: "☭" # HAMMER AND SICKLE
@@ -30,6 +29,7 @@
 <Multi_key> <backslash> <s> <i> <g> <h> <space>: "ಠ_ಠ"
 <Multi_key> <backslash> <m> <o> <n> <o> <c> <l> <e> <space>: "ಠ_ರೃ"
 <Multi_key> <backslash> <l> <o> <u> <d> <space>: "°Д°"
+# ;A;
 
 <Multi_key> <backslash> <f> <l> <i> <p> <space>: "(╯°□°）╯︵ ┻━┻"
 <Multi_key> <backslash> <2> <f> <l> <i> <p> <space>: "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻"
@@ -44,15 +44,6 @@
 
 <Multi_key> <less> <3>: "♥" # BLACK HEART SUIT
 
-<Multi_key> <less> <r> <3>: "❤️" # Red Heart
-<Multi_key> <less> <o> <3>: "🧡" # Orange Heart
-<Multi_key> <less> <y> <3>: "💛" # Yellow Heart
-<Multi_key> <less> <g> <3>: "💚" # Green Heart
-<Multi_key> <less> <b> <u> <3>: "💙" # Blue Heart
-<Multi_key> <less> <p> <3>: "💜" # Purple Heart
-<Multi_key> <less> <b> <k> <3>: "🖤" # Black Heart
-<Multi_key> <less> <w> <3>: "🤍" # White Heart
-<Multi_key> <less> <b> <r> <3>: "🤎" # Brown Heart
 
 ###### Games ######
 

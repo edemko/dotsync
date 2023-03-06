@@ -2,10 +2,9 @@
 #### Lul
 = '⎄'
 ### Emoji
-':)' "☺" # WHITE SMILING FACE
-':(' "☹" # WHITE FROWNING FACE
 
 'LGBT'  "🌈" # RAINBOW
+'TRANS' "⚧" # TRANSGENDER SYMBOL
 'SHINE' "✨" # SPARKLES
 'CGP'   "⚙️" # GEAR
 'CCCP'  "☭" # HAMMER AND SICKLE
@@ -28,6 +27,7 @@
 'sigh' "ಠ_ಠ"
 'monocle' "ಠ_ರೃ"
 'loud' "°Д°"
+# ;A;
 
 'flip'  "(╯°□°）╯︵ ┻━┻"
 '2flip' "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻"
@@ -42,16 +42,6 @@
 = '⎄'
 '<3' "♥" # BLACK HEART SUIT
 
-= '⎄<' '3'
-'r'  "❤️" # Red Heart
-'o'  "🧡" # Orange Heart
-'y'  "💛" # Yellow Heart
-'g'  "💚" # Green Heart
-'bu' "💙" # Blue Heart
-'p'  "💜" # Purple Heart
-'bk' "🖤" # Black Heart
-'w'  "🤍" # White Heart
-'br' "🤎" # Brown Heart
 
 ### Games
 # https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
