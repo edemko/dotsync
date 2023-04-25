@@ -107,12 +107,13 @@
 <Multi_key> <less> <o> <3>: "🧡" # Orange Heart
 <Multi_key> <less> <y> <3>: "💛" # Yellow Heart
 <Multi_key> <less> <g> <3>: "💚" # Green Heart
-<Multi_key> <less> <b> <u> <3>: "💙" # Blue Heart
+<Multi_key> <less> <b> <3>: "💙" # Blue Heart
 <Multi_key> <less> <l> <b> <3>: "🩵" # Light Blue Heart
-<Multi_key> <less> <p> <i> <3>: "💜" # Purple Heart
+<Multi_key> <less> <p> <u> <3>: "💜" # Purple Heart
+<Multi_key> <less> <p> <i> <3>: "🩷" # Pink Heart
 <Multi_key> <less> <b> <r> <3>: "🤎" # Brown Heart
-<Multi_key> <less> <b> <k> <3>: "🖤" # Black Heart
-<Multi_key> <less> <g> <y> <3>: "🩶" # Grey Heart
+<Multi_key> <less> <k> <3>: "🖤" # Black Heart
+<Multi_key> <less> <g> <r> <3>: "🩶" # Grey Heart
 <Multi_key> <less> <w> <3>: "🤍" # White Heart
 
 
@@ -136,6 +137,7 @@
 ### Marine ###
 
 <Multi_key> <colon> <o> <c> <t> <o> <colon>: "🐙"
+<Multi_key> <colon> <j> <e> <l> <l> <y> <colon>: "🪼"
 
 ### Bug ###
 
