@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sqliterc="${HOME}/.sqliterc"
-sqliterc_src="${1}/sqliterc"
+sqliterc_src="${dotdir}/sqliterc"
 
 
 dotsync_depsgood() {

@@ -1,20 +1,91 @@
-###         ###
+###############
 # Punctuation #
-###         ###
+###############
 
-### Spaces ###
+###### Spaces ######
+
+<Multi_key> <space> <space>: " " # NO-BREAK SPACE
+<Multi_key> <space> <period>: " " # PUNCTUATION SPACE
+<Multi_key> <minus> <minus> <space>: "­" # SOFT HYPHEN
 
 # tabular space = the width of a digit if font is fixed‐digit
-<Multi_key> <space> <numbersign>: " " U2007 # FIGURE SPACE
+<Multi_key> <space> <numbersign>: " " # FIGURE SPACE
+
+###### Dots ######
+
+<Multi_key> <period> <period>: "…" # HORIZONTAL ELLIPSIS
+<Multi_key> <period> <minus>: "·" # MIDDLE DOT
+<Multi_key> <period> <asciicircum>: "·" # MIDDLE DOT
+<Multi_key> <asciicircum> <period>: "·" # MIDDLE DOT
+
+###### Dashes ######
+
+<Multi_key> <minus> <minus> <period>: "–" # EN DASH
+<Multi_key> <minus> <minus> <minus>: "—" # EM DASH
+
+###### Ordinals ######
+
+
+<Multi_key> <asciicircum> <underscore> <a>: "ª" # FEMININE ORDINAL INDICATOR
+<Multi_key> <asciicircum> <underscore> <o>: "º" # MASCULINE ORDINAL INDICATOR
+
+###### Quote Marks ######
+
+
+<Multi_key> <period> <greater>: "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <period> <less>: "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <less> <less>: "«" # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <greater> <greater>: "»" # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <less> <apostrophe>: "‘" # LEFT SINGLE QUOTATION MARK
+<Multi_key> <apostrophe> <less>: "‘" # LEFT SINGLE QUOTATION MARK
+<Multi_key> <greater> <apostrophe>: "’" # RIGHT SINGLE QUOTATION MARK
+<Multi_key> <apostrophe> <greater>: "’" # RIGHT SINGLE QUOTATION MARK
+<Multi_key> <comma> <apostrophe>: "‚" # SINGLE LOW-9 QUOTATION MARK
+<Multi_key> <apostrophe> <comma>: "‚" # SINGLE LOW-9 QUOTATION MARK
+<Multi_key> <less> <quotedbl>: "“" # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <less>: "“" # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <greater> <quotedbl>: "”" # RIGHT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <greater>: "”" # RIGHT DOUBLE QUOTATION MARK
+<Multi_key> <comma> <quotedbl>: "„" # DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <quotedbl> <comma>: "„" # DOUBLE LOW-9 QUOTATION MARK
+
+###### Emote Marks ######
+
+
+<Multi_key> <exclam> <exclam>: "¡" # INVERTED EXCLAMATION MARK
+<Multi_key> <question> <question>: "¿" # INVERTED QUESTION MARK
+
+<Multi_key> <exclam> <question>: "‽" # INTERROBANG
+<Multi_key> <question> <exclam>: "⸘" # INVERTED INTERROBANG
+
+<Multi_key> <exclam> <comma>: "!̦" # comma exclam
+<Multi_key> <question> <comma>: "?̦" # comma question
+<Multi_key> <asciitilde> <question>: "⸮" # irony/sarcasm point
+<Multi_key> <slash> <s> <a> <r> <c> <a> <s> <m>: "⸮" # irony/sarcasm point
+
+###### List Bullets ######
+
+<Multi_key> <period> <equal>: "•" # BULLET
+<Multi_key> <backslash> <y> <e> <s> <space>: "✓"
+<Multi_key> <backslash> <n> <o> <space>: "✗"
+
+
+###### Misc Breaks ######
+
+
+<Multi_key> <p> <exclam>: "¶" # PILCROW SIGN (paragraph)
+<Multi_key> <P> <exclam>: "¶" # PILCROW SIGN (paragraph)
+<Multi_key> <P> <P>: "¶" # PILCROW SIGN (paragraph)
+
+<Multi_key> <s> <o>: "§" # SECTION SIGN
+<Multi_key> <o> <s>: "§" # SECTION SIGN
+<Multi_key> <S> <O>: "§" # SECTION SIGN
+<Multi_key> <O> <S>: "§" # SECTION SIGN
+<Multi_key> <s> <exclam>: "§" # SECTION SIGN
+<Multi_key> <S> <exclam>: "§" # SECTION SIGN
 
 <Multi_key> <3> <asterisk>: "⁂" # ASTERISM
 <Multi_key> <asterisk> <3>: "⁂" # ASTERISM
 <Multi_key> <f> <greater>: "❧" # ROTATED FLORAL HEART BULLET (fleuron)
 
 
-### Emote Marks ###
-
-<Multi_key> <exclam> <comma>: "!̦"
-<Multi_key> <question> <comma>: "?̦"
-<Multi_key> <asciitilde> <?>: "⸮" # irony/sarcasm point
-<Multi_key> <slash> <s> <a> <r> <c> <a> <s> <m>: "⸮" # irony/sarcasm point

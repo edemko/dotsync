@@ -1,0 +1,240 @@
+====== math
+# [Here](https://www.compart.com/en/unicode/block/U+2200)'s a good place to search for symbols
+
+#### Everyday Math
+= '⎄'
+'xx' "×" # MULTIPLICATION SIGN
+':-' "÷" # DIVISION SIGN
+'-:' "÷" # DIVISION SIGN
+
+'%o' "‰" # PER MILLE SIGN
+'%O' "‱" # PER MYRIAD SIGN
+
+'mu' "µ" # MICRO SIGN
+
+'+-' "±" # PLUS-MINUS SIGN
+'-+' "∓" # MINUS-OR-PLUS SIGN
+
+'oo' "°" # DEGREE SIGN
+'*0' "°" # DEGREE SIGN
+'0*' "°" # DEGREE SIGN
+
+'v/'  "√" # SQUARE ROOT
+'3v/' "∛" # CUBE ROOT
+'4v/' "∜" # FOURTH ROOT
+
+'88' "∞" # INFINITY
+
+'8c' "∝" # PROPORTIONAL TO
+
+### Duodecimal
+'dec' "↊"
+'el' "↋"
+
+
+#### Logic
+= '⎄'
+'all'  "∀"
+'exi'  "∃"
+'/exi' "∄" # THERE DOES NOT EXIST
+
+',-' "¬" # NOT SIGN
+'-,' "¬" # NOT SIGN
+
+'&&' "∧" # LOGICAL AND
+'||' "∨" # LOGICAL OR
+'/&&' "⊼" # NAND
+'/||' "⊽" # NOR
+'!||' "⊻" # XOR
+
+'.3' "∴" # THEREFORE
+
+
+#### Functions
+= '⎄'
+'of' "∘"
+'fo' "⨾"
+
+'fn' "λ"
+'Fn' "Λ"
+'FN' "Λ"
+
+
+#### Set Theory
+
+'{}' "∅" # EMPTY SET
+
+= '⎄\'
+'cap' "∩"
+'cup' "∪"
+
+'in' "∈"
+'/in' "∉"
+'ni' "∋"
+'/ni' "∌"
+
+= '⎄\' 's'
+'<'  "⊂" # SUBSET OF
+'>'  "⊃" # SUPERSET OF
+'<=' "⊆" # SUBSET OF OR EQUAL TO
+'>=' "⊇" # SUPERSET OF OR EQUAL TO
+
+'/<'  "⊄" # NOT SUBSET OF
+'/>'  "⊅" # SUPERSET OF
+'/<=' "⊈" # NEITHER A SUBSET OF NOR EQUAL TO
+'/>=' "⊉" # NEITHER A SUPERSET OF NOR EQUAL TO
+
+'</=' "⊊" # SUBSET OF WITH NOT EQUAL TO
+'>/=' "⊋" # SUPERSET OF WITH NOT EQUAL TO
+
+
+## Square Variants
+= '⎄\q'
+'cap' "⊓" # SQUARE CAP
+'cup' "⊔" # SQUARE CUP
+
+= '⎄\' 'q'
+'<'  "⊏" # SQUARE IMAGE OF
+'>'  "⊐" # SQUARE ORIGINAL OF
+'<=' "⊑" # SQUARE IMAGE OF OR EQUAL TO
+'>=' "⊒" # SQUARE ORIGINAL OF OR EQUAL TO
+
+'/<=' "⋢" # NOT SQUARE IMAGE OF OR EQUAL TO
+'/>=' "⋣" # NOT SQUARE ORIGINAL OF OR EQUAL TO
+
+'</=' "⋤" # SQUARE IMAGE OF OR NOT EQUAL TO
+'>/=' "⋥" # SQUARE ORIGINAL OF OR NOT EQUAL TO
+
+
+#### Geometry
+= '⎄'
+'di' "⌀" # DIAMETER SIGN
+
+# "∟" # RIGHT ANGLE
+# "∠" # ANGLE
+# "∡" # MEASURED ANGLE
+# "∢" # SPHERICAL ANGLE
+
+
+#### Calculus
+= '⎄'
+# "∂" # PARTIAL DIFFERENTIAL
+'\nabla' "∇" # NABLA
+
+# "∫" # INTEGRAL
+# "∬" # DOUBLE INTEGRAL
+# "∭" # TRIPLE INTEGRAL
+# "∮" # CONTOUR INTEGRAL
+# "∯" # SURFACE INTEGRAL
+# "∰" # VOLUME INTEGRAL
+# "∱" # CLOCKWISE INTEGRAL
+# "∲" # CLOCKWISE CONTOUR INTEGRAL
+# "∳" # ANTICLOCKWISE CONTOUR INTEGRAL
+
+
+#### Operators ###
+= '⎄'
+'\copi' "∐" # N-ARY COPRODUCT
+
+# "⋆" # STAR OPERATOR
+
+# "⊕" # CIRCLED PLUS
+# "⊖" # CIRCLED MINUS
+# "⊗" # CIRCLED TIMES
+# "⊘" # CIRCLED DIVISION SLASH
+# "⊙" # CIRCLED DOT OPERATOR
+# "⊚" # CIRCLED RING OPERATOR
+# "⊛" # CIRCLED ASTERISK OPERATOR
+# "⊜" # CIRCLED EQUALS
+# "⊝" # CIRCLED DASH
+
+# "⊞" # SQUARED PLUS
+# "⊟" # SQUARED MINUS
+# "⊠" # SQUARED TIMES
+# "⊡" # SQUARED DOT OPERATOR
+
+
+#### Relations
+= '⎄'
+'/=' "≠" # NOT EQUAL TO
+'=/' "≠" # NOT EQUAL TO
+
+'~=' "≃" # ISOMORPHIC TO
+
+'===' "≡" # IDENTICAL TO
+# "≢" # NOT IDENTICAL TO
+
+'~~'  "≈" # ALMOST EQUAL TO
+'~/~' "≉" # NOT ALMOST EQUAL TO
+
+# "≏" # DIFFERENCE BETWEEN
+'?=' "≟" # QUESTIONED EQUAL TO
+# "≝" # EQUAL TO BY DEFINITION
+
+'<='  "≤" # LESS-THAN OR EQUAL TO
+'>='  "≥" # GREATER-THAN OR EQUAL TO
+'/<.' "≮" # NOT LESS-THAN
+'/>.' "≯" # NOT GREATER-THAN
+'/<=' "≰" # NEITHER LESS-THAN NOR EQUAL TO
+'/>=' "≱" # NEITHER GREATER-THAN NOR EQUAL TO
+
+# "≪" # MUCH LESS-THAN
+# "≫" # MUCH GREATER-THAN
+
+# "≬" U226C Between
+# "≍" # EQUIVALENT TO
+# "≭" # Not Equivalent To
+
+### Preorders
+# "≺" # PRECEDES
+# "≻" # SUCCEEDS
+# "≼" # PRECEDES OR EQUAL TO
+# "≽" # SUCCEEDS OR EQUAL TO
+# "⊀" # DOES NOT PRECEDE
+# "⊁" # DOES NOT SUCCEED
+# "⋠" # DOES NOT PRECEDE OR EQUAL
+# "⋡" # DOES NOT SUCCEED OR EQUAL
+
+# "≶" # LESS-THAN OR GREATER-THAN
+# "≷" # GREATER-THAN OR LESS-THAN
+# "≸" # NEITHER LESS-THAN NOR GREATER-THAN
+# "≹" # NEITHER GREATER-THAN NOR LESS-THAN
+
+
+#### Vulgar Fractions
+= '⎄' '2'
+'1' "½" # VULGAR FRACTION ONE HALF
+
+= '⎄' '3'
+'0' "↉" # VULGAR FRACTION ZERO THIRDS (because baseball)
+'1' "⅓" # VULGAR FRACTION ONE THIRD
+'2' "⅔" # VULGAR FRACTION TWO THIRDS
+
+= '⎄' '4'
+'1' "¼" # VULGAR FRACTION ONE QUARTER
+'3' "¾" # VULGAR FRACTION THREE QUARTERS
+
+= '⎄' '5'
+'1' "⅕" # VULGAR FRACTION ONE FIFTH
+'2' "⅖" # VULGAR FRACTION TWO FIFTHS
+'3' "⅗" # VULGAR FRACTION THREE FIFTHS
+'4' "⅘" # VULGAR FRACTION FOUR FIFTHS
+
+= '⎄' '6'
+'1' "⅙" # VULGAR FRACTION ONE SIXTH
+'5' "⅚" # VULGAR FRACTION FIVE SIXTHS
+
+= '⎄' '7'
+'1' "⅐" # VULGAR FRACTION ONE SEVENTH
+
+= '⎄' '8'
+'1' "⅛" # VULGAR FRACTION ONE EIGHTH
+'3' "⅜" # VULGAR FRACTION THREE EIGHTHS
+'5' "⅝" # VULGAR FRACTION FIVE EIGHTHS
+'7' "⅞" # VULGAR FRACTION SEVEN EIGHTHS
+
+= '⎄' '9'
+'1' "⅑" # VULGAR FRACTION ONE NINTH
+
+= '⎄' '10'
+'1' "⅒" # VULGAR FRACTION ONE TENTH

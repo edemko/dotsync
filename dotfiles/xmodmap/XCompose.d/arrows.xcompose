@@ -1,0 +1,14 @@
+#################
+# Common Arrows #
+#################
+
+<Multi_key> <minus> <greater>: "→" # RIGHTWARDS ARROW
+<Multi_key> <equal> <greater>: "⇒" # RIGHTWARDS DOUBLE ARROW
+
+<Multi_key> <less> <minus>: "←" # LEFTWARDS ARROW
+
+<Multi_key> <slash> <minus> <greater>: "↛" # RIGHTWARDS ARROW WITH STROKE
+<Multi_key> <slash> <less> <minus>: "↚" # LEFTWARDS ARROW WITH STROKE
+<Multi_key> <slash> <less> <greater>: "↮" # LEFT RIGHT ARROW WITH STROKE
+
+# TODO: lots more arrows, likely under a circumfix

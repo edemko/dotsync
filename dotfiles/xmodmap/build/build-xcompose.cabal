@@ -1,0 +1,29 @@
+cabal-version: 3.0
+name: build-xcompose
+version: 0.0.1.0
+-- synopsis: 
+-- description:
+category: @@@CATEGORY@@@
+homepage: https://github.com/edemko/build-xcompose
+bug-reports: https://github.com/edemko/build-xcompose/issues
+author: Eric Demko
+maintainer: zankoku.okuno@gmail.com
+copyright: 2021 Eric Demko
+license: BSD-3-Clause
+license-file: LICENSE
+extra-source-files: CHANGELOG.md
+
+executable build-xcompose
+  hs-source-dirs: app
+  main-is: Main.hs
+  other-modules:
+    Build
+    Parse
+    Render
+  build-depends:
+    , base >=4.11.1
+    , containers >=0.6.2
+    , filepath >=1.4
+    , optparse-generic >=1.4
+  default-language: Haskell2010
+  ghc-options: -Wall -O2 -threaded

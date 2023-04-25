@@ -1,0 +1,37 @@
+[global_config]
+  title_transmit_bg_color = "#4e9a06"
+[keybindings]
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+  rotate_cw = <Primary><Shift>r
+  rotate_ccw = <Primary><Shift>e
+  split_vert = <Primary><Shift>s
+  toggle_scrollbar = None
+  reset = None
+  reset_clear = None
+  help = None
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_blink = False
+    cursor_shape = ibeam
+    cursor_color = "#aaaaaa"
+    font = Source Code Pro 10
+    foreground_color = "#ffffff"
+    use_system_font = False
+    background_alpha = 0.1
+    scroll_on_output = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

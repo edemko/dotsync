@@ -1,7 +1,7 @@
 #!/bin/sh
 
-srcexe="${1}/dotsync"
-srcfuncs="${1}/dotfuncs"
+srcexe="${dotdir}/dotsync"
+srcfuncs="${dotdir}/dotfuncs"
 bindir="${HOME}/bin"
 targetexe="${bindir}/dotsync"
 targetfuncs="${bindir}/dotfuncs"

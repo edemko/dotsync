@@ -1,10 +1,87 @@
-#####################
-### Other Symbols ###
-#####################
+#################
+# Other Symbols #
+#################
 
-<Multi_key> <backslash> <c> <o> <m> <p> <space>: "⎄"
+<Multi_key> <N> <o>: "№" # NUMERO SIGN
+<Multi_key> <N> <O>: "№" # NUMERO SIGN
 
-<Multi_key> <backslash> <y> <e> <s> <space>: "✓"
-<Multi_key> <backslash> <n> <o> <space>: "✗"
+###### Keyboard Keys ######
 
-<Multi_key> <u> <g>: "ğ"
+<Multi_key> <backslash> <c> <o> <m> <p> <space>: "⎄" # COMPOSE KEY
+
+###### Obsolete Computer Characters ######
+
+<Multi_key> <bar> <exclam>: "¦" # BROKEN BAR
+
+##############
+# Capitalism #
+##############
+
+<Multi_key> <parenleft> <C> <parenright>: "©" # COPYRIGHT SIGN
+<Multi_key> <O> <C> <quotedbl>: "©" # COPYRIGHT SIGN
+
+<Multi_key> <parenleft> <R> <parenright>: "®" # REGISTERED SIGN
+<Multi_key> <O> <R>: "®" # REGISTERED SIGN
+
+<Multi_key> <S> <M>: "℠" # SERVICE MARK
+<Multi_key> <s> <m>: "℠" # SERVICE MARK
+
+<Multi_key> <T> <M>: "™" # TRADE MARK SIGN
+<Multi_key> <t> <m>: "™" # TRADE MARK SIGN
+
+###### Currencies ######
+
+<Multi_key> <O> <X>: "¤" # CURRENCY SIGN
+<Multi_key> <o> <x>: "¤" # CURRENCY SIGN
+
+# "₳" # AUSTRAL SIGN
+# "₵" # CEDI SIGN
+<Multi_key> <C> <bar>: "¢" # CENT SIGN
+<Multi_key> <bar> <C>: "¢" # CENT SIGN
+<Multi_key> <C> <dollar>: "₡" # COLON SIGN
+<Multi_key> <dollar> <C>: "₡" # COLON SIGN
+<Multi_key> <C> <r>: "₢" # CRUZEIRO SIGN
+<Multi_key> <d> <equal>: "₫" # DONG SIGN
+<Multi_key> <equal> <d>: "₫" # DONG SIGN
+# "₯" # DRACHMA SIGN
+<Multi_key> <C> <equal>: "€" # EURO SIGN
+<Multi_key> <C> <E>: "₠" # EURO-CURRENCY SIGN
+<Multi_key> <F> <r>: "₣" # FRENCH FRANC SIGN
+# "₰" # GERMAN PENNY SIGN
+# "₲" # GUARANI SIGN
+# "₴" # HRYVNIA SIGN
+<Multi_key> <R> <equal>: "₹" # INDIAN RUPEE SIGN
+<Multi_key> <equal> <R>: "₹" # INDIAN RUPEE SIGN
+# "₭" # KIP SIGN
+<Multi_key> <L> <equal>: "₤" # LIRA SIGN
+<Multi_key> <equal> <L>: "₤" # LIRA SIGN
+<Multi_key> <m> <slash>: "₥" # MILL SIGN
+<Multi_key> <slash> <m>: "₥" # MILL SIGN
+<Multi_key> <N> <equal>: "₦" # NAIRA SIGN
+<Multi_key> <equal> <N>: "₦" # NAIRA SIGN
+# "₪" # NEW SHEQEL SIGN
+<Multi_key> <P> <t>: "₧" # PESETA SIGN
+# "₱" # PESO SIGN
+<Multi_key> <L> <minus>: "£" # POUND SIGN
+<Multi_key> <minus> <L>: "£" # POUND SIGN
+<Multi_key> <P> <equal>: "₽" # ROUBLE SIGN
+<Multi_key> <equal> <P>: "₽" # ROUBLE SIGN
+<Multi_key> <R> <s>: "₨" # RUPEE SIGN
+# "₮" $ TUGRIK SIGN
+<Multi_key> <W> <equal>: "₩" # WON SIGN
+<Multi_key> <equal> <W>: "₩" # WON SIGN
+<Multi_key> <Y> <equal>: "¥" # YEN SIGN
+<Multi_key> <equal> <Y>: "¥" # YEN SIGN
+# <dead_currency> <a>           : "؋"   U060B               # AFGHANI SIGN
+# <dead_currency> <b>           : "฿"   Thai_baht           # THAI CURRENCY SYMBOL BAHT
+# <dead_currency> <I>           : "៛"   U17DB               # KHMER CURRENCY SYMBOL RIEL
+# <dead_currency> <i>           : "﷼"   UFDFC               # RIAL SIGN
+# <dead_currency> <O>           : "૱"   U0AF1               # GUJARATI RUPEE SIGN
+# <dead_currency> <o>           : "௹"   U0BF9               # TAMIL RUPEE SIGN
+# <dead_currency> <t>           : "৳"   U09F3               # BENGALI RUPEE SIGN
+# <dead_currency> <THORN>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <thorn>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <U>           : "圓"   U5713              # YUAN / WEN
+# <dead_currency> <u>           : "元"   U5143              # YUAN / WEN
+# <dead_currency> <Y>           : "円"   U5186              # YEN
+

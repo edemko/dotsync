@@ -1,56 +1,248 @@
-###                  ###
-# Mathematical Symbols #
-###                  ###
+# [Here](https://www.compart.com/en/unicode/block/U+2200)'s a good place to search for symbols
 
-### Everyday Math ###
+#################
+# Everyday Math #
+#################
 
-# <%> <o> already used for ‰ (per-mille)
-<Multi_key> <percent> <O>: "‱" U2031 # PER MYRIAD SIGN
+<Multi_key> <x> <x>: "×" # MULTIPLICATION SIGN
+<Multi_key> <colon> <minus>: "÷" # DIVISION SIGN
+<Multi_key> <minus> <colon>: "÷" # DIVISION SIGN
 
+<Multi_key> <percent> <o>: "‰" # PER MILLE SIGN
+<Multi_key> <percent> <O>: "‱" # PER MYRIAD SIGN
 
-### Duodecimal ###
+<Multi_key> <m> <u>: "µ" # MICRO SIGN
+
+<Multi_key> <plus> <minus>: "±" # PLUS-MINUS SIGN
+<Multi_key> <minus> <plus>: "∓" # MINUS-OR-PLUS SIGN
+
+<Multi_key> <o> <o>: "°" # DEGREE SIGN
+<Multi_key> <asterisk> <0>: "°" # DEGREE SIGN
+<Multi_key> <0> <asterisk>: "°" # DEGREE SIGN
+
+<Multi_key> <v> <slash>: "√" # SQUARE ROOT
+<Multi_key> <3> <v> <slash>: "∛" # CUBE ROOT
+<Multi_key> <4> <v> <slash>: "∜" # FOURTH ROOT
+
+<Multi_key> <8> <8>: "∞" # INFINITY
+
+<Multi_key> <8> <c>: "∝" # PROPORTIONAL TO
+
+###### Duodecimal ######
 
 <Multi_key> <d> <e> <c>: "↊"
 <Multi_key> <e> <l>: "↋"
 
 
-### Logic ###
+#########
+# Logic #
+#########
 
 <Multi_key> <a> <l> <l>: "∀"
 <Multi_key> <e> <x> <i>: "∃"
-<Multi_key> <ampersand> <ampersand>: "∧"
-<Multi_key> <bar> <bar>: "∨"
+<Multi_key> <slash> <e> <x> <i>: "∄" # THERE DOES NOT EXIST
 
-<Multi_key> <period> <3>: "∴"
+<Multi_key> <comma> <minus>: "¬" # NOT SIGN
+<Multi_key> <minus> <comma>: "¬" # NOT SIGN
 
-### Functions ###
+<Multi_key> <ampersand> <ampersand>: "∧" # LOGICAL AND
+<Multi_key> <bar> <bar>: "∨" # LOGICAL OR
+<Multi_key> <slash> <ampersand> <ampersand>: "⊼" # NAND
+<Multi_key> <slash> <bar> <bar>: "⊽" # NOR
+<Multi_key> <exclam> <bar> <bar>: "⊻" # XOR
+
+<Multi_key> <period> <3>: "∴" # THEREFORE
+
+
+#############
+# Functions #
+#############
 
 <Multi_key> <o> <f>: "∘"
+<Multi_key> <f> <o>: "⨾"
 
-### Set Theory ###
+<Multi_key> <f> <n>: "λ"
+<Multi_key> <F> <n>: "Λ"
+<Multi_key> <F> <N>: "Λ"
 
-<Multi_key> <backslash> <e> <l> <e> <m>: "∈"
-<Multi_key> <backslash> <n> <e> <l> <e> <m>: "∉"
-<Multi_key> <backslash> <m> <e> <m> <b>: "∋"
-<Multi_key> <backslash> <n> <m> <e> <m> <b>: "∌"
+
+##############
+# Set Theory #
+##############
+
+
+<Multi_key> <braceleft> <braceright>: "∅" # EMPTY SET
 
 <Multi_key> <backslash> <c> <a> <p>: "∩"
 <Multi_key> <backslash> <c> <u> <p>: "∪"
 
-<Multi_key> <backslash> <less> <s>: "⊂"
-<Multi_key> <backslash> <greater> <s>: "⊃"
-<Multi_key> <backslash> <slash> <less> <s>: "⊄"
-<Multi_key> <backslash> <slash> <greater> <s>: "⊅"
-<Multi_key> <backslash> <less> <equal> <s>: "⊆"
-<Multi_key> <backslash> <greater> <equal> <s>: "⊇"
-<Multi_key> <backslash> <slash> <less> <equal> <s>: "⊈"
-<Multi_key> <backslash> <slash> <greater> <equal> <s>: "⊉"
-<Multi_key> <backslash> <less> <slash> <equal> <s>: "⊊"
-<Multi_key> <backslash> <greater> <slash> <equal> <s>: "⊋"
+<Multi_key> <backslash> <i> <n>: "∈"
+<Multi_key> <backslash> <slash> <i> <n>: "∉"
+<Multi_key> <backslash> <n> <i>: "∋"
+<Multi_key> <backslash> <slash> <n> <i>: "∌"
 
-<Multi_key> <backslash> <c> <o> <p> <i>: "∐"
+<Multi_key> <backslash> <less> <s>: "⊂" # SUBSET OF
+<Multi_key> <backslash> <greater> <s>: "⊃" # SUPERSET OF
+<Multi_key> <backslash> <less> <equal> <s>: "⊆" # SUBSET OF OR EQUAL TO
+<Multi_key> <backslash> <greater> <equal> <s>: "⊇" # SUPERSET OF OR EQUAL TO
 
-### Calculus ###
+<Multi_key> <backslash> <slash> <less> <s>: "⊄" # NOT SUBSET OF
+<Multi_key> <backslash> <slash> <greater> <s>: "⊅" # SUPERSET OF
+<Multi_key> <backslash> <slash> <less> <equal> <s>: "⊈" # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <backslash> <slash> <greater> <equal> <s>: "⊉" # NEITHER A SUPERSET OF NOR EQUAL TO
 
-<Multi_key> <backslash> <n> <a> <b> <l> <a>: "∇"
+<Multi_key> <backslash> <less> <slash> <equal> <s>: "⊊" # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <backslash> <greater> <slash> <equal> <s>: "⊋" # SUPERSET OF WITH NOT EQUAL TO
 
+
+### Square Variants ###
+<Multi_key> <backslash> <q> <c> <a> <p>: "⊓" # SQUARE CAP
+<Multi_key> <backslash> <q> <c> <u> <p>: "⊔" # SQUARE CUP
+
+<Multi_key> <backslash> <less> <q>: "⊏" # SQUARE IMAGE OF
+<Multi_key> <backslash> <greater> <q>: "⊐" # SQUARE ORIGINAL OF
+<Multi_key> <backslash> <less> <equal> <q>: "⊑" # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <backslash> <greater> <equal> <q>: "⊒" # SQUARE ORIGINAL OF OR EQUAL TO
+
+<Multi_key> <backslash> <slash> <less> <equal> <q>: "⋢" # NOT SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <backslash> <slash> <greater> <equal> <q>: "⋣" # NOT SQUARE ORIGINAL OF OR EQUAL TO
+
+<Multi_key> <backslash> <less> <slash> <equal> <q>: "⋤" # SQUARE IMAGE OF OR NOT EQUAL TO
+<Multi_key> <backslash> <greater> <slash> <equal> <q>: "⋥" # SQUARE ORIGINAL OF OR NOT EQUAL TO
+
+
+############
+# Geometry #
+############
+
+<Multi_key> <d> <i>: "⌀" # DIAMETER SIGN
+
+# "∟" # RIGHT ANGLE
+# "∠" # ANGLE
+# "∡" # MEASURED ANGLE
+# "∢" # SPHERICAL ANGLE
+
+
+############
+# Calculus #
+############
+
+# "∂" # PARTIAL DIFFERENTIAL
+<Multi_key> <backslash> <n> <a> <b> <l> <a>: "∇" # NABLA
+
+# "∫" # INTEGRAL
+# "∬" # DOUBLE INTEGRAL
+# "∭" # TRIPLE INTEGRAL
+# "∮" # CONTOUR INTEGRAL
+# "∯" # SURFACE INTEGRAL
+# "∰" # VOLUME INTEGRAL
+# "∱" # CLOCKWISE INTEGRAL
+# "∲" # CLOCKWISE CONTOUR INTEGRAL
+# "∳" # ANTICLOCKWISE CONTOUR INTEGRAL
+
+
+#################
+# Operators ### #
+#################
+
+<Multi_key> <backslash> <c> <o> <p> <i>: "∐" # N-ARY COPRODUCT
+
+# "⋆" # STAR OPERATOR
+
+# "⊕" # CIRCLED PLUS
+# "⊖" # CIRCLED MINUS
+# "⊗" # CIRCLED TIMES
+# "⊘" # CIRCLED DIVISION SLASH
+# "⊙" # CIRCLED DOT OPERATOR
+# "⊚" # CIRCLED RING OPERATOR
+# "⊛" # CIRCLED ASTERISK OPERATOR
+# "⊜" # CIRCLED EQUALS
+# "⊝" # CIRCLED DASH
+
+# "⊞" # SQUARED PLUS
+# "⊟" # SQUARED MINUS
+# "⊠" # SQUARED TIMES
+# "⊡" # SQUARED DOT OPERATOR
+
+
+#############
+# Relations #
+#############
+
+<Multi_key> <slash> <equal>: "≠" # NOT EQUAL TO
+<Multi_key> <equal> <slash>: "≠" # NOT EQUAL TO
+
+<Multi_key> <asciitilde> <equal>: "≃" # ISOMORPHIC TO
+
+<Multi_key> <equal> <equal> <equal>: "≡" # IDENTICAL TO
+# "≢" # NOT IDENTICAL TO
+
+<Multi_key> <asciitilde> <asciitilde>: "≈" # ALMOST EQUAL TO
+<Multi_key> <asciitilde> <slash> <asciitilde>: "≉" # NOT ALMOST EQUAL TO
+
+# "≏" # DIFFERENCE BETWEEN
+<Multi_key> <question> <equal>: "≟" # QUESTIONED EQUAL TO
+# "≝" # EQUAL TO BY DEFINITION
+
+<Multi_key> <less> <equal>: "≤" # LESS-THAN OR EQUAL TO
+<Multi_key> <greater> <equal>: "≥" # GREATER-THAN OR EQUAL TO
+<Multi_key> <slash> <less> <period>: "≮" # NOT LESS-THAN
+<Multi_key> <slash> <greater> <period>: "≯" # NOT GREATER-THAN
+<Multi_key> <slash> <less> <equal>: "≰" # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <greater> <equal>: "≱" # NEITHER GREATER-THAN NOR EQUAL TO
+
+# "≪" # MUCH LESS-THAN
+# "≫" # MUCH GREATER-THAN
+
+# "≬" U226C Between
+# "≍" # EQUIVALENT TO
+# "≭" # Not Equivalent To
+
+###### Preorders ######
+
+# "≺" # PRECEDES
+# "≻" # SUCCEEDS
+# "≼" # PRECEDES OR EQUAL TO
+# "≽" # SUCCEEDS OR EQUAL TO
+# "⊀" # DOES NOT PRECEDE
+# "⊁" # DOES NOT SUCCEED
+# "⋠" # DOES NOT PRECEDE OR EQUAL
+# "⋡" # DOES NOT SUCCEED OR EQUAL
+
+# "≶" # LESS-THAN OR GREATER-THAN
+# "≷" # GREATER-THAN OR LESS-THAN
+# "≸" # NEITHER LESS-THAN NOR GREATER-THAN
+# "≹" # NEITHER GREATER-THAN NOR LESS-THAN
+
+
+####################
+# Vulgar Fractions #
+####################
+
+<Multi_key> <1> <2>: "½" # VULGAR FRACTION ONE HALF
+
+<Multi_key> <0> <3>: "↉" # VULGAR FRACTION ZERO THIRDS (because baseball)
+<Multi_key> <1> <3>: "⅓" # VULGAR FRACTION ONE THIRD
+<Multi_key> <2> <3>: "⅔" # VULGAR FRACTION TWO THIRDS
+
+<Multi_key> <1> <4>: "¼" # VULGAR FRACTION ONE QUARTER
+<Multi_key> <3> <4>: "¾" # VULGAR FRACTION THREE QUARTERS
+
+<Multi_key> <1> <5>: "⅕" # VULGAR FRACTION ONE FIFTH
+<Multi_key> <2> <5>: "⅖" # VULGAR FRACTION TWO FIFTHS
+<Multi_key> <3> <5>: "⅗" # VULGAR FRACTION THREE FIFTHS
+<Multi_key> <4> <5>: "⅘" # VULGAR FRACTION FOUR FIFTHS
+
+<Multi_key> <1> <6>: "⅙" # VULGAR FRACTION ONE SIXTH
+<Multi_key> <5> <6>: "⅚" # VULGAR FRACTION FIVE SIXTHS
+
+<Multi_key> <1> <7>: "⅐" # VULGAR FRACTION ONE SEVENTH
+
+<Multi_key> <1> <8>: "⅛" # VULGAR FRACTION ONE EIGHTH
+<Multi_key> <3> <8>: "⅜" # VULGAR FRACTION THREE EIGHTHS
+<Multi_key> <5> <8>: "⅝" # VULGAR FRACTION FIVE EIGHTHS
+<Multi_key> <7> <8>: "⅞" # VULGAR FRACTION SEVEN EIGHTHS
+
+<Multi_key> <1> <9>: "⅑" # VULGAR FRACTION ONE NINTH
+
+<Multi_key> <1> <1> <0>: "⅒" # VULGAR FRACTION ONE TENTH

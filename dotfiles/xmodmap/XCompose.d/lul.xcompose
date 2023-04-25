@@ -1,10 +1,27 @@
-### ###
+#######
 # Lul #
-### ###
+#######
+
+###### Emoji ######
+
+
+<Multi_key> <L> <G> <B> <T>: "🌈" # RAINBOW
+<Multi_key> <T> <R> <A> <N> <S>: "⚧" # TRANSGENDER SYMBOL
+<Multi_key> <S> <H> <I> <N> <E>: "✨" # SPARKLES
+<Multi_key> <C> <G> <P>: "⚙️" # GEAR
+<Multi_key> <C> <C> <C> <P>: "☭" # HAMMER AND SICKLE
+<Multi_key> <P> <O> <O>: "💩" # PILE OF POO
+<Multi_key> <B> <A> <R> <F>: "🤮" # VOMITING
+
+### Hand Gestures ###
+<Multi_key> <backslash> <o> <slash>: "🙌" # PERSON RAISING BOTH HANDS IN CELEBRATION
+<Multi_key> <F> <U>: "🖕" # REVERSED HAND WITH MIDDLE FINGER EXTENDED
+<Multi_key> <L> <L> <A> <P>: "🖖" # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS
+
+###### Emoticons ######
 
 # Look at this link for some more faces:
 # https://gist.github.com/endolith/157796
-
 <Multi_key> <backslash> <g> <i> <f> <t> <space>: "(´・ω・)っ由"
 
 <Multi_key> <backslash> <s> <h> <r> <u> <g> <space>: "¯\_(ツ)_/¯"
@@ -12,12 +29,23 @@
 <Multi_key> <backslash> <s> <i> <g> <h> <space>: "ಠ_ಠ"
 <Multi_key> <backslash> <m> <o> <n> <o> <c> <l> <e> <space>: "ಠ_ರೃ"
 <Multi_key> <backslash> <l> <o> <u> <d> <space>: "°Д°"
+# ;A;
 
-<Multi_key> <backslash> <f> <l> <i> <p>  <space>: "(╯°□°）╯︵ ┻━┻"
+<Multi_key> <backslash> <f> <l> <i> <p> <space>: "(╯°□°）╯︵ ┻━┻"
 <Multi_key> <backslash> <2> <f> <l> <i> <p> <space>: "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻"
-<Multi_key> <backslash> <F> <L> <I> <P>  <space>: "(ノಠ益ಠ)ノ彡┻━┻"
+<Multi_key> <backslash> <F> <L> <I> <P> <space>: "(ノಠ益ಠ)ノ彡┻━┻"
 <Multi_key> <backslash> <exclam> <f> <l> <i> <p> <space>: "┬──┬ ノ( ゜-゜ノ)"
 
 <Multi_key> <backslash> <b> <e> <a> <r> <space>: "ʕ•ᴥ•ʔ"
 <Multi_key> <backslash> <B> <e> <a> <r> <space>: "ˁ(OᴥO)ˀ"
 <Multi_key> <backslash> <b> <e> <a> <r> <s> <space>: "ʕ•̫͡•ʕ_̫͡_ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ_̫͡_ʔ-̫͡-ʔ"
+
+###### Hearts ######
+
+<Multi_key> <less> <3>: "♥" # BLACK HEART SUIT
+
+
+###### Games ######
+
+# https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
+# https://en.wikipedia.org/wiki/Chess_symbols_in_Unicode

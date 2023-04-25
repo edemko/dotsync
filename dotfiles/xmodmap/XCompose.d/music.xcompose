@@ -1,0 +1,17 @@
+#########
+# Music #
+#########
+
+<Multi_key> <numbersign> <h>: "𝅗𝅥" # MUSICAL SYMBOL HALF NOTE
+<Multi_key> <numbersign> <q>: "♩" # QUARTER NOTE
+<Multi_key> <numbersign> <e>: "♪" # EIGHTH NOTE
+<Multi_key> <numbersign> <E>: "♫" # BEAMED EIGHTH NOTES
+<Multi_key> <numbersign> <s>: "𝅘𝅥𝅯" # MUSICAL SYMBOL SIXTEENTH NOTE
+<Multi_key> <numbersign> <S>: "♬" # BEAMED SIXTEENTH NOTES
+<Multi_key> <numbersign> <b>: "♭" # MUSIC FLAT SIGN
+<Multi_key> <numbersign> <f>: "♮" # MUSIC NATURAL SIGN
+<Multi_key> <numbersign> <numbersign>: "♯" # MUSIC SHARP SIGN
+
+# "𝅘𝅥𝅰"   U1D162 # MUSICAL SYMBOL THIRTY-SECOND NOTE
+# "𝅘𝅥𝅱"   U1D163 # MUSICAL SYMBOL SIXTY-FOURTH NOTE
+# "𝅘𝅥𝅲"   U1D164 # MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH NOTE

@@ -1,0 +1,13 @@
+====== arrows
+#### Common Arrows
+= '⎄'
+'->' "→" # RIGHTWARDS ARROW
+'=>' "⇒" # RIGHTWARDS DOUBLE ARROW
+
+'<-' "←" # LEFTWARDS ARROW
+
+'/->' "↛" # RIGHTWARDS ARROW WITH STROKE
+'/<-' "↚" # LEFTWARDS ARROW WITH STROKE
+'/<>' "↮" # LEFT RIGHT ARROW WITH STROKE
+
+# TODO: lots more arrows, likely under a circumfix

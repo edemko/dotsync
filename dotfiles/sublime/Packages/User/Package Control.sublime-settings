@@ -9,25 +9,27 @@
 	],
 	"install_prereleases":
 	[
-		"Move By Paragraph (Okuno remix)"
 	],
 	"installed_packages":
 	[
 		"Case Conversion",
-		"ColorPicker",
+		"Dockerfile Syntax Highlighting",
 		"ExpandRegion",
-		"Move By Paragraph (Okuno remix)",
+		"LinkerScript",
+		"Lunarized Color Scheme",
+		"Move By Paragraph",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
-		"SingleTrailingNewLine",
-		"Solarized Color Scheme",
+		"PackageResourceViewer",
 		"SublimeLinter",
 		"SublimeLinter-shellcheck",
 		"Surround",
 		"Verilog",
-		"VHDL"
+		"VHDL",
+		"x86 and x86_64 Assembly",
+		"Zig Language"
 	],
 	"repositories":
 	[
-		"https://raw.githubusercontent.com/Zankoku-Okuno/sublime-channel/master/repository.json"
 	]
 }

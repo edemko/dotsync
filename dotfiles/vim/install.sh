@@ -1,7 +1,7 @@
 #!/bin/sh
 
 vimrc="${HOME}/.vimrc"
-vimrc_src="${1}/vimrc.vim"
+vimrc_src="${dotdir}/vimrc.vim"
 
 vimdir="${HOME}/.vim"
 bundledir="${vimdir}/bundle"

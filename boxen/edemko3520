@@ -1,8 +1,12 @@
 bat-gadgets
 +FOUNDATION
 git
+fonts
 sublime
+skel
 
 ghc
 python
 psql
+
+terminator

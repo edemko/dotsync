@@ -59,12 +59,18 @@ elif [ ! -d "${boxdir}" ]; then
     exit 127
 fi
 
-hostconf="${boxdir}/$(hostname)"
-if [ ! -e "${hostconf}" ]; then
-    echo >&2 "$(withaf f00 '[ERROR]') Could not find configuration file for host '$(hostname)' at '${hostconf}'."
-    exit 127
-elif [ ! -f "${hostconf}" ]; then
-    echo >&2 "$(withaf f00 '[ERROR]') Could not find configuration file for host '$(hostname)' at '${hostconf}'; it is not a regular file."
+hostconf="${boxdir}/${USER}@$(hostname)"
+if [ -e "${hostconf}" ]; then
+    echo >&2 "$(withaf 08f '[INFO]') Found user-specific configuration file at $hostconf."
+else
+    hostconf="${boxdir}/$(hostname)"
+    if [ ! -e "${hostconf}" ]; then
+        echo >&2 "$(withaf f00 '[ERROR]') Could not find configuration file for host '$(hostname)' at '${hostconf}'."
+        exit 127
+    fi
+fi
+if [ ! -f "${hostconf}" ]; then
+    echo >&2 "$(withaf f00 '[ERROR]') Bad configuration file at '${hostconf}'; it is not a regular file."
     exit 127
 fi
 

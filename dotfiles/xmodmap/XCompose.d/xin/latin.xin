@@ -1,0 +1,79 @@
+====== latin
+#### Latin Alphabet #
+= '⎄'
+
+## Old English
+'AE' "Æ" # LATIN CAPITAL LETTER AE (ash, æsc)
+'ae' "æ" # LATIN SMALL LETTER AE
+'OE' "Œ" # LATIN CAPITAL LIGATURE OE (ethel, œthel)
+'oe' "œ" # LATIN SMALL LIGATURE OE
+'DH' "Ð" # Eth
+'dh' "ð" # eth
+'TH' "Þ" # Thorn
+'th' "þ" # thorn
+'WW' "Ƿ" # Wynn
+'ww' "ƿ" # wynn
+'Gh' "Ȝ" # Yogh
+'gh' "ȝ" # yogh
+
+
+## Extra Letters
+'NG' "Ŋ" # LATIN CAPITAL LETTER ENG
+'ng' "ŋ" # LATIN SMALL LETTER ENG
+
+'ee' "ə" # LATIN SMALL LETTER SCHWA
+'.i' "ı" # LATIN SMALL LETTER DOTLESS I
+'.j' "ȷ" # LATIN SMALL LETTER DOTLESS J
+
+'ss' "ß" # LATIN SMALL LETTER SHARP S
+'SS' "ẞ" # LATIN CAPITAL LETTER SHARP S
+
+## Variant Letters
+'vl' "ℓ" # SCRIPT SMALL L
+
+## Historical Characters
+'fs'  "ſ" # LATIN SMALL LETTER LONG S
+'fS'  "ſ" # LATIN SMALL LETTER LONG S
+'.fs' "ẛ" # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+
+'kk' "ĸ" # LATIN SMALL LETTER KRA
+
+## Insular Script
+= '⎄:ie'
+
+'D' "Ꝺ" # Capital Insular D
+'d' "ꝺ" # Small Insular D
+'F' "Ꝼ" # Capital Insular F
+'f' "ꝼ" # Small Insular F
+'G' "Ᵹ" # Capital Insular G
+'g' "ᵹ" # Small Insular G
+'NG' "Ꝿ" # Capital Turned Insular G
+'ng' "ꝿ" # Small Turned Insular G
+'R' "Ꞃ" # Capital Insular R
+'r' "ꞃ" # Small Insular R
+'S' "Ꞅ" # Capital Insular S
+'s' "ꞅ" # Small Insular S
+'T' "Ꞇ" # Capital Insular T
+'t' "ꞇ" # Small Insular T
+
+## Tironian Notes
+= '⎄:T:'
+'Et' "⹒" # Capital Tironian Et
+'et' "⁊" # Small Tironian Et
+
+## Ligatures
+= '⎄'
+
+'ff' "ﬀ" # LATIN SMALL LIGATURE FF
+'fi' "ﬁ" # LATIN SMALL LIGATURE FI
+'fl' "ﬂ" # LATIN SMALL LIGATURE FL
+'Fi' "ﬃ" # LATIN SMALL LIGATURE FFI
+'Fl' "ﬄ" # LATIN SMALL LIGATURE FFL
+'st' "ﬆ" # LATIN SMALL LIGATURE ST
+'IJ' "Ĳ" # LATIN CAPITAL LIGATURE IJ
+'Ij' "Ĳ" # LATIN CAPITAL LIGATURE IJ
+'ij' "ĳ" # LATIN SMALL LIGATURE IJ
+'WY' "Ꝡ" # LATIN CAPITAL LIGATURE VY
+'Wy' "Ꝡ" # LATIN CAPITAL LIGATURE VY
+'wy' "ꝡ" # LATIN SMALL LIGATURE VY
+

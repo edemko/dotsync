@@ -1,0 +1,257 @@
+====== phonetic
+#### Phonetic Alphabets
+= '⎄'
+### IPA Characters
+
+# TODO alternate spellings (i.e. easier to type)
+
+## Labial
+'ph' "ɸ"
+'bh' "β"
+'BB' "ʙ"
+
+## Labiodental
+'m_d' "ɱ"
+'vr' "ⱱ"
+'v_d' "ʋ"
+
+## Dental
+'Th' "θ"
+# 'dh' "ð" already in latin.xin
+
+## Alveolar
+'rt' "ɾ"
+'lh' "ɬ"
+'lz' "ɮ"
+'rr' "ɹ"
+'rl' "ɺ"
+
+## Postalveolar
+'sh' "ʃ"
+'zh' "ʒ"
+
+## Retroflex
+'tr' "ʈ"
+'dr' "ɖ"
+'nr' "ɳ"
+'Rt' "ɽ"
+'sr' "ʂ"
+'zr' "ʐ"
+'Rr' "ɻ"
+'lr' "ɭ"
+'lR' "ꞎ"
+
+## Alveopalatal
+'nJ' "ȵ"
+'tJ' "ȶ"
+'dJ' "ȡ"
+'sJ' "ɕ"
+'zJ' "ʑ"
+'lJ' "ȴ"
+
+## Palatal
+'gj' "ɟ"
+'nj' "ɲ"
+# 'c,' "ç" already in diacritics.xin
+'jh' "ʝ"
+'lj' "ʎ"
+'lc' ""
+
+## Velar
+'\g ' "ɡ"
+'g ' "ɡ"
+# 'ng' "ŋ" already in default gtk compose table
+'gx' "ɣ"
+'wx' "ɰ"
+'lx' "ʟ" # TODO why does LL not work‽
+'lk' "Ɬ"
+
+## Uvular
+'GG' "ɢ"
+'NN' "ɴ"
+'RR' "ʀ"
+'xq' "χ"
+'rq' "ʁ"
+
+## Pharyngeal
+# 'h-' "ħ" # already in diacritics.xin
+'?h' "ʕ"
+
+## Epiglottal
+'?-.' "ʡ"
+'?-h' "ʢ"
+'HH' "ʜ"
+
+## Glottal
+'?.' "ʔ"
+'hz' "ɦ"
+
+## Vowels
+'i=' "ɨ"
+'u=' "ʉ"
+'u&' "ɯ"
+'II' "ɪ"
+'YY' "ʏ"
+'OO' "ʊ"
+# 'o/' "ø" # already in diacritics.xin
+'e=' "ɘ"
+'o=' "ɵ"
+'o&' "ɤ"
+# 'ee' "ə" # already in latin.xin
+'e ' "ɛ"
+# 'oe' "œ" # already in latin.xin
+'@e' "ɜ"
+'@o' "ɞ"
+'ax' "ʌ"
+'o ' "ɔ"
+# 'ae' "æ" already in latin.xin
+'@a' "ɐ"
+'ao' "ɶ"
+'a ' "ɑ"
+'a&' "ɒ"
+
+
+## Coarticulations
+'jw' "ɥ"
+'wh' "ʍ"
+'sx' "ɧ"
+'==*' "͡" # U+0361: TIE BAR ABOVE
+'==_' "͜" # U+035C: TIE BAR BELOW
+
+## Glottalic
+'_>' "ʼ"
+= '⎄' '_<'
+'b' "ɓ"
+'d' "ɗ"
+'J' "ʄ"
+'g' "ɠ"
+'G' "ʛ"
+
+## Clicks
+= '⎄' '\'
+'O' "ʘ"
+'d|' "ǀ"
+'!' "ǃ"
+'=' "ǂ"
+'l||' "ǁ"
+= '⎄'
+
+## Suprasegmentals
+'*!' "ˈ" # primary stress
+'*.' "ˌ" # secondary stress
+'::' "ː" # long
+';;' "ˑ" # half-long
+'*:' "̆" # U+0306: extra-short (breve)
+' | ' "|" # minor (foot) group # this is just the simple ascii bar
+' || ' "‖" # major (intonation) group
+'~_~' "‿" # linking (absence of a break)
+
+### Diacritics
+## syllabicity
+'_$' "̩" # U+0329: syllabic
+'*$' "̍" # U+030D: syllabic (above)
+'_%' "̯" # U+032F: non-syllabic
+'*%' "̑" # U+0311: non-syllabic (above)
+
+## consonant release
+'*h' "ʰ" # aspirated
+'*H' "ʱ" # voiced aspirate/breathy
+'*]' "˺" # no audible release
+'*n' "ⁿ" # nasal release
+'*l' "ˡ" # lateral release
+
+## phonation TODO
+# '_f' "̥" # U+0325: voiceless
+# '*f' "̊" # U+030A: voiceless (above)
+# '_v' "̬" # U+032C: voiced
+# '_h' "̤" # U+0324: breathy voiced # FIXME why didn't asciitilde work? went with xsampa
+# '_k' "̰" # U+0330: creaky voiced # FIXME why didn't quotedbl work? went with xsampa
+
+## articulation TODO
+# '_d' "̪" # U+032A: dental
+# '*d' "͆" # U+0346: dental (above)
+# '_b' "̼" # U+033C: linguolabial
+# '_t' "̺" # U+033A: apical
+# '_l' "̻" # U+033B: laminal
+'_⎄<-' "̟" # U+031F: advanced
+'=⎄<-' "˖" # U+02D6: advanced (after)
+ '_⎄->' "̠" # U+0320: retracted
+'=⎄->' "˗" # U+02D7: retracted (after)
+# '*"' "̈" # U+0308: centralized
+# '*x' "̽" # U+033D: mid-centralized
+'_⎄|^' "̝" # U+031D: raised
+'=⎄|^' "˔" # U+02D4: raised (after)
+'_⎄|v' "̞" # U+031E: lowered
+'=⎄|v' "˕" # U+02D5: lowered (after)
+
+## co-articulation
+# TODO '_)' "̹" # U+0339: more rounded
+'*)' "͗" # U+0357: more rounded (above)
+# TODO '_(' "̜" # U+031C: less rounded
+'*(' "͑" # U+0351: less rounded (above)
+'=r' "˞" # U+02DE: rhoticity
+'*w' "ʷ" # labialized
+'*j' "ʲ" # palatalized
+'*y' "ᶣ" # labiopalatalized
+'*g' "ˠ" # velarized
+'*?' "ˤ" # pharyngealized
+'=~' "̴" # U+0334: velarized or pharyngealized
+'_|<' "̘" # U+0318: advanced tongue root
+'_|>' "̙" # U+0319: retracted tongue root
+'*~' "̃" # U+0303: nasalized
+
+### Tones and Word Accents
+'1|' "˩"
+'2|' "˨"
+'3|' "˧"
+'4|' "˦"
+'5|' "˥"
+# note: tone contours are available in some fonts by stringing several tone letters together (e.g. ˧˩)
+# TODO: add in two- and three-letter tone sequences (such as <31|>, <253|>)
+
+# TODO tone diacritics
+# '*1|'
+# '*2|'
+# '*3|'
+# '*4|'
+# '*5|'
+
+'*dn' "ꜜ"
+'*up' "ꜛ"
+'*DN' "↘︎"
+'*UP' "↗︎"
+
+
+### Extended IPA
+## lateral
+'lss' "ʪ"
+'lsz' "ʫ"
+# 'lrz' # TODO ɭ-ʒ ligature not supported in unicode to my knowledge
+
+## velo-pharyngeal
+'fg' "ʩ"
+'frg' "fŋ̑" # NOTE: this sequence appears to be a hack; the true glyph is not supported in unicode
+
+## velodorsal
+#  NOTE: velodorsal sounds (reversed k, g, and ŋ) are not supported in unicode to my knowledge
+
+## pharyngeal
+#  NOTE: pharyngeal sounds (small-caps Q, turned small-caps G) are not supported in unicode to my knowledge
+
+## percussive
+'!.w' "ʬ"
+'!.t' "ʭ"
+# '!!' "¡" already in punctuation.xin
+
+## diacritics
+# FIXME many of these are not working
+'=(' "₍" # initial partial (de)voicing
+'=)' "₎" # final partial (de)voicing
+'|v' "↓" # ingressive airflow
+'|^' "↑" # ingressive airflow
+'*=' "˭" # unaspirated
+'*2~' "͌" # U+034C velopharyngeal friction
+'*/~' "͊" # U+034A denasal
+'_\=' "͈" # U+0348 strong articulation
+'_]'  "͉" # U+0349 weak articulation
+# TODO there are more diacritics, but I'm not going to bother unless I get some requests

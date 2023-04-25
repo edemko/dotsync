@@ -1,0 +1,83 @@
+====== other
+#### Other Symbols
+= '⎄'
+'No' "№" # NUMERO SIGN
+'NO' "№" # NUMERO SIGN
+
+### Keyboard Keys
+= '⎄\' ' '
+'comp' "⎄" # COMPOSE KEY
+
+### Obsolete Computer Characters
+= '⎄'
+'|!' "¦" # BROKEN BAR
+
+#### Capitalism
+= '⎄'
+'(C)' "©" # COPYRIGHT SIGN
+'OC"' "©" # COPYRIGHT SIGN
+
+'(R)' "®" # REGISTERED SIGN
+'OR' "®" # REGISTERED SIGN
+
+'SM' "℠" # SERVICE MARK
+'sm' "℠" # SERVICE MARK
+
+'TM' "™" # TRADE MARK SIGN
+'tm' "™" # TRADE MARK SIGN
+
+### Currencies
+'OX' "¤" # CURRENCY SIGN
+'ox' "¤" # CURRENCY SIGN
+
+# "₳" # AUSTRAL SIGN
+# "₵" # CEDI SIGN
+'C|' "¢" # CENT SIGN
+'|C' "¢" # CENT SIGN
+'C$' "₡" # COLON SIGN
+'$C' "₡" # COLON SIGN
+'Cr' "₢" # CRUZEIRO SIGN
+'d=' "₫" # DONG SIGN
+'=d' "₫" # DONG SIGN
+# "₯" # DRACHMA SIGN
+'C=' "€" # EURO SIGN
+'CE' "₠" # EURO-CURRENCY SIGN
+'Fr' "₣" # FRENCH FRANC SIGN
+# "₰" # GERMAN PENNY SIGN
+# "₲" # GUARANI SIGN
+# "₴" # HRYVNIA SIGN
+'R=' "₹" # INDIAN RUPEE SIGN
+'=R' "₹" # INDIAN RUPEE SIGN
+# "₭" # KIP SIGN
+'L=' "₤" # LIRA SIGN
+'=L' "₤" # LIRA SIGN
+'m/' "₥" # MILL SIGN
+'/m' "₥" # MILL SIGN
+'N=' "₦" # NAIRA SIGN
+'=N' "₦" # NAIRA SIGN
+# "₪" # NEW SHEQEL SIGN
+'Pt' "₧" # PESETA SIGN
+# "₱" # PESO SIGN
+'L-' "£" # POUND SIGN
+'-L' "£" # POUND SIGN
+'P=' "₽" # ROUBLE SIGN
+'=P' "₽" # ROUBLE SIGN
+'Rs' "₨" # RUPEE SIGN
+# "₮" $ TUGRIK SIGN
+'W=' "₩" # WON SIGN
+'=W' "₩" # WON SIGN
+'Y=' "¥" # YEN SIGN
+'=Y' "¥" # YEN SIGN
+# <dead_currency> <a>           : "؋"   U060B               # AFGHANI SIGN
+# <dead_currency> <b>           : "฿"   Thai_baht           # THAI CURRENCY SYMBOL BAHT
+# <dead_currency> <I>           : "៛"   U17DB               # KHMER CURRENCY SYMBOL RIEL
+# <dead_currency> <i>           : "﷼"   UFDFC               # RIAL SIGN
+# <dead_currency> <O>           : "૱"   U0AF1               # GUJARATI RUPEE SIGN
+# <dead_currency> <o>           : "௹"   U0BF9               # TAMIL RUPEE SIGN
+# <dead_currency> <t>           : "৳"   U09F3               # BENGALI RUPEE SIGN
+# <dead_currency> <THORN>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <thorn>         : "৲"   U09F2               # BENGALI RUPEE MARK
+# <dead_currency> <U>           : "圓"   U5713              # YUAN / WEN
+# <dead_currency> <u>           : "元"   U5143              # YUAN / WEN
+# <dead_currency> <Y>           : "円"   U5186              # YEN
+

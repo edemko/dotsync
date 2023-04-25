@@ -1,6 +1,9 @@
 #!/bin/sh
 
 dotsync_depsgood() {
+    if ! command -v git-icdiff >/dev/null; then
+        echo >&2 "$(withaf f80 '[WARNING]') git-icdiff not installed."
+    fi
     return 0
 }
 
@@ -8,6 +11,8 @@ dotsync_newest() {
     git config --global --get core.editor >/dev/null || return 1
     git config --global --get user.name >/dev/null || return 1
     git config --global --get user.email >/dev/null || return 1
+    # icdiff
+    git config --global --get icdiff.options >/dev/null || return 1
     # Aliases
     git config --global --get alias.st >/dev/null || return 1
     git config --global --get alias.graph >/dev/null || return 1
@@ -37,6 +42,8 @@ dotsync_setup() {
             * ) git config --global user.email "${inp}" ;;
         esac
     fi
+    # icdiff
+    git config --global icdiff.options '--line-numbers --tabsize=2'
     # Aliases
     git config --global alias.st 'status'
     git config --global alias.graph 'log --graph --all --oneline --decorate'
