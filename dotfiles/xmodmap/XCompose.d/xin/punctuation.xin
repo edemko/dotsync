@@ -26,6 +26,9 @@
 
 ### Quote Marks
 
+'< ' "⟨" # left math angle bracket
+'> ' "⟩" # right math angle bracket
+
 '.>' "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
 '.<' "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
 '<<' "«" # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK

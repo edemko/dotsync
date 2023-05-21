@@ -32,6 +32,9 @@
 ###### Quote Marks ######
 
 
+<Multi_key> <less> <space>: "⟨" # left math angle bracket
+<Multi_key> <greater> <space>: "⟩" # right math angle bracket
+
 <Multi_key> <period> <greater>: "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
 <Multi_key> <period> <less>: "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
 <Multi_key> <less> <less>: "«" # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
