@@ -105,12 +105,13 @@
 'o'  "🧡" # Orange Heart
 'y'  "💛" # Yellow Heart
 'g'  "💚" # Green Heart
-'bu' "💙" # Blue Heart
+'b' "💙" # Blue Heart
 'lb' "🩵" # Light Blue Heart
-'pi'  "💜" # Purple Heart
+'pu'  "💜" # Purple Heart
+'pi'  "🩷" # Pink Heart
 'br' "🤎" # Brown Heart
-'bk' "🖤" # Black Heart
-'gy' "🩶" # Grey Heart
+'k' "🖤" # Black Heart
+'gr' "🩶" # Grey Heart
 'w'  "🤍" # White Heart
 
 ='⎄:' ':'
@@ -134,6 +135,7 @@
 ## Marine
 
 'octo' "🐙"
+'jelly' "🪼"
 
 ## Bug
 

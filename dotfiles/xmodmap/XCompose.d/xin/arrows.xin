@@ -1,8 +1,12 @@
 ====== arrows
-#### Common Arrows
+#### Shortcuts
 = '⎄'
 '->' "→" # RIGHTWARDS ARROW
 '=>' "⇒" # RIGHTWARDS DOUBLE ARROW
+'|- ' "⊢" # turnstile, vtack
+'~>' "↝" # right squiggle arrow, transforms to, rewrites to
+'-->' "⟶" # long right arrow, reduces
+'|->' "↦" # right arrow from bar, maps to
 
 '<-' "←" # LEFTWARDS ARROW
 
@@ -10,8 +14,90 @@
 '/<-' "↚" # LEFTWARDS ARROW WITH STROKE
 '/<>' "↮" # LEFT RIGHT ARROW WITH STROKE
 
-# TODO: lots more arrows, likely under a circumfix
-# "⊢" # right tack
-# "⟶" # long right arrow
-# "↝" # right wave arrow
-# "↦" # right arrow from bar
+# Rightward
+
+= '⎄ra'
+
+'->'   "→" # right arrow
+'-/>'  "↛" # slash right arrow, partial function
+'-->'  "⟶" # long right arrow, reduces
+'|->'  "↦" # right arrow from bar, maps to
+'|- '  "⊢" # turnstile, vtack
+'~>'   "↝" # right squiggle arrow, transforms to, rewrites to
+'w>'   "⇝"
+'=>'   "⇒" # double-stroke right arrow, implies
+'-`'   "⇀"
+'c-'   "↪"
+'>->'  "↣"
+'>- '  "⤚"
+'2>- ' "⤜"
+'-2>'  "↠"
+'-3'   "⥽"
+'x2->' "⇉"
+'==>'  "⟹" # long double-stroke right arrow
+'3=>'  "⇛" # triple-stroke right arrow
+'4=>'  "⭆" # quadruple-stroke right arrow
+'-o>'  "⇴"
+
+# Leftward
+
+= '⎄la'
+
+'->'   "←"
+'-/>'  "↚"
+'-->'  "⟵"
+'|->'  "↤"
+'|- '  "⊣"
+'~>'   "↜"
+'w>'   "⇜"
+'=>'   "⇐"
+'-`'   "↼"
+'c-'   "↩"
+'>->'  "↢"
+'>- '  "⤙"
+'2>- ' "⤛"
+'-2>'  "↞"
+'-3'   "⥼"
+'x2->' "⇇"
+'==>'  "⟸"
+'3=>'  "⇚"
+'4=>'  "⭅"
+'-o>'  "⬰"
+
+# Upward
+
+= '⎄ua' '>'
+
+'-' "↑"
+# "↥"
+# "⊥"
+# "⇑"
+# "↟"
+# "⇈"
+# "⤊"
+# "⟰"
+# "⥾"
+
+# Downward
+
+= '⎄da' '>'
+
+'-' "↓"
+# "↧"
+# "⊤"
+# "⇓"
+# "↡"
+# "⇊"
+# "⤋"
+# "⟱"
+# "⥿"
+
+# Left-Right
+
+= '⎄ha' '>'
+
+'-' "↔"
+# "↮"
+# "↭"
+# "⟺"
+# "⥈"

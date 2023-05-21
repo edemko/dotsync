@@ -6,23 +6,23 @@
 #umask 022
 
 # set PATH so it includes user's private bin directories
-if ! echo "${PATH}" | grep -q "${HOME}/bin"; then
+if ! echo ":${PATH}:" | grep -q ":${HOME}/bin:"; then
     export PATH="${PATH}:${HOME}/bin"
 fi
-if ! echo "${PATH}" | grep -q "${HOME}/.local/bin"; then
+if ! echo ":${PATH}:" | grep -q ":${HOME}/.local/bin:"; then
     export PATH="${PATH}:${HOME}/.local/bin"
 fi
 # FIXME this looks like haskell dotfiles
-if ! echo "${PATH}" | grep -q "${HOME}/.ghcup/bin"; then
+if ! echo ":${PATH}:" | grep -q ":${HOME}/.ghcup/bin:"; then
     export PATH="${PATH}:${HOME}/.ghcup/bin"
 fi
-if ! echo "${PATH}" | grep -q "/opt/ghc/bin"; then
+if ! echo ":${PATH}:" | grep -q ":/opt/ghc/bin:"; then
     export PATH="${PATH}:/opt/ghc/bin"
 fi
-if ! echo "${PATH}" | grep -q "/opt/cabal/bin"; then
+if ! echo ":${PATH}:" | grep -q ":/opt/cabal/bin:"; then
     export PATH="${PATH}:/opt/cabal/bin"
 fi
-if ! echo "${PATH}" | grep -q "${HOME}/.cabal/bin"; then
+if ! echo ":${PATH}:" | grep -q ":${HOME}/.cabal/bin:"; then
     export PATH="${PATH}:${HOME}/.cabal/bin"
 fi
 if ! echo "${PATH}" | grep -q "${HOME}/.cargo/bin"; then
