@@ -1,0 +1,162 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{typetheory}
+
+\RequirePackage{amssymb}
+\RequirePackage{latexsym}
+% \RequirePackage{MnSymbol} % WARNING this changes a lot of symbols $=, \cong, \sineq$ to be stubby and ugly, and collapses $\emptyset$ and $\varnothing$
+\RequirePackage{amsmath,mathtools}
+\RequirePackage{mathrsfs} % provides \mathscr, which is an alternative caligraphic font
+\RequirePackage{bussproofs,fitch}
+% FIXME: why is \emptyset rendering identical to \varnothing?
+
+% FIXME: is there any good solution for blackboard bold numerals?
+  % \RequirePackage{bbold} % WARNING: sans-serif looks awful
+  % \RequirePackage{dsfont} % WARNING: missing numerals except 1
+  % \RequirePackage[showoptions]{mathalpha} % NOTE: maybe this approach is more configable?
+  %   \RequirePackage[bb=boondox]{mathalpha} % WARNING: sans-serif again
+    \RequirePackage[bb=dsserif,bbscaled=1.1]{mathalpha} % WARNING: a little blocky/angular, but at least it's serif
+
+\RequirePackage{varwidth}
+
+%%%%%% Helpers %%%%%%
+
+\newcommand\strong[1]{{\bf#1}} % to highlight definitions
+% TODO: make sure it chooses an appropriate font style depending on context
+\def\supth/{\textsuperscript{th}}
+
+\def\Nary/{$n$-ary}
+
+% handy arrow synonyms
+\newcommand*\To{\Rightarrow}
+\newcommand*\from{\leftarrow}
+\newcommand*\longto{\longrightarrow}
+\newcommand*\reduceto{\mathrel{\;\,\scalebox{1.5}[1]{$\to$}\;\,}}
+
+% use bussproofs' prooftree environment in math mode (e.g. for inside equation environments)
+% taken from https://tex.stackexchange.com/a/58041
+% needs varwidth package
+\newenvironment{mathprooftree}
+  {\varwidth{.9\textwidth}\centering\leavevmode}
+  {\DisplayProof\endvarwidth}
+
+\def\qcomma/{?\kern -0.9ex,}
+
+\newcommand\mcolorbox[2]{\colorbox{#1}{$#2$}}% FIXME carry along the math style
+\newcommand\mgray[1]{\mcolorbox{lightgray}{#1}}
+
+%%%%%% Common Functions and Relations %%%%%%
+
+\newcommand*\dom{\mathrm{dom}}
+\newcommand*\fv{\mathrm{fv}} % free variables
+
+\newcommand*\ordcolon{\mathord:} % eliminate space around a colon
+\newcommand*\scrcolon{\mathbin{\,\ordcolon\,}} % colon can get crunched in subscripts
+
+\newcommand\varexp[1]{\mathrm{e}^{#1}}
+
+%%%%%% Common Notations %%%%%%
+
+% TODO: I've priveledged my "Chef's Choice" notations; I'd better allow for options, though
+
+\newcommand\namedhole[1]{%
+  \relax%
+  \ifmmode%
+    {%
+      \mathchoice%
+        {\fbox{$\displaystyle%$
+          \mathstrut%
+          \textsc{\small #1}%
+        $}}%
+        {\fbox{$\textstyle%
+          % \mathstrut%
+          \textsc{\small #1}% TODO tune size of font
+        $}}%
+        {\fbox{$\scriptstyle%$
+          % \mathstrut%
+          \textsc{#1}% TODO tune size of font
+        $}}%
+        {\fbox{$\scriptscriptstyle%$
+          % \mathstrut%
+          \textsc{#1}% TODO tune size of font
+        $}}%
+    }%
+  \else%
+    {%
+      \setlength{\fboxsep}{0.2ex}%
+      \fbox{%
+        $\mathstrut$%
+        \textsc{#1}%
+      }%
+    }%
+  \fi%
+}
+
+\newcommand*\ind{\mathsf{ind}}
+\newcommand*\rec{\mathsf{rec}}
+
+\newcommand\lambdaesque[2]{{#1}{#2}.\,}
+
+\newcommand\fun[1]{\lambdaesque{\lambda}{#1}}
+\newcommand\Fun[1]{\lambdaesque{\Lambda}{#1}}
+% for type annotations on binders, use either `^` or `\varcolon`
+% use `\;` for application fo explicit arguments
+\newcommand\all[1]{\lambdaesque{\forall}{#1}}
+\newcommand\All{\mathop{\mathchoice%
+  {\scalebox{1.78}{\raisebox{-0.45ex}{$\forall$}}}%
+  {\scalebox{1.25}{\raisebox{-0.275ex}{$\forall$}}\!}%
+  {\scalebox{1}{\raisebox{-0.3ex}{$\forall$}}\!}%
+  {\scalebox{0.75}{\raisebox{-0.35ex}{$\forall$}}\!}%
+}}
+
+\newcommand*\U{\mathcal{U}}
+
+% \fontsize{4pt}{4pt}\selectfont
+% \newcommand\defeq{\overset{\text{\fontsize{4pt}{4pt}\selectfont def}}{=}}
+% \newcommand\defeq{\mathrel{\overset{\text{def}}{\scalebox{1.5}[1]=}}}
+\newcommand*\trieq{\mathrel{\overset{\scalebox{0.6}{$\triangle$}}=}}
+\newcommand*\defeq{\mathrel{\overset{\mathclap{\scalebox{0.6}{\text{def}}}}{\scalebox{1.1}[1]=}}}
+
+\newcommand\dto[1]{\mathbin{\prescript{}{#1}{\mathord{\to}}}}
+  % \newcommand\deparr[3]{#2 \dto{#1} #3}
+\newcommand\Pitype{\@ifstar{\Pitype@star}{\Pitype@nostar}}
+  \newcommand\Pitype@nostar[2]{\prod_{#1 : #2}}
+  \newcommand\Pitype@star[2]{\prod_{\mathclap{#1 \scrcolon #2}}}
+\newcommand\PitypeR[2]{\prod_{#1 \scrcolon \mathrlap{#2}}}
+
+\newcommand\Pitypes{\@ifstar{\Pitypes@star}{\Pitypes@nostar}}
+  \newcommand\Pitypes@nostar[1]{\prod_{\substack{#1}}}
+  \newcommand\Pitypes@star[1]{\prod_{\mathclap{\substack{#1}}}}
+\newcommand\deparr[2]{({#1}:{#2}) \to}
+\newcommand\deparri[2]{\{{#1}:{#2}\} \to}
+\newcommand\vardeparr[3][]{\prescript{{#2}\ordcolon\!{#1}}{}{{#3}} \to}
+
+\newcommand\deptimes[2]{({#1}:{#2}) \times}
+\newcommand\vardeptimes[3][]{\prescript{{#2}\ordcolon\!{#1}}{}{{#3}} \times}
+
+
+\newcommand\W{\mathsf{W}}
+\DeclareMathOperator{\bigW}{\W}
+\newcommand\wsup{\mathsf{sup}}
+\newcommand\WI{\mathsf{WI}}
+
+\newcommand\refl{\mathsf{refl}}
+
+\newcommand\letPart{\mathinner{\textbf{let}}}
+\newcommand\letrecPart{\mathinner{\textbf{let rec}}}
+\newcommand\inPart{\mathinner{\textbf{in}}}
+\newcommand\letin[1]{\letPart{#1}\inPart}
+\newcommand\where{\mathinner{\textbf{where}}}
+
+\newcommand\casePart{\mathinner{\textbf{case}}}
+\newcommand\ofPart{\mathinner{\textbf{of}}}
+\newcommand\caseof[1]{\casePart{#1}\ofPart}
+
+
+%%%%%% Names for Things %%%%%%
+
+% Thanks to https://tex.stackexchange.com/a/147061 for this trailing-slash solution
+\def\lambdaCalculus/{$\lambda$-calculus}
+\def\SystemF/{System $\mathrm F$}
+\def\SystemFw/{System $\mathrm F_\omega$}
+\def\SystemU/{System $\mathrm U$}
+\def\SystemUminus/{System $\mathrm U^-$}

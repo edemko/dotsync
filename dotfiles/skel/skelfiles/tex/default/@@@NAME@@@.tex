@@ -1,0 +1,67 @@
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+%%% FONTS
+\usepackage[T1]{fontenc}
+
+%%% PACKAGES
+\usepackage{typetheory}
+
+\usepackage{multirow}
+\usepackage{stackengine}
+\usepackage{hyperref}
+  \hypersetup{
+    colorlinks = true, %Colours links instead of ugly boxes
+    urlcolor = blue!70!black, %Colour for external hyperlinks
+    linkcolor = green!50!black, %Colour of internal links
+    citecolor = blue!50!black %Colour of citations
+  }
+\usepackage[inline]{enumitem}
+\usepackage{float}
+  \floatstyle{boxed}
+  \restylefloat{figure}
+\usepackage{subcaption}
+\usepackage[noabbrev]{cleveref}
+\usepackage{qtree}
+\usepackage{tikz}
+
+\newcommand\ldisplaycell[1]{\begin{array}[c]{@{}l@{}}\displaystyle {#1}\end{array}}
+\newcommand\ltextcell[1]{\begin{array}[c]{@{}l@{}}\textstyle {#1}\end{array}}
+
+\usepackage{amsthm}
+  \theoremstyle{definition}
+  \newtheorem{definition}{Definition}
+  \theoremstyle{remark}
+  \newtheorem{example}{Example}
+
+\usepackage[backend=biber]{biblatex}
+  \addbibresource{@@@NAME@@@.bib}
+
+\usepackage{mdframed}
+\newenvironment{aside}
+  {\begin{mdframed}[style=0,%
+      leftline=false,rightline=false,leftmargin=2em,rightmargin=2em,%
+          innerleftmargin=0pt,innerrightmargin=0pt,linewidth=0.75pt,%
+      skipabove=7pt,skipbelow=7pt]\small}
+  {\end{mdframed}}
+
+\title{@@@TITLE@@@}
+\author{Marseille Valen Bouchard Demko}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\end{abstract}
+
+\printbibliography
+
+
+\end{document}
