@@ -4,6 +4,7 @@
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias tree='tree -I ".git|dist-newstyle"'
 
 # lolcat, but less
 loless() {
