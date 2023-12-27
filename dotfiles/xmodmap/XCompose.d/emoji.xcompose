@@ -7,114 +7,165 @@
 ###### Smileys ######
 
 
-### smiling ###
+### happy ###
 
-<Multi_key> <colon> <space> <colon> <parenright> <colon>: "😀"
-<Multi_key> <colon> <space> <colon> <D> <colon>: "😁"
-<Multi_key> <colon> <space> <X> <D> <colon>: "😆"
-<Multi_key> <colon> <space> <asciicircum> <period> <asciicircum> <apostrophe> <colon>: "😅"
-<Multi_key> <colon> <r> <o> <f> <l> <colon>: "🤣"
-<Multi_key> <colon> <space> <parenleft> <colon> <colon>: "🙃"
-<Multi_key> <colon> <m> <e> <l> <t> <colon>: "🫠"
-<Multi_key> <colon> <space> <semicolon> <parenright> <colon>: "😉"
-<Multi_key> <colon> <b> <l> <u> <s> <h> <colon>: "😊"
-<Multi_key> <colon> <h> <a> <l> <o> <colon>: "😇"
+<Multi_key> <colon> <parenright> <space>: "😀" # grinning face
+<Multi_key> <colon> <D>: "😁" # grinning face with smiling eyes
+<Multi_key> <colon> <y> <a> <y>: "😊" # smiling face with smiling eyes # TODO
 
-### affection ###
+# laughter
 
-<Multi_key> <colon> <l> <o> <v> <e> <colon>: "🥰"
-<Multi_key> <colon> <less> <3> <e> <y> <e> <colon>: "😍"
-<Multi_key> <colon> <s> <t> <a> <r> <e> <y> <e> <colon>: "🤩"
-<Multi_key> <colon> <k> <i> <s> <s> <colon>: "😘"
-<Multi_key> <colon> <s> <w> <e> <a> <t> <colon>: "🥲"
+<Multi_key> <colon> <X> <D>: "😆" # grinning squinting face
+<Multi_key> <colon> <l> <m> <a> <o>: "😂" # face with tears of joy
+<Multi_key> <colon> <r> <o> <f> <l>: "🤣" # rolling on the floor laughing
+<Multi_key> <colon> <d> <e> <a> <d>: "💀" # skull
 
-### tongue ###
+# affection
 
-<Multi_key> <colon> <y> <u> <m> <colon>: "😋"
-<Multi_key> <colon> <space> <colon> <P> <colon>: "😛"
-<Multi_key> <colon> <space> <semicolon> <P> <colon>: "😜"
-<Multi_key> <colon> <z> <a> <n> <y> <colon>: "🤪"
-<Multi_key> <colon> <space> <X> <P> <colon>: "😝"
-<Multi_key> <colon> <space> <dollar> <P> <colon>: "🤑"
+<Multi_key> <colon> <h> <u> <g>: "🤗" # hugging face
 
-### face-hand ###
+<Multi_key> <colon> <less> <parenright> <3>: "🥰" # smiling face with three hearts
+<Multi_key> <colon> <less> <3> <parenright>: "😍" # smiling face with heart eyes
+<Multi_key> <colon> <parenright> <less> <3>: "😘" # face throwing a kiss
 
-<Multi_key> <colon> <h> <u> <g> <colon>: "🤗"
-<Multi_key> <colon> <h> <e> <e> <h> <e> <e> <colon>: "🤭"
-<Multi_key> <colon> <s> <h> <h> <h> <colon>: "🤫"
-<Multi_key> <colon> <h> <m> <m> <m> <colon>: "🤔"
+# enjoyment
 
-### neutral/skeptical ###
+<Multi_key> <colon> <p>: "😋" # face savoring delicious food
+<Multi_key> <colon> <asciicircum> <q> <asciicircum>: "🤤" # drooling face
+<Multi_key> <colon> <asterisk> <parenright>: "🤩" # smiling face with star eyes
+<Multi_key> <colon> <apostrophe> <parenright>: "🥲" # smiling face with tear
 
-<Multi_key> <colon> <z> <i> <p> <colon>: "🤐"
-<Multi_key> <colon> <e> <y> <e> <b> <r> <o> <w> <colon>: "🤨"
-<Multi_key> <colon> <space> <colon> <bar> <colon>: "😐"
-<Multi_key> <colon> <space> <minus> <underscore> <minus> <colon>: "😑"
-<Multi_key> <colon> <space> <greater> <period> <greater> <colon>: "😒"
-<Multi_key> <colon> <g> <r> <i> <m> <a> <c> <e> <colon>: "😬"
-<Multi_key> <colon> <w> <h> <e> <w> <colon>: "😮‍💨"
+# celebration
 
-### sleepy ###
+# 'party' "🥳" # face with party horn and party hat # TODO
+<Multi_key> <colon> <t> <a> <d> <a>: "🎉" # party popper
+<Multi_key> <colon> <T> <A> <D> <A>: "🎊" # confetti ball
 
-<Multi_key> <colon> <r> <e> <l> <a> <x> <colon>: "😌"
-<Multi_key> <colon> <s> <n> <o> <r> <e> <colon>: "😪"
-<Multi_key> <colon> <d> <r> <o> <o> <l> <colon>: "🤤"
-<Multi_key> <colon> <z> <z> <z> <colon>: "😴"
+### devious ###
 
-### unwell ###
+# sarcastic
 
-<Multi_key> <colon> <s> <i> <c> <k> <colon>: "🤢"
-<Multi_key> <colon> <b> <a> <r> <f> <colon>: "🤮"
-<Multi_key> <colon> <s> <n> <e> <e> <z> <e> <colon>: "🤧"
-<Multi_key> <colon> <h> <o> <t> <colon>: "🥵"
-<Multi_key> <colon> <c> <o> <l> <d> <colon>: "🥶"
-<Multi_key> <colon> <space> <at> <period> <at> <colon>: "😵‍💫"
-<Multi_key> <colon> <s> <p> <l> <o> <d> <e> <colon>: "🤯"
+<Multi_key> <colon> <parenleft> <colon>: "🙃" # upside-down face
+<Multi_key> <colon> <m> <e> <l> <t>: "🫠" # melting face
 
-### hat ###
+# just a joke, bro
 
-<Multi_key> <colon> <p> <a> <r> <t> <y> <colon>: "🥳"
+<Multi_key> <colon> <semicolon> <parenright>: "😉" # winking face
+<Multi_key> <colon> <P>: "😛" # face with stuck-out tongue
+<Multi_key> <colon> <X> <P>: "😝" # squinting face with tongue
+<Multi_key> <colon> <semicolon> <P>: "😜" # face with stuck-out tongue and winking eye
 
-### concerned ###
+<Multi_key> <colon> <at> <P>: "🤪" # zany face
+<Multi_key> <colon> <h> <e> <e> <h> <e> <e>: "🤭" # face with hand over mouth
 
-<Multi_key> <colon> <space> <colon> <slash> <colon>: "🫤"
-<Multi_key> <colon> <w> <o> <r> <r> <y> <colon>: "😟"
-<Multi_key> <colon> <space> <colon> <parenleft> <colon>: "🙁"
-<Multi_key> <colon> <space> <colon> <C> <colon>: "☹"
-<Multi_key> <colon> <space> <colon> <o> <colon>: "😮"
-<Multi_key> <colon> <O> <w> <O> <colon>: "😳"
-<Multi_key> <colon> <b> <e> <g> <colon>: "🥺"
-<Multi_key> <colon> <1> <t> <e> <a> <r> <colon>: "😢"
-<Multi_key> <colon> <space> <T> <period> <T> <colon>: "😭"
-<Multi_key> <colon> <space> <0> <period> <0> <colon>: "😱"
-<Multi_key> <colon> <space> <greater> <period> <less> <colon>: "😖"
-<Multi_key> <colon> <space> <D> <colon> <colon>: "😩"
-<Multi_key> <colon> <space> <D> <X> <colon>: "😫"
-<Multi_key> <colon> <y> <a> <w> <n> <colon>: "🥱"
+# desire
 
-### negative ###
+<Multi_key> <colon> <0> <period> <0>: "😳" # flushed face
+<Multi_key> <colon> <u> <w> <u>: "🥺" # pleading face
 
-<Multi_key> <colon> <space> <greater> <colon> <parenleft> <colon>: "😠"
-<Multi_key> <colon> <d> <e> <a> <d> <colon>: "💀"
+# quiet
+
+<Multi_key> <colon> <s> <h> <h>: "🤫" # shush face
+<Multi_key> <colon> <z> <i> <p>: "🤐" # zipper-mouth face
+
+### sad ###
+
+<Multi_key> <colon> <v> <period> <v>: "😟" # worried face
+<Multi_key> <colon> <parenleft> <space>: "🙁" # slightly frowning face
+<Multi_key> <colon> <C>: "☹" # frowning face
+<Multi_key> <colon> <parenleft> <parenleft>: "😩" # weary face
+<Multi_key> <colon> <X> <parenleft>: "😫" # tired face
+
+# crying
+
+<Multi_key> <colon> <t> <period> <t>: "😢" # crying face
+<Multi_key> <colon> <T> <period> <T>: "😭" # loudly crying face
+
+# anger
+
+<Multi_key> <colon> <greater> <colon> <parenleft>: "😠" # angry face
+
+# illness
+
+<Multi_key> <colon> <s> <i> <c> <k>: "🤢"
+<Multi_key> <colon> <b> <a> <r> <f>: "🤮"
+<Multi_key> <colon> <s> <n> <e> <e> <z> <e>: "🤧"
+
+### low-energy ###
+
+# relief/relax
+
+<Multi_key> <colon> <w> <h> <e> <w>: "😮‍💨" # face exhaling
+<Multi_key> <colon> <u> <period> <u> <space>: "😌" # relieved face
+<Multi_key> <colon> <y> <a> <w> <n>: "🥱" # yawning face
+<Multi_key> <colon> <u> <period> <u> <o> <O>: "😪" # sleepy face
+<Multi_key> <colon> <u> <period> <u> <z> <z>: "😴" # sleeping face
+
+# unease
+
+<Multi_key> <colon> <h> <o> <t>: "🥵"
+<Multi_key> <colon> <c> <o> <l> <d>: "🥶"
+
+### thinking ###
+
+# reflection
+
+<Multi_key> <colon> <asciicircum> <period> <asciicircum> <apostrophe>: "😅" # smiling face with open mouth and cold sweat
+<Multi_key> <colon> <h> <m> <m>: "🤔" # thinking face
+<Multi_key> <colon> <o> <underscore> <O>: "🤨" # face with one eyebrow raised
+
+# skeptical
+
+<Multi_key> <colon> <bar>: "😐" # neutral face
+<Multi_key> <colon> <minus> <underscore> <minus>: "😑" # expressionless face
+<Multi_key> <colon> <greater> <period> <greater>: "😒" # unamused face
+<Multi_key> <colon> <slash>: "🫤" # face with diagonal mouth
+<Multi_key> <colon> <y> <i> <k> <e> <s>: "😬" # grimacing face
+
+# surprise/confusion
+
+<Multi_key> <colon> <o> <space>: "😮" # face with open mouth
+<Multi_key> <colon> <0> <o> <0>: "😱" # face screaming in fear
+<Multi_key> <colon> <s> <p> <l> <o> <d> <e>: "🤯" # shocked face with exploding head
+<Multi_key> <colon> <greater> <period> <less>: "😖" # confounded face
+<Multi_key> <colon> <at> <period> <at>: "😵‍💫" # face with spiral eyes
+
+# motivation
+
+<Multi_key> <colon> <h> <a> <l> <o> <parenright>: "😇" # smiling face with halo
+<Multi_key> <colon> <dollar> <P>: "🤑" # money-mouth face emoji
+
+### cats ###
+
+<Multi_key> <colon> <3> <space>: "😺" # smiling cat face with open mouth
+<Multi_key> <colon> <3> <3>: "😸" # grinning cat face with smiling eyes
+<Multi_key> <colon> <X> <3>: "😹" # cat face with tears of joy
+
+# '' "😻" # smiling cat face with heart-shaped eyes # TODO
+# '' "😼" # cat face with wry smile # TODO
+# '' "😽" # kissing cat face with closed eyes # TODO
+# '' "😾" # pouting cat face # TODO
+# '' "😿" # crying cat face # TODO
+# '' "🙀" # weary cat face # TODO
 
 ###### Hearts ######
 
 
-<Multi_key> <less> <slash> <3>: "💔"
+<Multi_key> <less> <p> <i> <3>: "🩷" # pink heart
+<Multi_key> <less> <r> <3>: "❤️" # red heart
+<Multi_key> <less> <o> <3>: "🧡" # orange heart
+<Multi_key> <less> <y> <3>: "💛" # yellow heart
+<Multi_key> <less> <g> <3>: "💚" # green heart
+<Multi_key> <less> <l> <b> <3>: "🩵" # light blue heart
+<Multi_key> <less> <b> <3>: "💙" # blue heart
+<Multi_key> <less> <p> <u> <3>: "💜" # purple heart
+<Multi_key> <less> <b> <r> <3>: "🤎" # brown heart
+<Multi_key> <less> <k> <3>: "🖤" # black heart
+<Multi_key> <less> <g> <r> <3>: "🩶" # grey heart
+<Multi_key> <less> <w> <3>: "🤍" # white heart
 
-<Multi_key> <less> <r> <3>: "❤️" # Red Heart
-<Multi_key> <less> <p> <3>: "🩷" # Pink Heart
-<Multi_key> <less> <o> <3>: "🧡" # Orange Heart
-<Multi_key> <less> <y> <3>: "💛" # Yellow Heart
-<Multi_key> <less> <g> <3>: "💚" # Green Heart
-<Multi_key> <less> <b> <3>: "💙" # Blue Heart
-<Multi_key> <less> <l> <b> <3>: "🩵" # Light Blue Heart
-<Multi_key> <less> <p> <u> <3>: "💜" # Purple Heart
-<Multi_key> <less> <p> <i> <3>: "🩷" # Pink Heart
-<Multi_key> <less> <b> <r> <3>: "🤎" # Brown Heart
-<Multi_key> <less> <k> <3>: "🖤" # Black Heart
-<Multi_key> <less> <g> <r> <3>: "🩶" # Grey Heart
-<Multi_key> <less> <w> <3>: "🤍" # White Heart
+<Multi_key> <less> <slash> <3>: "💔"
+<Multi_key> <less> <asterisk> <3>: "💖" # sparkle heart
 
 
 ###### Animals & Nature ######

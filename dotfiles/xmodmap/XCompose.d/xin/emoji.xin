@@ -1,122 +1,173 @@
 ====== emoji
 #### Emoji
 # see https://unicode.org/emoji/charts/full-emoji-list.html
-='⎄:' ':'
 
 ### Smileys
+= '⎄:'
 
-## smiling
+## happy
 
-' :)' "😀"
-' :D' "😁"
-' XD' "😆"
-' ^.^''' "😅"
-'rofl' "🤣"
-' (:' "🙃"
-'melt' "🫠"
-' ;)' "😉"
-'blush' "😊"
-'halo' "😇"
+') ' "😀" # grinning face
+'D' "😁" # grinning face with smiling eyes
+'yay' "😊" # smiling face with smiling eyes # TODO
 
-## affection
+# laughter
 
-'love' "🥰"
-'<3eye' "😍"
-'stareye' "🤩"
-'kiss' "😘"
-'sweat' "🥲"
+'XD' "😆" # grinning squinting face
+'lmao' "😂" # face with tears of joy
+'rofl' "🤣" # rolling on the floor laughing
+'dead' "💀" # skull
 
-## tongue
+# affection
 
-'yum' "😋"
-' :P' "😛"
-' ;P' "😜"
-'zany' "🤪"
-' XP' "😝"
-' $P' "🤑"
+'hug' "🤗" # hugging face
 
-## face-hand
+'<)3' "🥰" # smiling face with three hearts
+'<3)' "😍" # smiling face with heart eyes
+')<3' "😘" # face throwing a kiss
 
-'hug' "🤗"
-'heehee' "🤭"
-'shhh' "🤫"
-'hmmm' "🤔"
+# enjoyment
 
-## neutral/skeptical
+'p' "😋" # face savoring delicious food
+'^q^' "🤤" # drooling face
+'*)' "🤩" # smiling face with star eyes
+''')' "🥲" # smiling face with tear
 
-'zip' "🤐"
-'eyebrow' "🤨"
-' :|' "😐"
-' -_-' "😑"
-' >.>' "😒"
-'grimace' "😬"
-'whew' "😮‍💨"
+# celebration
 
-## sleepy
+# 'party' "🥳" # face with party horn and party hat # TODO
+'tada' "🎉" # party popper
+'TADA' "🎊" # confetti ball
 
-'relax' "😌"
-'snore' "😪"
-'drool' "🤤"
-'zzz' "😴"
+## devious
 
-## unwell
+# sarcastic
+
+'(:' "🙃" # upside-down face
+'melt' "🫠" # melting face
+
+# just a joke, bro
+
+';)' "😉" # winking face
+'P' "😛" # face with stuck-out tongue
+'XP' "😝" # squinting face with tongue
+';P' "😜" # face with stuck-out tongue and winking eye
+
+'@P' "🤪" # zany face
+'heehee' "🤭" # face with hand over mouth
+
+# desire
+
+'0.0' "😳" # flushed face
+'uwu' "🥺" # pleading face
+
+# quiet
+
+'shh' "🤫" # shush face
+'zip' "🤐" # zipper-mouth face
+
+## sad
+
+'v.v' "😟" # worried face
+'( ' "🙁" # slightly frowning face
+'C' "☹" # frowning face
+'((' "😩" # weary face
+'X(' "😫" # tired face
+
+# crying
+
+'t.t' "😢" # crying face
+'T.T' "😭" # loudly crying face
+
+# anger
+
+'>:(' "😠" # angry face
+
+# illness
 
 'sick' "🤢"
 'barf' "🤮"
 'sneeze' "🤧"
+
+## low-energy
+
+# relief/relax
+
+'whew' "😮‍💨" # face exhaling
+'u.u ' "😌" # relieved face
+'yawn' "🥱" # yawning face
+'u.uoO' "😪" # sleepy face
+'u.uzz' "😴" # sleeping face
+
+# unease
+
 'hot' "🥵"
 'cold' "🥶"
-' @.@' "😵‍💫"
-'splode' "🤯"
 
-## hat
+## thinking
 
-'party' "🥳"
+# reflection
 
-## concerned
+'^.^''' "😅" # smiling face with open mouth and cold sweat
+'hmm' "🤔" # thinking face
+'o_O' "🤨" # face with one eyebrow raised
 
-' :/' "🫤"
-'worry' "😟"
-' :(' "🙁"
-' :C' "☹"
-' :o' "😮"
-'OwO' "😳"
-'beg' "🥺"
-'1tear' "😢"
-' T.T' "😭"
-' 0.0' "😱"
-' >.<' "😖"
-' D:' "😩"
-' DX' "😫"
-'yawn' "🥱"
+# skeptical
 
-## negative
+'|' "😐" # neutral face
+'-_-' "😑" # expressionless face
+'>.>' "😒" # unamused face
+'/' "🫤" # face with diagonal mouth
+'yikes' "😬" # grimacing face
 
-' >:(' "😠"
-'dead' "💀"
+# surprise/confusion
+
+'o ' "😮" # face with open mouth
+'0o0' "😱" # face screaming in fear
+'splode' "🤯" # shocked face with exploding head
+'>.<' "😖" # confounded face
+'@.@' "😵‍💫" # face with spiral eyes
+
+# motivation
+
+'halo)' "😇" # smiling face with halo
+'$P' "🤑" # money-mouth face emoji
+
+## cats
+
+'3 ' "😺" # smiling cat face with open mouth
+'33' "😸" # grinning cat face with smiling eyes
+'X3' "😹" # cat face with tears of joy
+
+# '' "😻" # smiling cat face with heart-shaped eyes # TODO
+# '' "😼" # cat face with wry smile # TODO
+# '' "😽" # kissing cat face with closed eyes # TODO
+# '' "😾" # pouting cat face # TODO
+# '' "😿" # crying cat face # TODO
+# '' "🙀" # weary cat face # TODO
 
 ### Hearts
 = '⎄<' '3'
 
+'pi'  "🩷" # pink heart
+'r'  "❤️" # red heart
+'o'  "🧡" # orange heart
+'y'  "💛" # yellow heart
+'g'  "💚" # green heart
+'lb' "🩵" # light blue heart
+'b' "💙" # blue heart
+'pu'  "💜" # purple heart
+'br' "🤎" # brown heart
+'k' "🖤" # black heart
+'gr' "🩶" # grey heart
+'w'  "🤍" # white heart
+
 '/' "💔"
+'*' "💖" # sparkle heart
 
-'r'  "❤️" # Red Heart
-'p'  "🩷" # Pink Heart
-'o'  "🧡" # Orange Heart
-'y'  "💛" # Yellow Heart
-'g'  "💚" # Green Heart
-'b' "💙" # Blue Heart
-'lb' "🩵" # Light Blue Heart
-'pu'  "💜" # Purple Heart
-'pi'  "🩷" # Pink Heart
-'br' "🤎" # Brown Heart
-'k' "🖤" # Black Heart
-'gr' "🩶" # Grey Heart
-'w'  "🤍" # White Heart
-
-='⎄:' ':'
 
 ### Animals & Nature
+='⎄:' ':'
 
 ## Mammals
 
