@@ -45,7 +45,9 @@ nmap <silent> , :nohlsearch<CR>
 set gdefault
 
 " make Nj and Nk easier; taking the compiler's advice is easy as Ngg
-set relativenumber
+" set relativenumber
+" OR, just scroll with mouse and only use Nj/Nk in macro recordings for short
+" jumps
 
 " make whitespace visible
 set list

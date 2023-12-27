@@ -5,3 +5,4 @@ if [ -f ~/.Xmodmap ]; then
     (sleep 1 ; xmodmap ~/.Xmodmap)
     (sleep 3 ; xmodmap ~/.Xmodmap)
 fi
+

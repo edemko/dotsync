@@ -16,6 +16,7 @@ dotsync_newest() {
     # Aliases
     git config --global --get alias.st >/dev/null || return 1
     git config --global --get alias.graph >/dev/null || return 1
+    git config --global --get alias.hash >/dev/null || return 1
     git config --global --get alias.com >/dev/null || return 1
     git config --global --get alias.amend >/dev/null || return 1
     git config --global --get alias.co >/dev/null || return 1
@@ -47,6 +48,7 @@ dotsync_setup() {
     # Aliases
     git config --global alias.st 'status'
     git config --global alias.graph 'log --graph --all --oneline --decorate'
+    git config --global alias.hash 'rev-parse HEAD'
     git config --global alias.com 'commit -a'
     git config --global alias.amend 'commit -a --amend'
     git config --global alias.co 'checkout'
