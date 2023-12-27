@@ -15,6 +15,9 @@
 <Multi_key> <slash> <less> <minus>: "↚" # LEFTWARDS ARROW WITH STROKE
 <Multi_key> <slash> <less> <greater>: "↮" # LEFT RIGHT ARROW WITH STROKE
 
+<Multi_key> <t> <t>: "⊤" # logical top element
+<Multi_key> <f> <f>: "⊥" # logical bottom element
+
 # Rightward
 
 
