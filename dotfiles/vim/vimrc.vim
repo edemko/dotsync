@@ -15,7 +15,7 @@ filetype plugin indent on
 
 """ keybindings """
 
-" remap next/prev char serach from ;/, to make space
+" remap next/prev char search from ;/, to make space
 nmap <C-p> ,
 nmap <C-n> ;
 " beautifully saves two keystrokes entering command mode
@@ -23,11 +23,32 @@ nnoremap ; :
 vnoremap ; :
 " I'm always hitting escape. My life is changed now: let's not leave the home row.
 inoremap jf <esc>
+vnoremap jf <esc>
+cnoremap jf <esc>
 " see near highlighting below that , also gets repurposed
 
 " forgot sudo? use this (once I understand it):
 " cmap w!! w !sudo tee % >/dev/null
 
+" make 0 work like ^ when not at the start of the text on a line, otherwise keep its default functionality. so if I want to go to the actual start of the line, I press 0 twice:
+nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
+vnoremap <expr> <silent> <home> col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
+" FIXME for some reason, I can't get the home key to actually register as a
+" thing in insert mode
+"inoremap <expr> <silent> <home> col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
+
+" make a new paragraph
+nnoremap oo o<esc>O
+
+" I don't use `s`, but it's easier to hit then `v`
+" therefore, the `s` key now changes into "select" mode, which I always want
+" to be visual
+nnoremap s v
+" and while I'm at it, let's make it a toggle
+vnoremap s <esc>
+" and I'll also use `a` for "alter" a synonym for "change" that's harder to
+" typo
+vnoremap a c
 
 """ History """
 
@@ -44,10 +65,13 @@ set hlsearch
 nmap <silent> , :nohlsearch<CR>
 set gdefault
 
+set number
 " make Nj and Nk easier; taking the compiler's advice is easy as Ngg
 " set relativenumber
 " OR, just scroll with mouse and only use Nj/Nk in macro recordings for short
 " jumps
+set mouse=a
+
 
 " make whitespace visible
 set list
@@ -57,11 +81,11 @@ set listchars+=precedes:…,extends:…
 """ non-text keeb keys """
 
 " good indentation settings
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab " use spaces instead of tabs.
-set smarttab " let's tab key insert 'tab stops', and bksp deletes tabs.
+set smarttab " lets tab key insert 'tab stops', and bksp deletes tabs.
 set shiftround " tab / shifting moves to closest tabstop.
 set autoindent
 set copyindent
