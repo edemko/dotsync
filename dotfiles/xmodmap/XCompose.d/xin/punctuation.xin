@@ -19,15 +19,31 @@
 '--.' "–" # EN DASH
 '---' "—" # EM DASH
 
+### Brackets
+
+'< ' "⟨" # left math angle bracket
+'> ' "⟩" # right math angle bracket
+
+'((' "⦅" # blackboard bold open paren
+'))' "⦆" # blackboard bold close paren
+'[[' "⟦" # blackboard bold open bracket
+']]' "⟧" # blackboard bold close bracket
+'{{' "⦃" # blackboard bold open brace
+'}}' "⦄" # blackboard bold close brace
+'<|' "⦉" # blackboard bold open angle bracket
+'|>' "⦊" # blackboard bold close angle bracket
+
+'2(' "⸨" # left double paren
+'2)' "⸩" # left double paren
+'2<' "⟪" # left math double angle bracket
+'2>' "⟫" # left math double angle bracket
+
 ### Ordinals
 
 '^_a' "ª" # FEMININE ORDINAL INDICATOR
 '^_o' "º" # MASCULINE ORDINAL INDICATOR
 
 ### Quote Marks
-
-'< ' "⟨" # left math angle bracket
-'> ' "⟩" # right math angle bracket
 
 '.>' "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
 '.<' "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK

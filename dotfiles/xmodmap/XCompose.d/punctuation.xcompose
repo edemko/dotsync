@@ -23,6 +23,26 @@
 <Multi_key> <minus> <minus> <period>: "–" # EN DASH
 <Multi_key> <minus> <minus> <minus>: "—" # EM DASH
 
+###### Brackets ######
+
+
+<Multi_key> <less> <space>: "⟨" # left math angle bracket
+<Multi_key> <greater> <space>: "⟩" # right math angle bracket
+
+<Multi_key> <parenleft> <parenleft>: "⦅" # blackboard bold open paren
+<Multi_key> <parenright> <parenright>: "⦆" # blackboard bold close paren
+<Multi_key> <bracketleft> <bracketleft>: "⟦" # blackboard bold open bracket
+<Multi_key> <bracketright> <bracketright>: "⟧" # blackboard bold close bracket
+<Multi_key> <braceleft> <braceleft>: "⦃" # blackboard bold open brace
+<Multi_key> <braceright> <braceright>: "⦄" # blackboard bold close brace
+<Multi_key> <less> <bar>: "⦉" # blackboard bold open angle bracket
+<Multi_key> <bar> <greater>: "⦊" # blackboard bold close angle bracket
+
+<Multi_key> <2> <parenleft>: "⸨" # left double paren
+<Multi_key> <2> <parenright>: "⸩" # left double paren
+<Multi_key> <2> <less>: "⟪" # left math double angle bracket
+<Multi_key> <2> <greater>: "⟫" # left math double angle bracket
+
 ###### Ordinals ######
 
 
@@ -31,9 +51,6 @@
 
 ###### Quote Marks ######
 
-
-<Multi_key> <less> <space>: "⟨" # left math angle bracket
-<Multi_key> <greater> <space>: "⟩" # right math angle bracket
 
 <Multi_key> <period> <greater>: "›" # SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
 <Multi_key> <period> <less>: "‹" # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
