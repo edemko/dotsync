@@ -1,28 +1,50 @@
 cache: false
-downloader: Wget
-"gpg-setting": GPGNone
-"keep-dirs": Errors
-"key-bindings":
+downloader: Curl
+gpg-setting: GPGNone
+keep-dirs: Errors
+key-bindings:
   changelog:
-    KChar: c
+    Key:
+      KChar: c
+    Mods: []
   down:
+    Key:
       KChar: j
+    Mods: []
   install:
-    KChar: i
+    Key:
+      KChar: i
+    Mods: []
   quit:
-    KChar: q
+    Key:
+      KChar: q
+    Mods: []
   set:
-    KChar: s
-  "show-all":
-    KChar: a
-  "show-all-tools":
-    KChar: t
+    Key:
+      KChar: s
+    Mods: []
+  show-all:
+    Key:
+      KChar: a
+    Mods: []
+  show-all-tools:
+    Key:
+      KChar: t
+    Mods: []
   uninstall:
-    KChar: u
+    Key:
+      KChar: u
+    Mods: []
   up:
-    KChar: k
-"no-network": false
-"no-verify": false
-"url-source":
-  GHCupURL: []
+    Key:
+      KChar: k
+    Mods: []
+meta-cache: null
+meta-mode: null
+mirrors: null
+no-network: false
+no-verify: false
+platform-override: null
+url-source:
+- GHCupURL
 verbose: false
